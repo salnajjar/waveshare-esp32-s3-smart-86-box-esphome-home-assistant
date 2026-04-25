@@ -1,0 +1,1 @@
+# Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant
