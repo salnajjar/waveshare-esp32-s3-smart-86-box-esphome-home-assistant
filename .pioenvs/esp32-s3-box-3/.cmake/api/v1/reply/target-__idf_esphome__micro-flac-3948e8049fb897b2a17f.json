@@ -1,0 +1,1032 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/esphome__micro-flac/libesphome__micro-flac.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"idf_component_register",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"flac_configure_esp_idf",
+			"add_compile_definitions",
+			"target_compile_definitions",
+			"include_directories",
+			"target_include_directories",
+			"__component_add_include_dirs",
+			"add_cxx_compile_options"
+		],
+		"files" : 
+		[
+			"C:/PlatformIO/core/packages/framework-espidf/tools/cmake/component.cmake",
+			"managed_components/esphome__micro-flac/CMakeLists.txt",
+			"managed_components/esphome__micro-flac/cmake/esp-idf.cmake",
+			"C:/PlatformIO/core/packages/framework-espidf/tools/cmake/utilities.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 494,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 479,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 14,
+				"parent" : 5
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 480,
+				"parent" : 1
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 27,
+				"parent" : 5
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 11,
+				"parent" : 5
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 478,
+				"parent" : 1
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 496,
+				"parent" : 1
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 323,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 497,
+				"parent" : 1
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 323,
+				"parent" : 13
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 323,
+				"parent" : 13
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 482,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 270,
+				"parent" : 16
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags\" -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=extra"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Os"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-freorder-blocks"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fmacro-prefix-map=C:/ESPHomeBuild/esp32-s3-box-3=."
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fmacro-prefix-map=C:/PlatformIO/core/packages/framework-espidf=/IDF"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fno-tree-switch-conversion"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-std=gnu++2b"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-fuse-cxa-atexit"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-O2"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wsign-conversion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wimplicit-fallthrough"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "ESP_PLATFORM"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "IDF_VER=\"5.5.4\""
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MICRO_FLAC_MEMORY_PREFER_PSRAM"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "NDEBUG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_GLIBCXX_HAVE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_GLIBCXX_USE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/config"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/ESPHomeBuild/esp32-s3-box-3/managed_components/esphome__micro-flac/include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/ESPHomeBuild/esp32-s3-box-3/managed_components/esphome__micro-flac/src"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/ESPHomeBuild/esp32-s3-box-3/managed_components/esphome__micro-flac/lib/micro-ogg-demuxer/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/config/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/config/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/config/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/include/soc/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/dma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/ldo/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/debug_probe/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/mspi_timing_tuning/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/power_supply/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/port/esp32s3/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/port/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/heap/tlsf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/soc/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/soc/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/soc/esp32s3/register"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/hal/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/hal/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_rom/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_rom/esp32s3/include/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_rom/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/xtensa/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/xtensa/deprecated_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/esp32xx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/esp32xx/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/esp32xx/include/sys"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/asmflags\""
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-error=extra"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Os"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-freorder-blocks"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fmacro-prefix-map=C:/ESPHomeBuild/esp32-s3-box-3=."
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fmacro-prefix-map=C:/PlatformIO/core/packages/framework-espidf=/IDF"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fno-tree-switch-conversion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-O2"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wsign-conversion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wimplicit-fallthrough"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "ESP_PLATFORM"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "IDF_VER=\"5.5.4\""
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MICRO_FLAC_MEMORY_PREFER_PSRAM"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "NDEBUG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_GLIBCXX_HAVE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_GLIBCXX_USE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/config"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/ESPHomeBuild/esp32-s3-box-3/managed_components/esphome__micro-flac/include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/ESPHomeBuild/esp32-s3-box-3/managed_components/esphome__micro-flac/src"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/ESPHomeBuild/esp32-s3-box-3/managed_components/esphome__micro-flac/lib/micro-ogg-demuxer/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/config/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/config/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/config/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/include/soc/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/dma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/ldo/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/debug_probe/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/mspi_timing_tuning/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/power_supply/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/port/esp32s3/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/port/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/heap/tlsf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/soc/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/soc/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/soc/esp32s3/register"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/hal/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/hal/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_rom/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_rom/esp32s3/include/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_rom/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/xtensa/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/xtensa/deprecated_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/esp32xx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/esp32xx/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/PlatformIO/core/packages/framework-espidf/components/lwip/port/esp32xx/include/sys"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				6,
+				7
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "__idf_xtensa::@1daaaad7abe597e030f9"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "micro_ogg_demuxer::@cf5c1df3854d1cd1368a"
+		}
+	],
+	"id" : "__idf_esphome__micro-flac::@cf5c1df3854d1cd1368a",
+	"name" : "__idf_esphome__micro-flac",
+	"nameOnDisk" : "libesphome__micro-flac.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/esphome__micro-flac",
+		"source" : "managed_components/esphome__micro-flac"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				6,
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "managed_components/esphome__micro-flac/src/flac_decoder.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "managed_components/esphome__micro-flac/src/decorrelation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "managed_components/esphome__micro-flac/src/frame_header.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "managed_components/esphome__micro-flac/src/pcm_packing.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "managed_components/esphome__micro-flac/src/crc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "managed_components/esphome__micro-flac/src/lpc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "managed_components/esphome__micro-flac/src/xtensa/lpc_32_xtensa.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "managed_components/esphome__micro-flac/src/xtensa/lpc_64_xtensa.S",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
