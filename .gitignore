@@ -1,0 +1,15 @@
+.pioenvs/
+.piolibdeps/
+.vscode/
+build/
+managed_components/
+
+*.pyc
+__pycache__/
+
+compile_commands.json
+*.elf
+*.map
+*.bin
+*.factory.bin
+*.ota.bin
