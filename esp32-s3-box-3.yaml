@@ -88,6 +88,9 @@ ota:
 logger:
   hardware_uart: USB_SERIAL_JTAG
 
+debug:
+  update_interval: 60s
+
 wifi:
   ap:
   on_connect:
@@ -114,6 +117,10 @@ button:
       - media_player.speaker.play_on_device_media_file:
           media_file: timer_finished_sound
           announcement: true
+  - platform: restart
+    name: "${friendly_name} Restart"
+  - platform: safe_mode
+    name: "${friendly_name} Restart in Safe Mode"
 
 binary_sensor:
   - platform: gpio
@@ -870,7 +877,33 @@ font:
     glyphsets:
       - ${font_glyphsets}
 
+sensor:
+  - platform: wifi_signal
+    name: "${friendly_name} WiFi Signal"
+    update_interval: 60s
+
+  - platform: uptime
+    name: "${friendly_name} Uptime"
+
+  - platform: debug
+    free:
+      name: "${friendly_name} Heap Free"
+    block:
+      name: "${friendly_name} Heap Max Block"
+    loop_time:
+      name: "${friendly_name} Loop Time"
+
 text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "${friendly_name} IP Address"
+
+  - platform: debug
+    reset_reason:
+      name: "${friendly_name} Reset Reason"
+    device:
+      name: "${friendly_name} Device Info"
+
   - id: text_request
     platform: template
     on_value:
