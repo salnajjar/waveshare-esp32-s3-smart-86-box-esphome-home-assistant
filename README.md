@@ -31,6 +31,44 @@ ota_data_initial.bin
 
 Use `firmware.factory.bin` for first-time flashing, and `firmware.ota.bin` for OTA updates.
 
+## Building In This Folder
+
+If you changed only C++ files under `src/`, build from this folder with the included PowerShell wrapper:
+
+```powershell
+.\build.ps1
+```
+
+The wrapper runs PlatformIO with the ESPHome-generated `platformio.ini` and writes build output under:
+
+```text
+.pio/build/esp32-s3-box-3/
+```
+
+It also mirrors the main firmware binaries back to:
+
+```text
+.pioenvs/esp32-s3-box-3/
+```
+
+Do not build this folder with the ESP-IDF extension's raw `ninja` task. ESPHome generates a PlatformIO project with required build flags; skipping those flags causes linker errors such as `undefined reference to app_main`.
+
+To clean the local build output:
+
+```powershell
+.\clean.ps1
+```
+
+If you changed `esp32-s3-box-3.yaml`, regenerate and build with:
+
+```powershell
+.\generate.ps1
+```
+
+This runs the custom ESPHome 2026.4.2 source tree used for this firmware, so generated code stays in sync with the YAML.
+
+Each build updates `firmware_build_info.json`, increments the firmware build number, stamps the current date/time, and exposes that value in Home Assistant as the `ESP32 S3 Box 3 Firmware Build` diagnostic text sensor.
+
 ## First-Time Setup
 
 1. Flash the device with `firmware.factory.bin`.
