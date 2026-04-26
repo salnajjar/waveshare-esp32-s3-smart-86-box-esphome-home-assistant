@@ -84,6 +84,21 @@ api:
 ota:
   - platform: esphome
     id: ota_esphome
+    on_begin:
+      - lambda: |-
+          id(ota_update_in_progress) = true;
+          id(ota_update_progress) = 0.0f;
+      - script.execute: draw_ota_update
+    on_progress:
+      - lambda: id(ota_update_progress) = x;
+      - script.execute: draw_ota_update
+    on_end:
+      - lambda: |-
+          id(ota_update_progress) = 100.0f;
+      - script.execute: draw_ota_update
+    on_error:
+      - lambda: id(ota_update_in_progress) = false;
+      - script.execute: draw_display
 
 logger:
   hardware_uart: USB_SERIAL_JTAG
@@ -402,6 +417,7 @@ script:
               - media_player.is_announcing:
               - speaker.is_playing:
               - switch.is_on: timer_ringing
+              - lambda: return id(ota_update_in_progress);
           then:
             - script.execute: screen_idle_timer
           else:
@@ -458,59 +474,65 @@ script:
       - script.execute: wake_screen
       - if:
           condition:
-            lambda: return !id(init_in_progress);
+            lambda: return id(ota_update_in_progress);
           then:
+            - script.execute: draw_ota_update
+          else:
             - if:
                 condition:
-                  wifi.connected:
+                  lambda: return !id(init_in_progress);
                 then:
                   - if:
                       condition:
-                        api.connected:
+                        wifi.connected:
                       then:
-                        - lambda: |
-                            switch(id(voice_assistant_phase)) {
-                              case ${voice_assist_listening_phase_id}:
-                                id(s3_box_lcd).show_page(listening_page);
-                                id(s3_box_lcd).update();
-                                break;
-                              case ${voice_assist_thinking_phase_id}:
-                                id(s3_box_lcd).show_page(thinking_page);
-                                id(s3_box_lcd).update();
-                                break;
-                              case ${voice_assist_replying_phase_id}:
-                                id(s3_box_lcd).show_page(replying_page);
-                                id(s3_box_lcd).update();
-                                break;
-                              case ${voice_assist_error_phase_id}:
-                                id(s3_box_lcd).show_page(error_page);
-                                id(s3_box_lcd).update();
-                                break;
-                              case ${voice_assist_muted_phase_id}:
-                                id(s3_box_lcd).show_page(muted_page);
-                                id(s3_box_lcd).update();
-                                break;
-                              case ${voice_assist_not_ready_phase_id}:
-                                id(s3_box_lcd).show_page(no_ha_page);
-                                id(s3_box_lcd).update();
-                                break;
-                              case ${voice_assist_timer_finished_phase_id}:
-                                id(s3_box_lcd).show_page(timer_finished_page);
-                                id(s3_box_lcd).update();
-                                break;
-                              default:
-                                id(s3_box_lcd).show_page(idle_page);
-                                id(s3_box_lcd).update();
-                            }
+                        - if:
+                            condition:
+                              api.connected:
+                            then:
+                              - lambda: |
+                                  switch(id(voice_assistant_phase)) {
+                                    case ${voice_assist_listening_phase_id}:
+                                      id(s3_box_lcd).show_page(listening_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_thinking_phase_id}:
+                                      id(s3_box_lcd).show_page(thinking_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_replying_phase_id}:
+                                      id(s3_box_lcd).show_page(replying_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_error_phase_id}:
+                                      id(s3_box_lcd).show_page(error_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_muted_phase_id}:
+                                      id(s3_box_lcd).show_page(muted_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_not_ready_phase_id}:
+                                      id(s3_box_lcd).show_page(no_ha_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_timer_finished_phase_id}:
+                                      id(s3_box_lcd).show_page(timer_finished_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    default:
+                                      id(s3_box_lcd).show_page(idle_page);
+                                      id(s3_box_lcd).update();
+                                  }
+                            else:
+                              - display.page.show: no_ha_page
+                              - component.update: s3_box_lcd
                       else:
-                        - display.page.show: no_ha_page
+                        - display.page.show: no_wifi_page
                         - component.update: s3_box_lcd
                 else:
-                  - display.page.show: no_wifi_page
+                  - display.page.show: initializing_page
                   - component.update: s3_box_lcd
-          else:
-            - display.page.show: initializing_page
-            - component.update: s3_box_lcd
 
   - id: fetch_first_active_timer
     then:
@@ -623,6 +645,15 @@ script:
           if (filled > 0)
             id(s3_box_lcd).filled_rectangle(x + padding, y + padding, filled, bar_h, id(active_timer_color));
           id(s3_box_lcd).rectangle(x + padding, y + padding, bar_w, bar_h, Color::BLACK);
+
+  - id: draw_ota_update
+    mode: restart
+    then:
+      - light.turn_on:
+          id: led
+          brightness: 100%
+      - display.page.show: ota_update_page
+      - component.update: s3_box_lcd
 
   # Starts either mWW or the streaming wake word, depending on the configured location
   - id: start_wake_word
@@ -802,6 +833,14 @@ globals:
     type: float
     restore_value: false
     initial_value: "0.5"
+  - id: ota_update_in_progress
+    type: bool
+    restore_value: false
+    initial_value: "false"
+  - id: ota_update_progress
+    type: float
+    restore_value: false
+    initial_value: "0.0"
 
 image:
   - file: ${error_illustration_file}
@@ -894,9 +933,16 @@ sensor:
       name: "${friendly_name} Loop Time"
 
 text_sensor:
-  - platform: wifi_info
-    ip_address:
-      name: "${friendly_name} IP Address"
+  - platform: template
+    name: "${friendly_name} IP Address"
+    update_interval: 30s
+    lambda: |-
+      auto ips = network::get_ip_addresses();
+      if (!ips[0].is_set())
+        return {};
+      char buf[network::IP_ADDRESS_BUFFER_SIZE];
+      ips[0].str_to(buf);
+      return std::string(buf);
 
   - platform: debug
     reset_reason:
@@ -1016,6 +1062,22 @@ display:
         - GPIO14
     update_interval: never
     pages:
+      - id: ota_update_page
+        lambda: |-
+          const int screen_w = it.get_width();
+          const int bar_x = 60;
+          const int bar_y = 284;
+          const int bar_w = screen_w - 120;
+          const int bar_h = 28;
+          const float progress = std::min(std::max(id(ota_update_progress), 0.0f), 100.0f);
+          const int filled = static_cast<int>(roundf(bar_w * progress / 100.0f));
+
+          it.fill(Color::BLACK);
+          it.printf(screen_w / 2, 180, id(font_timer), Color::WHITE, TextAlign::CENTER, "Update in progress...");
+          it.rectangle(bar_x, bar_y, bar_w, bar_h, Color::WHITE);
+          if (filled > 0)
+            it.filled_rectangle(bar_x, bar_y, filled, bar_h, id(active_timer_color));
+          it.printf(screen_w / 2, 328, id(font_request), Color::WHITE, TextAlign::CENTER, "%.0f%%", progress);
       - id: idle_page
         lambda: |-
           it.fill(id(idle_color));

@@ -80,8 +80,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-6nbp7z"
-      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-6nbp7z"
+      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-jd7cqo"
+      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-jd7cqo"
     cmakeVariables:
       CMAKE_C_FLAGS: "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags\""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -91,10 +91,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-6nbp7z'
+        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-jd7cqo'
         
-        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_fe771
-        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_477af
+        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
         Target: xtensa-esp-elf
@@ -102,8 +102,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fe771.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fe771.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -version -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccLeqGCd.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_477af.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_477af.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -version -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc0X1MKQ.s
         GNU C17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0 20170516, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -120,12 +120,12 @@ events:
          C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: 34e5336e60a2964f821c4f7d5c22f1b1
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fe771.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccLeqGCd.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_477af.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc0X1MKQ.s
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj -o cmTC_fe771   && cd ."
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj -o cmTC_477af   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
         COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe
@@ -136,9 +136,9 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_fe771' '-dumpdir' 'cmTC_fe771.'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc5AGlJe.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_fe771 C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYwLcnj -lgcc -lc -lnosys -lc -lgcc C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_fe771' '-dumpdir' 'cmTC_fe771.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_477af' '-dumpdir' 'cmTC_477af.'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccU66CYV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_477af C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cckDFRRH -lgcc -lc -lnosys -lc -lgcc C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_477af' '-dumpdir' 'cmTC_477af.'
         
       exitCode: 0
   -
@@ -173,10 +173,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-6nbp7z']
+        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-jd7cqo']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_fe771]
-        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_477af]
+        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe]
         ignore line: [Target: xtensa-esp-elf]
@@ -184,8 +184,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fe771.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fe771.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -version -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccLeqGCd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_477af.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_477af.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -version -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc0X1MKQ.s]
         ignore line: [GNU C17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0 20170516  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -202,8 +202,8 @@ events:
         ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 34e5336e60a2964f821c4f7d5c22f1b1]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fe771.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccLeqGCd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_477af.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc0X1MKQ.s]
         ignore line: [COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
@@ -215,8 +215,8 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_fe771.dir/CMakeCCompilerABI.c.obj -o cmTC_fe771   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_477af.dir/CMakeCCompilerABI.c.obj -o cmTC_477af   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe]
@@ -236,13 +236,13 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_fe771' '-dumpdir' 'cmTC_fe771.']
-        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc5AGlJe.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_fe771 C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYwLcnj -lgcc -lc -lnosys -lc -lgcc C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_477af' '-dumpdir' 'cmTC_477af.']
+        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccU66CYV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_477af C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cckDFRRH -lgcc -lc -lnosys -lc -lgcc C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc5AGlJe.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccU66CYV.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -251,7 +251,7 @@ events:
           arg [--sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_fe771] ==> ignore
+          arg [cmTC_477af] ==> ignore
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o]
@@ -263,7 +263,7 @@ events:
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYwLcnj] ==> ignore
+          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cckDFRRH] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -271,7 +271,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_fe771' '-dumpdir' 'cmTC_fe771.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_477af' '-dumpdir' 'cmTC_477af.']
         ignore line: []
         ignore line: []
         collapse obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o]
@@ -303,8 +303,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-gicsfl"
-      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-gicsfl"
+      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-tt32dx"
+      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-tt32dx"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags\""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -315,10 +315,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-gicsfl'
+        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-tt32dx'
         
-        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_2aa3b
-        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_f2d02
+        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
         Target: xtensa-esp-elf
@@ -326,8 +326,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2aa3b.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2aa3b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -version -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccIy66lf.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f2d02.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f2d02.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -version -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccQW1JW6.s
         GNU C++17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0 20170516, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -350,12 +350,12 @@ events:
          C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: 2af905d1789c5d9f4b674ee0675574e1
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2aa3b.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccIy66lf.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f2d02.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccQW1JW6.s
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_2aa3b   && cd ."
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_f2d02   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
         COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe
@@ -366,9 +366,9 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_2aa3b' '-dumpdir' 'cmTC_2aa3b.'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccq5zwVk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_2aa3b C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccG0ZSGv -lgcc -lc -lnosys -lc -lgcc C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_2aa3b' '-dumpdir' 'cmTC_2aa3b.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_f2d02' '-dumpdir' 'cmTC_f2d02.'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccGp83xd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_f2d02 C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cccF6XVg -lgcc -lc -lnosys -lc -lgcc C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_f2d02' '-dumpdir' 'cmTC_f2d02.'
         
       exitCode: 0
   -
@@ -409,10 +409,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-gicsfl']
+        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-tt32dx']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_2aa3b]
-        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_f2d02]
+        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe]
         ignore line: [Target: xtensa-esp-elf]
@@ -420,8 +420,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2aa3b.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2aa3b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -version -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccIy66lf.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f2d02.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f2d02.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -version -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccQW1JW6.s]
         ignore line: [GNU C++17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0 20170516  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -444,8 +444,8 @@ events:
         ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 2af905d1789c5d9f4b674ee0675574e1]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2aa3b.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccIy66lf.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f2d02.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccQW1JW6.s]
         ignore line: [COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
@@ -457,8 +457,8 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_2aa3b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_2aa3b   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_f2d02.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_f2d02   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe]
@@ -478,13 +478,13 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_2aa3b' '-dumpdir' 'cmTC_2aa3b.']
-        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccq5zwVk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_2aa3b C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccG0ZSGv -lgcc -lc -lnosys -lc -lgcc C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_f2d02' '-dumpdir' 'cmTC_f2d02.']
+        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccGp83xd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_f2d02 C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cccF6XVg -lgcc -lc -lnosys -lc -lgcc C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccq5zwVk.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccGp83xd.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -493,7 +493,7 @@ events:
           arg [--sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_2aa3b] ==> ignore
+          arg [cmTC_f2d02] ==> ignore
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crti.o]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtbegin.o]
@@ -505,7 +505,7 @@ events:
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccG0ZSGv] ==> ignore
+          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cccF6XVg] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -513,7 +513,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtend.o]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o] ==> obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/crtn.o]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_2aa3b' '-dumpdir' 'cmTC_2aa3b.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-v' '-o' 'cmTC_f2d02' '-dumpdir' 'cmTC_f2d02.']
         ignore line: []
         ignore line: []
         collapse obj [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o]
@@ -548,8 +548,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-5z5e5y"
-      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-5z5e5y"
+      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-obfxcm"
+      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-obfxcm"
     cmakeVariables:
       CMAKE_C_FLAGS: "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags\""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -559,10 +559,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-5z5e5y'
+        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-obfxcm'
         
-        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_7e73f
-        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_eeb5b
+        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
         Target: xtensa-esp-elf
@@ -570,8 +570,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_7e73f.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7e73f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc3JnDA0.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_eeb5b.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_eeb5b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYx6zUl.s
         GNU C17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0 20170516, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -588,12 +588,12 @@ events:
          C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: 34e5336e60a2964f821c4f7d5c22f1b1
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_7e73f.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc3JnDA0.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_eeb5b.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYx6zUl.s
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj -o cmTC_7e73f   && cd ."
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj -o cmTC_eeb5b   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
         COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe
@@ -604,10 +604,10 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_7e73f' '-dumpdir' 'cmTC_7e73f.'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccbqapq2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_7e73f -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cccGaEGU -lgcc -lc -lnosys -lc -lgcc
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_eeb5b' '-dumpdir' 'cmTC_eeb5b.'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cciqWrJs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_eeb5b -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccqGIJiL -lgcc -lc -lnosys -lc -lgcc
         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400054
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_7e73f' '-dumpdir' 'cmTC_7e73f.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_eeb5b' '-dumpdir' 'cmTC_eeb5b.'
         
       exitCode: 0
   -
@@ -648,10 +648,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-5z5e5y']
+        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-obfxcm']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_7e73f]
-        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_eeb5b]
+        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe]
         ignore line: [Target: xtensa-esp-elf]
@@ -659,8 +659,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_7e73f.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7e73f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc3JnDA0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_eeb5b.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_eeb5b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYx6zUl.s]
         ignore line: [GNU C17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0 20170516  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -677,8 +677,8 @@ events:
         ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 34e5336e60a2964f821c4f7d5c22f1b1]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_7e73f.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc3JnDA0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_eeb5b.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYx6zUl.s]
         ignore line: [COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
@@ -690,8 +690,8 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_7e73f.dir/CMakeCCompilerABI.c.obj -o cmTC_7e73f   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_eeb5b.dir/CMakeCCompilerABI.c.obj -o cmTC_eeb5b   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe]
@@ -711,13 +711,13 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_7e73f' '-dumpdir' 'cmTC_7e73f.']
-        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccbqapq2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_7e73f -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cccGaEGU -lgcc -lc -lnosys -lc -lgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_eeb5b' '-dumpdir' 'cmTC_eeb5b.']
+        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cciqWrJs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_eeb5b -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccqGIJiL -lgcc -lc -lnosys -lc -lgcc]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccbqapq2.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cciqWrJs.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -726,7 +726,7 @@ events:
           arg [--sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_7e73f] ==> ignore
+          arg [cmTC_eeb5b] ==> ignore
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3]
@@ -735,7 +735,7 @@ events:
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cccGaEGU] ==> ignore
+          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccqGIJiL] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -743,7 +743,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00400054]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_7e73f' '-dumpdir' 'cmTC_7e73f.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_eeb5b' '-dumpdir' 'cmTC_eeb5b.']
         ignore line: []
         ignore line: []
         collapse library dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
@@ -773,8 +773,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-vyznl4"
-      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-vyznl4"
+      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-6qxlc2"
+      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-6qxlc2"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags\""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -785,10 +785,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-vyznl4'
+        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-6qxlc2'
         
-        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_ed7b1
-        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_89c11
+        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
         Target: xtensa-esp-elf
@@ -796,8 +796,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ed7b1.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ed7b1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cchLeIQf.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_89c11.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_89c11.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccw9GPWz.s
         GNU C++17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0 20170516, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -820,12 +820,12 @@ events:
          C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: 2af905d1789c5d9f4b674ee0675574e1
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ed7b1.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cchLeIQf.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_89c11.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccw9GPWz.s
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_ed7b1   && cd ."
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_89c11   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
         COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe
@@ -836,10 +836,10 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_ed7b1' '-dumpdir' 'cmTC_ed7b1.'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccJnyfOg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_ed7b1 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cciBWksn -lgcc -lc -lnosys -lc -lgcc
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_89c11' '-dumpdir' 'cmTC_89c11.'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccaIxXOF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_89c11 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccagVKtb -lgcc -lc -lnosys -lc -lgcc
         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400054
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_ed7b1' '-dumpdir' 'cmTC_ed7b1.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_89c11' '-dumpdir' 'cmTC_89c11.'
         
       exitCode: 0
   -
@@ -886,10 +886,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-vyznl4']
+        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-6qxlc2']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_ed7b1]
-        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_89c11]
+        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe]
         ignore line: [Target: xtensa-esp-elf]
@@ -897,8 +897,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ed7b1.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ed7b1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cchLeIQf.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_89c11.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_89c11.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccw9GPWz.s]
         ignore line: [GNU C++17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0 20170516  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -921,8 +921,8 @@ events:
         ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 2af905d1789c5d9f4b674ee0675574e1]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ed7b1.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cchLeIQf.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_89c11.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccw9GPWz.s]
         ignore line: [COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
@@ -934,8 +934,8 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_ed7b1.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_ed7b1   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_89c11.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_89c11   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe]
@@ -955,13 +955,13 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_ed7b1' '-dumpdir' 'cmTC_ed7b1.']
-        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccJnyfOg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_ed7b1 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cciBWksn -lgcc -lc -lnosys -lc -lgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_89c11' '-dumpdir' 'cmTC_89c11.']
+        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccaIxXOF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_89c11 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccagVKtb -lgcc -lc -lnosys -lc -lgcc]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccJnyfOg.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccaIxXOF.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -970,7 +970,7 @@ events:
           arg [--sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ed7b1] ==> ignore
+          arg [cmTC_89c11] ==> ignore
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3]
@@ -979,7 +979,7 @@ events:
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cciBWksn] ==> ignore
+          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccagVKtb] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -987,7 +987,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00400054]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_ed7b1' '-dumpdir' 'cmTC_ed7b1.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-v' '-o' 'cmTC_89c11' '-dumpdir' 'cmTC_89c11.']
         ignore line: []
         ignore line: []
         collapse library dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3] ==> [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3]
@@ -1013,8 +1013,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-pu0d8j"
-      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-pu0d8j"
+      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-bcirgh"
+      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-bcirgh"
     cmakeVariables:
       CMAKE_C_FLAGS: "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags\""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1024,10 +1024,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-pu0d8j'
+        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-bcirgh'
         
-        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_1714b
-        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_36159
+        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
         Target: xtensa-esp-elf
@@ -1035,8 +1035,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_1714b.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1714b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccc20fDk.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_36159.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_36159.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYVHqXQ.s
         GNU C17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0 20170516, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -1053,12 +1053,12 @@ events:
          C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: 34e5336e60a2964f821c4f7d5c22f1b1
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_1714b.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccc20fDk.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_36159.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYVHqXQ.s
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj -o cmTC_1714b   && cd ."
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj -o cmTC_36159   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
         COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe
@@ -1069,10 +1069,10 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_1714b' '-dumpdir' 'cmTC_1714b.'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccijluvq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_1714b -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc6nniDG -lgcc -lc -lnosys -lc -lgcc
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_36159' '-dumpdir' 'cmTC_36159.'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccO6NiYW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_36159 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccgjD5QJ -lgcc -lc -lnosys -lc -lgcc
         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400054
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_1714b' '-dumpdir' 'cmTC_1714b.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_36159' '-dumpdir' 'cmTC_36159.'
         
       exitCode: 0
   -
@@ -1105,10 +1105,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-pu0d8j']
+        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-bcirgh']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_1714b]
-        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_36159]
+        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags"    -v -o CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe]
         ignore line: [Target: xtensa-esp-elf]
@@ -1116,8 +1116,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_1714b.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1714b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccc20fDk.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_36159.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe -quiet -v -imultilib esp32s3 -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_36159.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYVHqXQ.s]
         ignore line: [GNU C17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0 20170516  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -1134,8 +1134,8 @@ events:
         ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 34e5336e60a2964f821c4f7d5c22f1b1]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_1714b.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccc20fDk.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_36159.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccYVHqXQ.s]
         ignore line: [COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
@@ -1147,8 +1147,8 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_1714b.dir/CMakeCCompilerABI.c.obj -o cmTC_1714b   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-v' '-o' 'CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_36159.dir/CMakeCCompilerABI.c.obj -o cmTC_36159   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe]
@@ -1168,13 +1168,13 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_1714b' '-dumpdir' 'cmTC_1714b.']
-        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccijluvq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_1714b -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc6nniDG -lgcc -lc -lnosys -lc -lgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_36159' '-dumpdir' 'cmTC_36159.']
+        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccO6NiYW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_36159 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccgjD5QJ -lgcc -lc -lnosys -lc -lgcc]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccijluvq.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccO6NiYW.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -1183,7 +1183,7 @@ events:
           arg [--sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_1714b] ==> ignore
+          arg [cmTC_36159] ==> ignore
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti]
@@ -1192,7 +1192,7 @@ events:
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc6nniDG] ==> ignore
+          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccgjD5QJ] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -1200,7 +1200,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00400054]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_1714b' '-dumpdir' 'cmTC_1714b.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_36159' '-dumpdir' 'cmTC_36159.']
         ignore line: []
         ignore line: []
         collapse library dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti] ==> [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti]
@@ -1226,8 +1226,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-9qcoy9"
-      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-9qcoy9"
+      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-k0uzkx"
+      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-k0uzkx"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags\""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1238,10 +1238,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-9qcoy9'
+        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-k0uzkx'
         
-        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_639b2
-        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_6d72b
+        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
         Target: xtensa-esp-elf
@@ -1249,8 +1249,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_639b2.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3/no-rtti -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_639b2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-rtti -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccCBJNay.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6d72b.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3/no-rtti -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6d72b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-rtti -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cceiEaW5.s
         GNU C++17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0 20170516, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -1273,12 +1273,12 @@ events:
          C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: 2af905d1789c5d9f4b674ee0675574e1
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_639b2.dir/'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccCBJNay.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6d72b.dir/'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cceiEaW5.s
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_639b2   && cd ."
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6d72b   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe
         COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe
@@ -1289,10 +1289,10 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
         COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_639b2' '-dumpdir' 'cmTC_639b2.'
-         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cckIkeKD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_639b2 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccugvik7 -lgcc -lc -lnosys -lc -lgcc
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_6d72b' '-dumpdir' 'cmTC_6d72b.'
+         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc88rwg7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_6d72b -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc67JSm4 -lgcc -lc -lnosys -lc -lgcc
         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400054
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_639b2' '-dumpdir' 'cmTC_639b2.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_6d72b' '-dumpdir' 'cmTC_6d72b.'
         
       exitCode: 0
   -
@@ -1331,10 +1331,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-9qcoy9']
+        ignore line: [Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-k0uzkx']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_639b2]
-        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_6d72b]
+        ignore line: [[1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe   @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags"    -v -o CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj -c C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe]
         ignore line: [Target: xtensa-esp-elf]
@@ -1342,8 +1342,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_639b2.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3/no-rtti -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_639b2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-rtti -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccCBJNay.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6d72b.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe -quiet -v -imultilib esp32s3/no-rtti -iprefix C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf C:/PlatformIO/core/packages/tool-cmake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6d72b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -mdisable-hardware-atomics -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-rtti -o C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cceiEaW5.s]
         ignore line: [GNU C++17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0 20170516  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -1366,8 +1366,8 @@ events:
         ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 2af905d1789c5d9f4b674ee0675574e1]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_639b2.dir/']
-        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccCBJNay.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6d72b.dir/']
+        ignore line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cceiEaW5.s]
         ignore line: [COMPILER_PATH=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
@@ -1379,8 +1379,8 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_639b2.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_639b2   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-g++.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cxxflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" -v CMakeFiles/cmTC_6d72b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6d72b   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp-elf-g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe]
@@ -1400,13 +1400,13 @@ events:
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_639b2' '-dumpdir' 'cmTC_639b2.']
-        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cckIkeKD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_639b2 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccugvik7 -lgcc -lc -lnosys -lc -lgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_6d72b' '-dumpdir' 'cmTC_6d72b.']
+        link line: [ C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe -plugin C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll -plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc88rwg7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_6d72b -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib @C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc67JSm4 -lgcc -lc -lnosys -lc -lgcc]
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cckIkeKD.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc88rwg7.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -1415,7 +1415,7 @@ events:
           arg [--sysroot=C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_639b2] ==> ignore
+          arg [cmTC_6d72b] ==> ignore
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32s3/no-rtti]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/no-rtti]
@@ -1424,7 +1424,7 @@ events:
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-LC:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\ccugvik7] ==> ignore
+          arg [@C:\\Users\\SERIAL~1\\AppData\\Local\\Temp\\cc67JSm4] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -1432,7 +1432,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
         ignore line: [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00400054]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_639b2' '-dumpdir' 'cmTC_639b2.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-mdisable-hardware-atomics' '-nostartfiles' '-fno-rtti' '-v' '-o' 'cmTC_6d72b' '-dumpdir' 'cmTC_6d72b.']
         ignore line: []
         ignore line: []
         collapse library dir [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti] ==> [C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti]
@@ -1460,8 +1460,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-66ahug"
-      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-66ahug"
+      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-90j353"
+      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-90j353"
     cmakeVariables:
       CMAKE_C_FLAGS: "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags\""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1471,17 +1471,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-66ahug'
+        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-90j353'
         
-        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_b1c4a
-        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" -o CMakeFiles/cmTC_b1c4a.dir/src.c.obj -c C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-66ahug/src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" CMakeFiles/cmTC_b1c4a.dir/src.c.obj -o cmTC_b1c4a   && cd ."
-        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_b1c4a.dir/src.c.obj:(.literal+0x14): warning: pthread_atfork is not implemented and will always fail
-        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_b1c4a.dir/src.c.obj:(.literal+0xc): warning: pthread_cancel is not implemented and will always fail
-        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_b1c4a.dir/src.c.obj:(.literal+0x4): warning: pthread_create is not implemented and will always fail
-        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_b1c4a.dir/src.c.obj:(.literal+0x8): warning: pthread_detach is not implemented and will always fail
-        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_b1c4a.dir/src.c.obj:(.literal+0x18): warning: pthread_exit is not implemented and will always fail
-        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_b1c4a.dir/src.c.obj:(.literal+0x10): warning: pthread_join is not implemented and will always fail
+        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_c1e2c
+        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" -o CMakeFiles/cmTC_c1e2c.dir/src.c.obj -c C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-90j353/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" CMakeFiles/cmTC_c1e2c.dir/src.c.obj -o cmTC_c1e2c   && cd ."
+        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_c1e2c.dir/src.c.obj:(.literal+0x14): warning: pthread_atfork is not implemented and will always fail
+        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_c1e2c.dir/src.c.obj:(.literal+0xc): warning: pthread_cancel is not implemented and will always fail
+        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_c1e2c.dir/src.c.obj:(.literal+0x4): warning: pthread_create is not implemented and will always fail
+        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_c1e2c.dir/src.c.obj:(.literal+0x8): warning: pthread_detach is not implemented and will always fail
+        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_c1e2c.dir/src.c.obj:(.literal+0x18): warning: pthread_exit is not implemented and will always fail
+        C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: CMakeFiles/cmTC_c1e2c.dir/src.c.obj:(.literal+0x10): warning: pthread_join is not implemented and will always fail
         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400054
         
       exitCode: 0
@@ -1495,8 +1495,8 @@ events:
     checks:
       - "Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
     directories:
-      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-g3tel5"
-      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-g3tel5"
+      source: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-s83los"
+      binary: "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-s83los"
     cmakeVariables:
       CMAKE_C_FLAGS: "@\"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags\" -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow"
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1506,11 +1506,11 @@ events:
       variable: "C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
       cached: true
       stdout: |
-        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-g3tel5'
+        Change Dir: 'C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-s83los'
         
-        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_dee29
-        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow    -Wformat-signedness -o CMakeFiles/cmTC_dee29.dir/src.c.obj -c C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-g3tel5/src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" CMakeFiles/cmTC_dee29.dir/src.c.obj -o cmTC_dee29   && cd ."
+        Run Build Command(s): C:/PlatformIO/core/packages/tool-ninja/ninja.exe -v cmTC_7d779
+        [1/2] C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow    -Wformat-signedness -o CMakeFiles/cmTC_7d779.dir/src.c.obj -c C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/CMakeFiles/CMakeScratch/TryCompile-s83los/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PlatformIO\\core\\packages\\toolchain-xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/cflags" -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow @"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/toolchain/ldflags" CMakeFiles/cmTC_7d779.dir/src.c.obj -o cmTC_7d779   && cd ."
         C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400054
         
       exitCode: 0

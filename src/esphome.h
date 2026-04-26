@@ -180,7 +180,6 @@
 #include "esphome\components\web_server_idf\web_server_idf.h"
 #include "esphome\components\wifi\automation.h"
 #include "esphome\components\wifi\wifi_component.h"
-#include "esphome\components\wifi_info\wifi_info_text_sensor.h"
 #include "esphome\components\wifi_signal\wifi_signal_sensor.h"
 #include "esphome\core\application.h"
 #include "esphome\core\area.h"
