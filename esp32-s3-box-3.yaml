@@ -36,9 +36,9 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "17"
-  build_id: "b17-20260427-182741"
-  build_time: "2026-04-27 18:27:41 +01:00"
+  build_number: "19"
+  build_id: "b19-20260427-200111"
+  build_time: "2026-04-27 20:01:11 +01:00"
   build_esphome_version: "2026.4.2"
 
 esphome:
@@ -362,12 +362,25 @@ voice_assistant:
         state: !lambda return x;
     - script.execute: draw_display
   on_tts_start:
+    - lambda: id(voice_response_active) = true;
     - text_sensor.template.publish:
         id: text_response
         state: !lambda return x;
     - lambda: id(voice_assistant_phase) = ${voice_assist_replying_phase_id};
     - script.execute: draw_display
+  on_tts_stream_start:
+    - lambda: |-
+        id(voice_response_active) = true;
+        id(voice_assistant_phase) = ${voice_assist_replying_phase_id};
+    - script.execute: draw_display
+  on_tts_stream_end:
+    - lambda: id(voice_response_active) = false;
   on_end:
+    # Wait for direct speaker TTS streaming to finish before returning to idle.
+    - wait_until:
+        condition:
+          lambda: return !id(voice_response_active);
+        timeout: 3min
     # Wait a short amount of time to see if an announcement starts
     - wait_until:
         condition:
@@ -397,6 +410,7 @@ voice_assistant:
         id: text_response
         state: ""
   on_error:
+    - lambda: id(voice_response_active) = false;
     - if:
         condition:
           lambda: return !id(init_in_progress);
@@ -419,7 +433,9 @@ voice_assistant:
     - script.execute: draw_display
   on_client_disconnected:
     - script.execute: stop_wake_word
-    - lambda: id(voice_assistant_phase) = ${voice_assist_not_ready_phase_id};
+    - lambda: |-
+        id(voice_response_active) = false;
+        id(voice_assistant_phase) = ${voice_assist_not_ready_phase_id};
     - script.execute: draw_display
   on_timer_started:
     - script.execute: draw_display
@@ -852,6 +868,10 @@ globals:
     type: uint32_t
     restore_value: false
     initial_value: "0"
+  - id: voice_response_active
+    type: bool
+    restore_value: false
+    initial_value: "false"
   - id: ota_update_in_progress
     type: bool
     restore_value: false
@@ -1001,8 +1021,8 @@ text_sensor:
     on_value:
       lambda: |-
         auto &state = id(text_request).state;
-        if (state.length() > 32) {
-          state.resize(31);
+        if (state.length() > 78) {
+          state.resize(75);
           state.append("...");
         }
 
@@ -1012,8 +1032,8 @@ text_sensor:
     on_value:
       lambda: |-
         auto &state = id(text_response).state;
-        if (state.length() > 32) {
-          state.resize(31);
+        if (state.length() > 78) {
+          state.resize(75);
           state.append("...");
         }
 
@@ -1150,23 +1170,149 @@ display:
           id(draw_volume_overlay).execute();
       - id: thinking_page
         lambda: |-
+          auto draw_speech_bubble = [&](const std::string &text, int x, int y, bool align_right, bool italic) {
+            if (text.empty())
+              return;
+
+            const int max_chars = 36;
+            const int bubble_w = 312;
+            const int bubble_h = 66;
+            const int radius = 8;
+            const int pad_x = 14;
+            const int pad_y = 11;
+            const int line_h = 20;
+            const Color bubble_color = Color::WHITE;
+            const Color border_color = Color::BLACK;
+            const Color text_color = Color::BLACK;
+            char line1[40] = {0};
+            char line2[40] = {0};
+            const char *source = text.c_str();
+            size_t len = strlen(source);
+
+            auto copy_line = [&](char *dest, const char *src, size_t count, bool ellipsis) {
+              count = std::min<size_t>(count, max_chars);
+              memcpy(dest, src, count);
+              dest[count] = '\0';
+              if (ellipsis && count >= 3) {
+                dest[count - 3] = '.';
+                dest[count - 2] = '.';
+                dest[count - 1] = '.';
+              }
+            };
+
+            size_t first_len = std::min<size_t>(len, max_chars);
+            if (len > max_chars) {
+              for (size_t i = first_len; i > 18; i--) {
+                if (source[i] == ' ') {
+                  first_len = i;
+                  break;
+                }
+              }
+            }
+            copy_line(line1, source, first_len, false);
+
+            size_t second_start = first_len;
+            while (second_start < len && source[second_start] == ' ')
+              second_start++;
+            if (second_start < len) {
+              const size_t remaining = len - second_start;
+              copy_line(line2, source + second_start, remaining, remaining > max_chars);
+            }
+
+            it.filled_rectangle(x + radius, y, bubble_w - 2 * radius, bubble_h, bubble_color);
+            it.filled_rectangle(x, y + radius, bubble_w, bubble_h - 2 * radius, bubble_color);
+            it.filled_circle(x + radius, y + radius, radius, bubble_color);
+            it.filled_circle(x + bubble_w - radius - 1, y + radius, radius, bubble_color);
+            it.filled_circle(x + radius, y + bubble_h - radius - 1, radius, bubble_color);
+            it.filled_circle(x + bubble_w - radius - 1, y + bubble_h - radius - 1, radius, bubble_color);
+            it.rectangle(x + radius, y, bubble_w - 2 * radius, bubble_h, border_color);
+            it.rectangle(x, y + radius, bubble_w, bubble_h - 2 * radius, border_color);
+
+            const int text_x = align_right ? x + bubble_w - pad_x : x + pad_x;
+            const TextAlign text_align = align_right ? TextAlign::TOP_RIGHT : TextAlign::TOP_LEFT;
+            auto *font = italic ? id(font_request) : id(font_response);
+            it.print(text_x, y + pad_y, font, text_color, text_align, line1, bubble_color);
+            if (line2[0] != '\0')
+              it.print(text_x, y + pad_y + line_h, font, text_color, text_align, line2, bubble_color);
+          };
+
           it.fill(id(thinking_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_thinking), ImageAlign::CENTER);
-          it.filled_rectangle(20 , 20 , 280 , 30 , Color::WHITE );
-          it.rectangle(20 , 20 , 280 , 30 , Color::BLACK );
-          it.printf(30, 25, id(font_request), Color::BLACK, "%s", id(text_request).state.c_str());
+          draw_speech_bubble(id(text_request).state, 16, 18, false, true);
           id(draw_timer_timeline).execute();
           id(draw_volume_overlay).execute();
       - id: replying_page
         lambda: |-
+          auto draw_speech_bubble = [&](const std::string &text, int x, int y, bool align_right, bool italic) {
+            if (text.empty())
+              return;
+
+            const int max_chars = 36;
+            const int bubble_w = 312;
+            const int bubble_h = 66;
+            const int radius = 8;
+            const int pad_x = 14;
+            const int pad_y = 11;
+            const int line_h = 20;
+            const Color bubble_color = Color::WHITE;
+            const Color border_color = Color::BLACK;
+            const Color text_color = Color::BLACK;
+            char line1[40] = {0};
+            char line2[40] = {0};
+            const char *source = text.c_str();
+            size_t len = strlen(source);
+
+            auto copy_line = [&](char *dest, const char *src, size_t count, bool ellipsis) {
+              count = std::min<size_t>(count, max_chars);
+              memcpy(dest, src, count);
+              dest[count] = '\0';
+              if (ellipsis && count >= 3) {
+                dest[count - 3] = '.';
+                dest[count - 2] = '.';
+                dest[count - 1] = '.';
+              }
+            };
+
+            size_t first_len = std::min<size_t>(len, max_chars);
+            if (len > max_chars) {
+              for (size_t i = first_len; i > 18; i--) {
+                if (source[i] == ' ') {
+                  first_len = i;
+                  break;
+                }
+              }
+            }
+            copy_line(line1, source, first_len, false);
+
+            size_t second_start = first_len;
+            while (second_start < len && source[second_start] == ' ')
+              second_start++;
+            if (second_start < len) {
+              const size_t remaining = len - second_start;
+              copy_line(line2, source + second_start, remaining, remaining > max_chars);
+            }
+
+            it.filled_rectangle(x + radius, y, bubble_w - 2 * radius, bubble_h, bubble_color);
+            it.filled_rectangle(x, y + radius, bubble_w, bubble_h - 2 * radius, bubble_color);
+            it.filled_circle(x + radius, y + radius, radius, bubble_color);
+            it.filled_circle(x + bubble_w - radius - 1, y + radius, radius, bubble_color);
+            it.filled_circle(x + radius, y + bubble_h - radius - 1, radius, bubble_color);
+            it.filled_circle(x + bubble_w - radius - 1, y + bubble_h - radius - 1, radius, bubble_color);
+            it.rectangle(x + radius, y, bubble_w - 2 * radius, bubble_h, border_color);
+            it.rectangle(x, y + radius, bubble_w, bubble_h - 2 * radius, border_color);
+
+            const int text_x = align_right ? x + bubble_w - pad_x : x + pad_x;
+            const TextAlign text_align = align_right ? TextAlign::TOP_RIGHT : TextAlign::TOP_LEFT;
+            auto *font = italic ? id(font_request) : id(font_response);
+            it.print(text_x, y + pad_y, font, text_color, text_align, line1, bubble_color);
+            if (line2[0] != '\0')
+              it.print(text_x, y + pad_y + line_h, font, text_color, text_align, line2, bubble_color);
+          };
+
           it.fill(id(replying_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_replying), ImageAlign::CENTER);
-          it.filled_rectangle(20 , 20 , 280 , 30 , Color::WHITE );
-          it.rectangle(20 , 20 , 280 , 30 , Color::BLACK );
-          it.filled_rectangle(20 , 190 , 280 , 30 , Color::WHITE );
-          it.rectangle(20 , 190 , 280 , 30 , Color::BLACK );
-          it.printf(30, 25, id(font_request), Color::BLACK, "%s", id(text_request).state.c_str());
-          it.printf(30, 195, id(font_response), Color::BLACK, "%s", id(text_response).state.c_str());
+          draw_speech_bubble(id(text_request).state, 16, 18, false, true);
+          draw_speech_bubble(id(text_response).state, 152, 360, true, false);
           id(draw_timer_timeline).execute();
           id(draw_volume_overlay).execute();
       - id: timer_finished_page
@@ -1198,6 +1344,8 @@ display:
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
+
+
 
 
 
