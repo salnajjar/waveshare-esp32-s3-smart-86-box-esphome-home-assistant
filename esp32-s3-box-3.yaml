@@ -36,9 +36,9 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "9"
-  build_id: "b9-20260427-120659"
-  build_time: "2026-04-27 12:06:59 +01:00"
+  build_number: "17"
+  build_id: "b17-20260427-182741"
+  build_time: "2026-04-27 18:27:41 +01:00"
   build_esphome_version: "2026.4.2"
 
 esphome:
@@ -84,6 +84,7 @@ psram:
   speed: 80MHz
 
 api:
+  batch_delay: 0ms
   on_client_connected:
     - script.execute: draw_display
   on_client_disconnected:
@@ -96,10 +97,16 @@ ota:
       - lambda: |-
           id(ota_update_in_progress) = true;
           id(ota_update_progress) = 0.0f;
+          id(ota_update_last_drawn_percent) = -1;
       - script.execute: draw_ota_update
     on_progress:
-      - lambda: id(ota_update_progress) = x;
-      - script.execute: draw_ota_update
+      - lambda: |-
+          id(ota_update_progress) = x;
+          const int progress = static_cast<int>(roundf(x));
+          if (progress >= id(ota_update_last_drawn_percent) + 2 || progress >= 100) {
+            id(ota_update_last_drawn_percent) = progress;
+            id(draw_ota_update).execute();
+          }
     on_end:
       - lambda: |-
           id(ota_update_progress) = 100.0f;
@@ -110,11 +117,13 @@ ota:
 
 logger:
   hardware_uart: USB_SERIAL_JTAG
+  level: WARN
 
 debug:
-  update_interval: 60s
+  update_interval: 120s
 
 wifi:
+  power_save_mode: none
   ap:
   on_connect:
     - script.execute: draw_display
@@ -140,6 +149,10 @@ time:
                 - component.update: s3_box_lcd
 
 esp32_ble_tracker:
+  scan_parameters:
+    interval: 320ms
+    window: 20ms
+    active: true
 
 bluetooth_proxy:
   active: true
@@ -185,6 +198,7 @@ binary_sensor:
   - platform: axp2101_powerkey
     id: power_button
     i2c_id: i2c_adc_dac
+    update_interval: 25ms
     internal: true
     on_press:
       - script.execute: volume_up_pressed
@@ -203,7 +217,7 @@ light:
     entity_category: config
     output: backlight_output
     restore_mode: RESTORE_DEFAULT_ON
-    default_transition_length: 250ms
+    default_transition_length: 0s
 
 i2c:
   - id: i2c_adc_dac
@@ -254,12 +268,13 @@ speaker:
     bits_per_sample: 16bit
     channel: stereo
     audio_dac: es8311_dac
-    buffer_duration: 100ms
+    buffer_duration: 80ms
 
 media_player:
   - platform: speaker
     name: None
     id: speaker_media_player
+    buffer_size: 131072
     volume_min: 0.5
     volume_max: 1.0
     volume_increment: 0.05
@@ -324,7 +339,7 @@ micro_wake_word:
 voice_assistant:
   id: va
   microphone: box_mic
-  media_player: speaker_media_player
+  speaker: box_speaker
   micro_wake_word: mww
   noise_suppression_level: 2
   auto_gain: 31dBFS
@@ -413,7 +428,7 @@ voice_assistant:
   on_timer_updated:
     - script.execute: draw_display
   on_timer_tick:
-    - script.execute: draw_display
+    - script.execute: refresh_timer_display
   on_timer_finished:
     - switch.turn_on: timer_ringing
     - wait_until:
@@ -425,9 +440,13 @@ script:
   - id: wake_screen
     mode: restart
     then:
-      - light.turn_on:
-          id: led
-          brightness: 100%
+      - if:
+          condition:
+            light.is_off: led
+          then:
+            - light.turn_on:
+                id: led
+                brightness: 100%
       - script.execute: screen_idle_timer
 
   - id: screen_idle_timer
@@ -452,24 +471,38 @@ script:
     then:
       - script.execute: wake_screen
       - lambda: |-
-          const float base_volume = id(volume_overlay_visible) ? id(volume_overlay_level) : id(speaker_media_player).volume;
+          const uint32_t now = millis();
+          const bool was_visible = id(volume_overlay_visible);
+          const float base_volume = id(volume_overlay_visible) ? id(volume_overlay_level) : id(box_speaker).get_volume();
           id(volume_overlay_level) = std::min(base_volume + 0.05f, 1.0f);
           id(volume_overlay_visible) = true;
-      - script.execute: refresh_volume_overlay
+          id(box_speaker).set_volume(id(volume_overlay_level));
+          id(speaker_media_player).make_call().set_volume(id(volume_overlay_level)).perform();
+          if (!was_visible || now - id(volume_overlay_last_draw_ms) >= 50) {
+            id(volume_overlay_last_draw_ms) = now;
+            id(draw_volume_overlay).execute();
+            id(s3_box_lcd).update();
+          }
       - script.execute: volume_overlay_hide_timer
-      - media_player.volume_up: speaker_media_player
 
   - id: volume_down_pressed
     mode: restart
     then:
       - script.execute: wake_screen
       - lambda: |-
-          const float base_volume = id(volume_overlay_visible) ? id(volume_overlay_level) : id(speaker_media_player).volume;
+          const uint32_t now = millis();
+          const bool was_visible = id(volume_overlay_visible);
+          const float base_volume = id(volume_overlay_visible) ? id(volume_overlay_level) : id(box_speaker).get_volume();
           id(volume_overlay_level) = std::max(base_volume - 0.05f, 0.0f);
           id(volume_overlay_visible) = true;
-      - script.execute: refresh_volume_overlay
+          id(box_speaker).set_volume(id(volume_overlay_level));
+          id(speaker_media_player).make_call().set_volume(id(volume_overlay_level)).perform();
+          if (!was_visible || now - id(volume_overlay_last_draw_ms) >= 50) {
+            id(volume_overlay_last_draw_ms) = now;
+            id(draw_volume_overlay).execute();
+            id(s3_box_lcd).update();
+          }
       - script.execute: volume_overlay_hide_timer
-      - media_player.volume_down: speaker_media_player
 
   - id: show_volume_overlay
     mode: restart
@@ -489,8 +522,14 @@ script:
   - id: refresh_volume_overlay
     mode: restart
     then:
-      - script.execute: wake_screen
       - script.execute: draw_volume_overlay
+      - component.update: s3_box_lcd
+
+  - id: refresh_timer_display
+    mode: restart
+    then:
+      - script.execute: draw_timer_timeline
+      - script.execute: draw_active_timer_widget
       - component.update: s3_box_lcd
 
   - id: draw_display
@@ -558,95 +597,59 @@ script:
                   - display.page.show: initializing_page
                   - component.update: s3_box_lcd
 
-  - id: fetch_first_active_timer
-    then:
-      - lambda: |
-          const auto &timers = id(va).get_timers();
-          auto output_timer = *timers.begin();
-          for (const auto &timer : timers) {
-            if (timer.is_active && timer.seconds_left <= output_timer.seconds_left) {
-              output_timer = timer;
-            }
-          }
-          id(global_first_active_timer) = output_timer;
-  - id: check_if_timers_active
-    then:
-      - lambda: |
-          const auto &timers = id(va).get_timers();
-          bool output = false;
-          for (const auto &timer : timers) {
-            if (timer.is_active) {
-              output = true;
-            }
-          }
-          id(global_is_timer_active) = output;
-  - id: fetch_first_timer
-    then:
-      - lambda: |
-          const auto &timers = id(va).get_timers();
-          auto output_timer = *timers.begin();
-          for (const auto &timer : timers) {
-            if (timer.seconds_left <= output_timer.seconds_left) {
-              output_timer = timer;
-            }
-          }
-          id(global_first_timer) = output_timer;
-  - id: check_if_timers
-    then:
-      - lambda: |
-          const auto &timers = id(va).get_timers();
-          bool output = false;
-          for (const auto &timer : timers) {
-            if (timer.is_active) {
-              output = true;
-            }
-          }
-          id(global_is_timer) = output;
-
   - id: draw_timer_timeline
     then:
       - lambda: |
-          id(check_if_timers_active).execute();
-          id(check_if_timers).execute();
-          if (id(global_is_timer_active)){
-            id(fetch_first_active_timer).execute();
-            int active_pixels = round( 320 * id(global_first_active_timer).seconds_left / max(id(global_first_active_timer).total_seconds , static_cast<uint32_t>(1)) );
-            if (active_pixels > 0){
-              id(s3_box_lcd).filled_rectangle(0 , 225 , 320 , 15 , Color::WHITE );
-              id(s3_box_lcd).filled_rectangle(0 , 226 , active_pixels , 13 , id(active_timer_color) );
-            }
-          } else if (id(global_is_timer)){
-            id(fetch_first_timer).execute();
-            int active_pixels = round( 320 * id(global_first_timer).seconds_left / max(id(global_first_timer).total_seconds , static_cast<uint32_t>(1)));
-            if (active_pixels > 0){
-              id(s3_box_lcd).filled_rectangle(0 , 225 , 320 , 15 , Color::WHITE );
-              id(s3_box_lcd).filled_rectangle(0 , 226 , active_pixels , 13 , id(paused_timer_color) );
+          const auto &timers = id(va).get_timers();
+          const voice_assistant::Timer *selected = nullptr;
+          bool active = false;
+          for (const auto &timer : timers) {
+            if (timer.is_active && (selected == nullptr || timer.seconds_left <= selected->seconds_left)) {
+              selected = &timer;
+              active = true;
             }
           }
+          if (selected == nullptr) {
+            for (const auto &timer : timers) {
+              if (selected == nullptr || timer.seconds_left <= selected->seconds_left)
+                selected = &timer;
+            }
+          }
+          if (selected == nullptr)
+            return;
+
+          const int active_pixels =
+              roundf(320.0f * selected->seconds_left / max(selected->total_seconds, static_cast<uint32_t>(1)));
+          if (active_pixels <= 0)
+            return;
+
+          id(s3_box_lcd).filled_rectangle(0, 225, 320, 15, Color::WHITE);
+          id(s3_box_lcd).filled_rectangle(0, 226, active_pixels, 13,
+                                          active ? id(active_timer_color) : id(paused_timer_color));
   - id: draw_active_timer_widget
     then:
       - lambda: |
-          id(check_if_timers_active).execute();
-          if (id(global_is_timer_active)){
-            id(s3_box_lcd).filled_rectangle(80 , 40 , 160 , 50 , Color::WHITE );
-            id(s3_box_lcd).rectangle(80 , 40 , 160 , 50 , Color::BLACK );
-
-            id(fetch_first_active_timer).execute();
-            int hours_left = floor(id(global_first_active_timer).seconds_left / 3600);
-            int minutes_left = floor((id(global_first_active_timer).seconds_left - hours_left * 3600) / 60);
-            int seconds_left = id(global_first_active_timer).seconds_left - hours_left * 3600 - minutes_left * 60 ;
-            auto display_hours = (hours_left < 10 ? "0" : "") + std::to_string(hours_left);
-            auto display_minute = (minutes_left < 10 ? "0" : "") + std::to_string(minutes_left);
-            auto display_seconds = (seconds_left  < 10 ? "0" : "") + std::to_string(seconds_left) ;
-
-            std::string display_string = "";
-            if (hours_left > 0) {
-              display_string = display_hours + ":" + display_minute;
-            } else {
-              display_string = display_minute + ":" + display_seconds;
-            }
-            id(s3_box_lcd).printf(120, 47, id(font_timer), Color::BLACK, "%s", display_string.c_str());
+          const auto &timers = id(va).get_timers();
+          const voice_assistant::Timer *selected = nullptr;
+          for (const auto &timer : timers) {
+            if (timer.is_active && (selected == nullptr || timer.seconds_left <= selected->seconds_left))
+              selected = &timer;
           }
+          if (selected == nullptr)
+            return;
+
+          id(s3_box_lcd).filled_rectangle(80, 40, 160, 50, Color::WHITE);
+          id(s3_box_lcd).rectangle(80, 40, 160, 50, Color::BLACK);
+
+          const int hours_left = selected->seconds_left / 3600;
+          const int minutes_left = (selected->seconds_left % 3600) / 60;
+          const int seconds_left = selected->seconds_left % 60;
+          char display_string[6];
+          if (hours_left > 0)
+            snprintf(display_string, sizeof(display_string), "%02d:%02d", hours_left, minutes_left);
+          else
+            snprintf(display_string, sizeof(display_string), "%02d:%02d", minutes_left, seconds_left);
+          id(s3_box_lcd).printf(120, 47, id(font_timer), Color::BLACK, "%s", display_string);
   - id: draw_volume_overlay
     then:
       - lambda: |
@@ -837,18 +840,6 @@ globals:
     type: int
     restore_value: false
     initial_value: ${voice_assist_not_ready_phase_id}
-  - id: global_first_active_timer
-    type: voice_assistant::Timer
-    restore_value: false
-  - id: global_is_timer_active
-    type: bool
-    restore_value: false
-  - id: global_first_timer
-    type: voice_assistant::Timer
-    restore_value: false
-  - id: global_is_timer
-    type: bool
-    restore_value: false
   - id: volume_overlay_visible
     type: bool
     restore_value: false
@@ -857,6 +848,10 @@ globals:
     type: float
     restore_value: false
     initial_value: "0.5"
+  - id: volume_overlay_last_draw_ms
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
   - id: ota_update_in_progress
     type: bool
     restore_value: false
@@ -865,6 +860,10 @@ globals:
     type: float
     restore_value: false
     initial_value: "0.0"
+  - id: ota_update_last_drawn_percent
+    type: int
+    restore_value: false
+    initial_value: "-1"
 
 image:
   - file: ${error_illustration_file}
@@ -981,7 +980,7 @@ text_sensor:
 
   - platform: template
     name: "${friendly_name} IP Address"
-    update_interval: 30s
+    update_interval: 60s
     lambda: |-
       auto ips = network::get_ip_addresses();
       if (!ips[0].is_set())
@@ -998,22 +997,24 @@ text_sensor:
 
   - id: text_request
     platform: template
+    update_interval: never
     on_value:
       lambda: |-
-        if(id(text_request).state.length()>32) {
-          std::string name = id(text_request).state.c_str();
-          std::string truncated = esphome::str_truncate(name.c_str(),31);
-          id(text_request).state = (truncated+"...").c_str();
+        auto &state = id(text_request).state;
+        if (state.length() > 32) {
+          state.resize(31);
+          state.append("...");
         }
 
   - id: text_response
     platform: template
+    update_interval: never
     on_value:
       lambda: |-
-        if(id(text_response).state.length()>32) {
-          std::string name = id(text_response).state.c_str();
-          std::string truncated = esphome::str_truncate(name.c_str(),31);
-          id(text_response).state = (truncated+"...").c_str();
+        auto &state = id(text_response).state;
+        if (state.length() > 32) {
+          state.resize(31);
+          state.append("...");
         }
 
 color:
@@ -1197,7 +1198,6 @@ display:
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
-
 
 
 
