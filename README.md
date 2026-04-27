@@ -4,11 +4,13 @@ ESPHome build output and source for running the Waveshare ESP32-S3 Smart 86 Box 
 
 ## Status
 
-Everything is working nicely overall.
+Everything is working nicely overall with caveats:
 
-One audio note: volume should not be set above 83%, as higher levels can introduce noticeable distortion.
+**Audio:** Volume should not be set above 83%, as higher levels can introduce noticeable distortion.
 
-The on-device volume buttons work, but volume adjustment from the buttons is a little finicky.
+**Physical:** The on-device volume buttons work, but volume adjustment from the buttons is a little finicky.
+
+**OTA Updates:** The screen can glitch heavily while an OTA flash is in progress.
 
 ## Built Firmware Images
 
