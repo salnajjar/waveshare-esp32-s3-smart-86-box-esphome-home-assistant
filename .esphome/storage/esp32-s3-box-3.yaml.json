@@ -35,6 +35,7 @@
     "globals",
     "gpio",
     "gpio_expander",
+    "homeassistant",
     "i2c",
     "i2s_audio",
     "image",
@@ -66,6 +67,7 @@
     "switch",
     "template",
     "text_sensor",
+    "time",
     "uptime",
     "voice_assistant",
     "web_server",
@@ -98,7 +100,8 @@
     "switch/gpio",
     "switch/template",
     "text_sensor/debug",
-    "text_sensor/template"
+    "text_sensor/template",
+    "time/homeassistant"
   ],
   "no_mdns": false,
   "framework": "esp-idf",

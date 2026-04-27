@@ -2,13 +2,13 @@
 substitutions:
   name: esp32-s3-box-3
   friendly_name: ESP32 S3 Box 3
-  loading_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/loading_320_240.png
-  idle_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/idle_320_240.png
-  listening_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/listening_320_240.png
-  thinking_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/thinking_320_240.png
-  replying_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/replying_320_240.png
-  error_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/error_320_240.png
-  timer_finished_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/timer_finished_320_240.png
+  loading_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/loading-480x480.png
+  idle_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/idle-480x480.png
+  listening_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/listening-480x480.png
+  thinking_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/thinking-480x480.png
+  replying_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/replying-480x480.png
+  error_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/error-480x480.png
+  timer_finished_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/timer-480x480.png
 
   loading_illustration_background_color: "000000"
   idle_illustration_background_color: "000000"
@@ -36,9 +36,9 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "4"
-  build_id: "b4-20260426-160551"
-  build_time: "2026-04-26 16:05:51 +01:00"
+  build_number: "9"
+  build_id: "b9-20260427-120659"
+  build_time: "2026-04-27 12:06:59 +01:00"
   build_esphome_version: "2026.4.2"
 
 esphome:
@@ -122,6 +122,22 @@ wifi:
     - script.execute: draw_display
 
 captive_portal:
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+    on_time:
+      - seconds: 0
+        then:
+          - if:
+              condition:
+                lambda: |-
+                  return !id(init_in_progress)
+                      && !id(ota_update_in_progress)
+                      && id(voice_assistant_phase) == ${voice_assist_idle_phase_id};
+              then:
+                - display.page.show: idle_page
+                - component.update: s3_box_lcd
 
 esp32_ble_tracker:
 
@@ -853,39 +869,39 @@ globals:
 image:
   - file: ${error_illustration_file}
     id: casita_error
-    resize: 320x240
-    type: RGB
-    transparency: alpha_channel
+    resize: 480x480
+    type: RGB565
+    transparency: opaque
   - file: ${idle_illustration_file}
     id: casita_idle
-    resize: 320x240
-    type: RGB
-    transparency: alpha_channel
+    resize: 480x480
+    type: RGB565
+    transparency: opaque
   - file: ${listening_illustration_file}
     id: casita_listening
-    resize: 320x240
-    type: RGB
-    transparency: alpha_channel
+    resize: 480x480
+    type: RGB565
+    transparency: opaque
   - file: ${thinking_illustration_file}
     id: casita_thinking
-    resize: 320x240
-    type: RGB
-    transparency: alpha_channel
+    resize: 480x480
+    type: RGB565
+    transparency: opaque
   - file: ${replying_illustration_file}
     id: casita_replying
-    resize: 320x240
-    type: RGB
-    transparency: alpha_channel
+    resize: 480x480
+    type: RGB565
+    transparency: opaque
   - file: ${timer_finished_illustration_file}
     id: casita_timer_finished
-    resize: 320x240
-    type: RGB
-    transparency: alpha_channel
+    resize: 480x480
+    type: RGB565
+    transparency: opaque
   - file: ${loading_illustration_file}
     id: casita_initializing
-    resize: 320x240
-    type: RGB
-    transparency: alpha_channel
+    resize: 480x480
+    type: RGB565
+    transparency: opaque
   - file: https://github.com/esphome/wake-word-voice-assistants/raw/main/error_box_illustrations/error-no-wifi.png
     id: error_no_wifi
     resize: 320x240
@@ -921,6 +937,22 @@ font:
       weight: 300
     id: font_timer
     size: 30
+    glyphsets:
+      - ${font_glyphsets}
+  - file:
+      type: gfonts
+      family: ${font_family}
+      weight: 500
+    id: font_idle_time
+    size: 48
+    glyphsets:
+      - ${font_glyphsets}
+  - file:
+      type: gfonts
+      family: ${font_family}
+      weight: 400
+    id: font_idle_date
+    size: 18
     glyphsets:
       - ${font_glyphsets}
 
@@ -1096,6 +1128,16 @@ display:
         lambda: |-
           it.fill(id(idle_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_idle), ImageAlign::CENTER);
+          auto now = id(homeassistant_time).now();
+          if (now.is_valid()) {
+            char time_buf[6];
+            char date_buf[16];
+            now.strftime(time_buf, sizeof(time_buf), "%H:%M");
+            now.strftime(date_buf, sizeof(date_buf), "%a %d %b");
+            const Color idle_clock_color(235, 235, 235);
+            it.printf(450, 20, id(font_idle_time), idle_clock_color, TextAlign::TOP_RIGHT, "%s", time_buf);
+            it.printf(450, 67, id(font_idle_date), idle_clock_color, TextAlign::TOP_RIGHT, "%s", date_buf);
+          }
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
@@ -1155,6 +1197,11 @@ display:
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
+
+
+
+
+
 
 
 
