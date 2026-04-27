@@ -20,14 +20,11 @@ Compiled firmware images are included in this repository under:
 
 Useful files:
 
-```text
-firmware.factory.bin
-firmware.ota.bin
-firmware.bin
-bootloader.bin
-partitions.bin
-ota_data_initial.bin
-```
+- [firmware.factory.bin](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-s3-box-3/firmware.factory.bin)
+- [firmware.ota.bin](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-s3-box-3/firmware.ota.bin)
+- [firmware.bin](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-s3-box-3/firmware.bin)
+- [firmware.elf](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-s3-box-3/firmware.elf)
+- [firmware.map](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-s3-box-3/firmware.map)
 
 Use `firmware.factory.bin` for first-time flashing, and `firmware.ota.bin` for OTA updates.
 
