@@ -131,7 +131,7 @@ void MipiRgb::setup() {
 void MipiRgb::common_setup_() {
   esp_lcd_rgb_panel_config_t config{};
   config.flags.fb_in_psram = 1;
-  config.bounce_buffer_size_px = this->width_ * 10;
+  config.bounce_buffer_size_px = this->width_ * this->bounce_buffer_lines_;
   config.num_fbs = 1;
   config.timings.h_res = this->width_;
   config.timings.v_res = this->height_;
@@ -382,6 +382,7 @@ void MipiRgb::dump_config() {
                 "\n  VSync Front Porch: %u"
                 "\n  Invert Colors: %s"
                 "\n  Pixel Clock: %uMHz"
+                "\n  Bounce Buffer Lines: %u"
                 "\n  Reset Pin: %s"
                 "\n  DE Pin: %s"
                 "\n  PCLK Pin: %s"
@@ -390,8 +391,8 @@ void MipiRgb::dump_config() {
                 this->model_, this->width_, this->height_, this->rotation_, YESNO(this->pclk_inverted_),
                 this->hsync_pulse_width_, this->hsync_back_porch_, this->hsync_front_porch_, this->vsync_pulse_width_,
                 this->vsync_back_porch_, this->vsync_front_porch_, YESNO(this->invert_colors_),
-                (unsigned) (this->pclk_frequency_ / 1000000), get_pin_name(this->reset_pin_, reset_buf),
-                get_pin_name(this->de_pin_, de_buf), get_pin_name(this->pclk_pin_, pclk_buf),
+                (unsigned) (this->pclk_frequency_ / 1000000), this->bounce_buffer_lines_,
+                get_pin_name(this->reset_pin_, reset_buf), get_pin_name(this->de_pin_, de_buf), get_pin_name(this->pclk_pin_, pclk_buf),
                 get_pin_name(this->hsync_pin_, hsync_buf), get_pin_name(this->vsync_pin_, vsync_buf));
 
   this->dump_pins_(8, 13, "Blue", 0);

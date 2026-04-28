@@ -2,6 +2,8 @@
 
 ESPHome build output and source for running the Waveshare ESP32-S3 Smart 86 Box with Home Assistant.
 
+See [CHANGELOG.md](CHANGELOG.md) for the project changelog generated from Git commits.
+
 ## Status
 
 **2026-04-28:** Updated to ESPHome 2026.4.3
@@ -10,7 +12,7 @@ Everything is working nicely overall with caveats:
 
 **Audio:** Volume should not be set above 83%, as higher levels can introduce noticeable distortion.
 
-**Physical:** The on-device volume buttons work, but volume adjustment from the buttons is a little finicky.
+**Physical:** The on-device buttons work to control the volume up and down, but volume adjustment from the buttons is a little finicky.
 
 **OTA Updates:** The screen can glitch heavily while an OTA flash is in progress.
 
