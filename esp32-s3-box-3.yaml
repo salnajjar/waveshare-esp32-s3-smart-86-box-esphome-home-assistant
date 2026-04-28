@@ -36,9 +36,9 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "32"
-  build_id: "b32-20260428-112631"
-  build_time: "2026-04-28 11:26:31 +01:00"
+  build_number: "39"
+  build_id: "b39-20260428-120309"
+  build_time: "2026-04-28 12:03:09 +01:00"
   build_esphome_version: "2026.4.3"
 
 esphome:
@@ -1433,14 +1433,16 @@ display:
               copy_line(line2, source + second_start, remaining, remaining > max_chars);
             }
 
-            it.filled_rectangle(x + radius, y, bubble_w - 2 * radius, bubble_h, bubble_color);
-            it.filled_rectangle(x, y + radius, bubble_w, bubble_h - 2 * radius, bubble_color);
-            it.filled_circle(x + radius, y + radius, radius, bubble_color);
-            it.filled_circle(x + bubble_w - radius - 1, y + radius, radius, bubble_color);
-            it.filled_circle(x + radius, y + bubble_h - radius - 1, radius, bubble_color);
-            it.filled_circle(x + bubble_w - radius - 1, y + bubble_h - radius - 1, radius, bubble_color);
-            it.rectangle(x + radius, y, bubble_w - 2 * radius, bubble_h, border_color);
-            it.rectangle(x, y + radius, bubble_w, bubble_h - 2 * radius, border_color);
+            auto fill_round_rect = [&](int bx, int by, int bw, int bh, int br, Color color) {
+              it.filled_rectangle(bx + br, by, bw - 2 * br, bh, color);
+              it.filled_rectangle(bx, by + br, bw, bh - 2 * br, color);
+              it.filled_circle(bx + br, by + br, br, color);
+              it.filled_circle(bx + bw - br - 1, by + br, br, color);
+              it.filled_circle(bx + br, by + bh - br - 1, br, color);
+              it.filled_circle(bx + bw - br - 1, by + bh - br - 1, br, color);
+            };
+            fill_round_rect(x, y, bubble_w, bubble_h, radius, border_color);
+            fill_round_rect(x + 1, y + 1, bubble_w - 2, bubble_h - 2, radius - 1, bubble_color);
 
             const int text_x = align_right ? x + bubble_w - pad_x : x + pad_x;
             const TextAlign text_align = align_right ? TextAlign::TOP_RIGHT : TextAlign::TOP_LEFT;
@@ -1507,14 +1509,16 @@ display:
               copy_line(line2, source + second_start, remaining, remaining > max_chars);
             }
 
-            it.filled_rectangle(x + radius, y, bubble_w - 2 * radius, bubble_h, bubble_color);
-            it.filled_rectangle(x, y + radius, bubble_w, bubble_h - 2 * radius, bubble_color);
-            it.filled_circle(x + radius, y + radius, radius, bubble_color);
-            it.filled_circle(x + bubble_w - radius - 1, y + radius, radius, bubble_color);
-            it.filled_circle(x + radius, y + bubble_h - radius - 1, radius, bubble_color);
-            it.filled_circle(x + bubble_w - radius - 1, y + bubble_h - radius - 1, radius, bubble_color);
-            it.rectangle(x + radius, y, bubble_w - 2 * radius, bubble_h, border_color);
-            it.rectangle(x, y + radius, bubble_w, bubble_h - 2 * radius, border_color);
+            auto fill_round_rect = [&](int bx, int by, int bw, int bh, int br, Color color) {
+              it.filled_rectangle(bx + br, by, bw - 2 * br, bh, color);
+              it.filled_rectangle(bx, by + br, bw, bh - 2 * br, color);
+              it.filled_circle(bx + br, by + br, br, color);
+              it.filled_circle(bx + bw - br - 1, by + br, br, color);
+              it.filled_circle(bx + br, by + bh - br - 1, br, color);
+              it.filled_circle(bx + bw - br - 1, by + bh - br - 1, br, color);
+            };
+            fill_round_rect(x, y, bubble_w, bubble_h, radius, border_color);
+            fill_round_rect(x + 1, y + 1, bubble_w - 2, bubble_h - 2, radius - 1, bubble_color);
 
             const int text_x = align_right ? x + bubble_w - pad_x : x + pad_x;
             const TextAlign text_align = align_right ? TextAlign::TOP_RIGHT : TextAlign::TOP_LEFT;
@@ -1527,7 +1531,7 @@ display:
           it.fill(id(replying_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_replying), ImageAlign::CENTER);
           draw_speech_bubble(id(text_request).state, 16, 18, false, true);
-          draw_speech_bubble(id(text_response).state, 152, 360, true, false);
+          draw_speech_bubble(id(text_response).state, it.get_width() - 312 - 16, it.get_height() - 66 - 18, true, false);
           id(draw_timer_timeline).execute();
           id(draw_volume_overlay).execute();
           id(draw_countdown_dialog).execute();
@@ -1566,6 +1570,13 @@ display:
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
           id(draw_countdown_dialog).execute();
+
+
+
+
+
+
+
 
 
 
