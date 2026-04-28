@@ -3,7 +3,8 @@
 This changelog is generated from the Git commit history for this project.
 
 ## 2026-04-28
-
+- [8bd4daa](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/commit/8bd4daa) Fixed the input / output dialogue boxes to make them rounded and positioned correctly.
+- [8ae3041](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/commit/8ae3041) ESPHome 2026.4.3 build broke the display output, this has been corrected
 - [0002b22](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/commit/0002b22) Updated readme.md
 - [a1b7f17](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/commit/a1b7f17) Updated to ESPHome 2026.4.3
 
