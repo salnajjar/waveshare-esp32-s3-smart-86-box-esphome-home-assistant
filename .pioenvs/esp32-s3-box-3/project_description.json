@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp32-s3-box-3",
-    "project_version":    "2026.4.2",
+    "project_version":    "2026.4.3",
     "project_path":       "C:/ESPHomeBuild/esp32-s3-box-3",
     "idf_path":           "C:/PlatformIO/core/packages/framework-espidf",
     "build_dir":          "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3",

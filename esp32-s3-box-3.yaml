@@ -36,10 +36,10 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "19"
-  build_id: "b19-20260427-200111"
-  build_time: "2026-04-27 20:01:11 +01:00"
-  build_esphome_version: "2026.4.2"
+  build_number: "21"
+  build_id: "b21-20260428-093709"
+  build_time: "2026-04-28 09:37:09 +01:00"
+  build_esphome_version: "2026.4.3"
 
 esphome:
   name: ${name}
@@ -66,6 +66,13 @@ esphome:
           then:
             - lambda: id(init_in_progress) = false;
             - script.execute: draw_display
+
+external_components:
+  - source:
+      type: local
+      path: local_components
+    components:
+      - axp2101_powerkey
 
 esp32:
   board: esp32-s3-devkitc-1
@@ -1344,6 +1351,8 @@ display:
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
+
+
 
 
 

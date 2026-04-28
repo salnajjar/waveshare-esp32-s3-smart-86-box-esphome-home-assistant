@@ -64,7 +64,7 @@ If you changed `esp32-s3-box-3.yaml`, regenerate and build with:
 .\generate.ps1
 ```
 
-This runs the custom ESPHome 2026.4.2 source tree used for this firmware, so generated code stays in sync with the YAML.
+The ESPHome release used for generation is controlled by `version.txt`. `build.ps1` and `generate.ps1` call `ensure_esphome_source.ps1`, which clones the matching `esphome-$version` source tree if it is not already present. To move to a future ESPHome release, change `version.txt` and run `.\generate.ps1` or `.\build.ps1`.
 
 Each build updates `firmware_build_info.json`, increments the firmware build number, stamps the current date/time, and exposes that value in Home Assistant as the `ESP32 S3 Box 3 Firmware Build` diagnostic text sensor.
 

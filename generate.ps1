@@ -2,7 +2,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $ProjectDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$EspHomeDir = "C:\Users\Seri Al-Najjar\Documents\Dev\ESP32\ESP-S3-Touch-LCD-4B-2\esphome-2026.4.2"
+$EspHomeDir = (& powershell -ExecutionPolicy Bypass -File (Join-Path $ProjectDir "ensure_esphome_source.ps1") | Select-Object -Last 1)
 
 $env:PLATFORMIO_CORE_DIR = "C:\PlatformIO\core"
 $env:PLATFORMIO_HOME_DIR = "C:\PlatformIO\home"
