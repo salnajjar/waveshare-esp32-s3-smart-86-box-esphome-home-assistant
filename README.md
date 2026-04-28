@@ -4,6 +4,8 @@ ESPHome build output and source for running the Waveshare ESP32-S3 Smart 86 Box 
 
 ## Status
 
+**2026-04-28:** Updated to ESPHome 2026.4.3
+
 Everything is working nicely overall with caveats:
 
 **Audio:** Volume should not be set above 83%, as higher levels can introduce noticeable distortion.
