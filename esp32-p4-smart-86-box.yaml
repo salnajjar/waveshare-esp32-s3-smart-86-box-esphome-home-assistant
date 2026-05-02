@@ -1,0 +1,289 @@
+---
+substitutions:
+  name: esp32-p4-smart-86-box
+  friendly_name: ESP32 P4 Smart 86 Box
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  min_version: 2026.4.0
+  project:
+    name: salnajjar.waveshare_esp32_p4_smart_86_box
+    version: "p4-preview"
+  build_path: C:/ESPHomeBuild/esp32-p4-smart-86-box
+  name_add_mac_suffix: true
+  on_boot:
+    priority: 600
+    then:
+      - light.turn_on:
+          id: backlight
+          brightness: 85%
+      - switch.turn_on: speaker_enable
+      - speaker.volume_set:
+          id: box_speaker
+          volume: 0.7
+      - speaker.mute_off: box_speaker
+
+esp32:
+  board: esp32-p4-evboard
+  variant: ESP32P4
+  flash_size: 32MB
+  cpu_frequency: 360MHz
+  framework:
+    type: esp-idf
+    advanced:
+      enable_idf_experimental_features: true
+    sdkconfig_options:
+      CONFIG_COMPILER_OPTIMIZATION_PERF: "y"
+      CONFIG_CACHE_L2_CACHE_256KB: "y"
+      CONFIG_CACHE_L2_CACHE_LINE_128B: "y"
+      CONFIG_FREERTOS_HZ: "1000"
+      CONFIG_ESP_MAIN_TASK_STACK_SIZE: "10240"
+
+psram:
+  mode: hex
+  speed: 200MHz
+
+esp_ldo:
+  - id: mipi_dsi_phy_power
+    channel: 3
+    voltage: 2.5V
+
+esp32_hosted:
+  variant: ESP32C6
+  active_high: true
+  reset_pin: GPIO54
+  slot: 1
+  bus_width: 4
+  sdio_frequency: 40MHz
+  clk_pin: GPIO18
+  cmd_pin: GPIO19
+  d0_pin: GPIO14
+  d1_pin: GPIO15
+  d2_pin: GPIO16
+  d3_pin: GPIO17
+
+api:
+  batch_delay: 0ms
+
+ota:
+  - platform: esphome
+
+logger:
+  hardware_uart: USB_SERIAL_JTAG
+  level: WARN
+
+debug:
+  update_interval: 120s
+
+wifi:
+  power_save_mode: none
+  ap:
+
+captive_portal:
+
+i2c:
+  - id: i2c_adc_dac
+    sda: GPIO7
+    scl: GPIO8
+    frequency: 400kHz
+
+output:
+  - platform: ledc
+    id: backlight_output
+    pin:
+      number: GPIO26
+      inverted: true
+    frequency: 5000Hz
+  - platform: gpio
+    id: speaker_enable_output
+    pin: GPIO53
+
+light:
+  - platform: monochromatic
+    id: backlight
+    name: "${friendly_name} Backlight"
+    output: backlight_output
+    restore_mode: ALWAYS_ON
+
+switch:
+  - platform: output
+    id: speaker_enable
+    name: "${friendly_name} Speaker Enable"
+    output: speaker_enable_output
+    restore_mode: ALWAYS_ON
+  - platform: template
+    id: mute
+    name: "${friendly_name} Mute"
+    optimistic: true
+    on_turn_on:
+      - speaker.mute_on: box_speaker
+    on_turn_off:
+      - speaker.mute_off: box_speaker
+
+touchscreen:
+  - platform: gt911
+    id: touch_panel
+    display: p4_lcd
+    i2c_id: i2c_adc_dac
+    reset_pin: GPIO23
+    update_interval: 50ms
+    on_touch:
+      - light.turn_on:
+          id: backlight
+          brightness: 85%
+
+i2s_audio:
+  i2s_lrclk_pin: GPIO10
+  i2s_bclk_pin: GPIO12
+  i2s_mclk_pin: GPIO13
+
+audio_adc:
+  - platform: es7210
+    i2c_id: i2c_adc_dac
+    id: es7210_adc
+    bits_per_sample: 16bit
+    sample_rate: 16000
+
+audio_dac:
+  - platform: es8311
+    i2c_id: i2c_adc_dac
+    id: es8311_dac
+    bits_per_sample: 16bit
+    sample_rate: 16000
+
+microphone:
+  - platform: i2s_audio
+    id: box_mic
+    sample_rate: 16000
+    i2s_din_pin: GPIO11
+    bits_per_sample: 16bit
+    adc_type: external
+
+speaker:
+  - platform: i2s_audio
+    id: box_speaker
+    i2s_dout_pin: GPIO9
+    dac_type: external
+    sample_rate: 16000
+    bits_per_sample: 16bit
+    channel: stereo
+    audio_dac: es8311_dac
+    buffer_duration: 160ms
+    timeout: never
+
+voice_assistant:
+  id: va
+  microphone:
+    microphone: box_mic
+  speaker: box_speaker
+  on_listening:
+    - display.page.show: listening_page
+    - component.update: p4_lcd
+  on_stt_end:
+    - display.page.show: thinking_page
+    - component.update: p4_lcd
+  on_tts_start:
+    - display.page.show: replying_page
+    - component.update: p4_lcd
+  on_end:
+    - display.page.show: idle_page
+    - component.update: p4_lcd
+  on_error:
+    - display.page.show: error_page
+    - component.update: p4_lcd
+
+sensor:
+  - platform: wifi_signal
+    name: "${friendly_name} WiFi Signal"
+    update_interval: 60s
+  - platform: uptime
+    name: "${friendly_name} Uptime"
+  - platform: debug
+    free:
+      name: "${friendly_name} Heap Free"
+    block:
+      name: "${friendly_name} Heap Max Block"
+    loop_time:
+      name: "${friendly_name} Loop Time"
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "${friendly_name} IP Address"
+    ssid:
+      name: "${friendly_name} Connected SSID"
+    mac_address:
+      name: "${friendly_name} MAC Address"
+  - platform: debug
+    reset_reason:
+      name: "${friendly_name} Reset Reason"
+    device:
+      name: "${friendly_name} Device Info"
+
+button:
+  - platform: restart
+    name: "${friendly_name} Restart"
+  - platform: safe_mode
+    name: "${friendly_name} Restart in Safe Mode"
+
+font:
+  - file:
+      type: gfonts
+      family: Figtree
+      weight: 500
+    id: font_small
+    size: 26
+    glyphsets:
+      - GF_Latin_Core
+  - file:
+      type: gfonts
+      family: Figtree
+      weight: 600
+    id: font_large
+    size: 46
+    glyphsets:
+      - GF_Latin_Core
+
+color:
+  - id: color_background
+    hex: "FFFFFF"
+  - id: color_text
+    hex: "202020"
+  - id: color_accent
+    hex: "F2B705"
+  - id: color_error
+    hex: "A00000"
+
+display:
+  - platform: mipi_dsi
+    id: p4_lcd
+    model: WAVESHARE-P4-86-PANEL
+    auto_clear_enabled: false
+    pages:
+      - id: idle_page
+        lambda: |-
+          it.fill(id(color_background));
+          it.filled_circle(360, 310, 135, id(color_accent));
+          it.filled_rectangle(265, 310, 190, 120, id(color_accent));
+          it.filled_circle(315, 305, 25, id(color_background));
+          it.filled_circle(405, 305, 25, id(color_background));
+          it.printf(360, 520, id(font_large), id(color_text), TextAlign::CENTER, "Ready");
+      - id: listening_page
+        lambda: |-
+          it.fill(id(color_background));
+          it.printf(360, 285, id(font_large), id(color_text), TextAlign::CENTER, "Listening");
+          it.printf(360, 345, id(font_small), id(color_text), TextAlign::CENTER, "Ask Home Assistant");
+      - id: thinking_page
+        lambda: |-
+          it.fill(id(color_background));
+          it.printf(360, 315, id(font_large), id(color_text), TextAlign::CENTER, "Thinking");
+      - id: replying_page
+        lambda: |-
+          it.fill(id(color_background));
+          it.printf(360, 315, id(font_large), id(color_text), TextAlign::CENTER, "Replying");
+      - id: error_page
+        lambda: |-
+          it.fill(id(color_background));
+          it.printf(360, 300, id(font_large), id(color_error), TextAlign::CENTER, "Error");
+          it.printf(360, 360, id(font_small), id(color_text), TextAlign::CENTER, "Check logs");

@@ -1,6 +1,8 @@
-# Waveshare ESP32-S3 Smart 86 Box ESPHome Home Assistant
+# Waveshare ESP32 Smart 86 Box ESPHome Home Assistant
 
 ESPHome build output and source for running the Waveshare ESP32-S3 Smart 86 Box with Home Assistant.
+
+This repository also includes an experimental ESP32-P4 Smart 86 Box build target.
 
 See [CHANGELOG.md](CHANGELOG.md) for the project changelog generated from Git commits.
 
@@ -18,6 +20,8 @@ Everything is working nicely overall with caveats:
 
 ## Built Firmware Images
 
+### ESP32-S3 Smart 86 Box
+
 Compiled firmware images are included in this repository under:
 
 ```text
@@ -33,6 +37,22 @@ Useful files:
 - [firmware.map](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-s3-box-3/firmware.map)
 
 Use `firmware.factory.bin` for first-time flashing, and `firmware.ota.bin` for OTA updates.
+
+### ESP32-P4 Smart 86 Box
+
+An experimental P4 build is included under:
+
+```text
+.pioenvs/esp32-p4-smart-86-box/
+```
+
+Useful files:
+
+- [firmware.factory.bin](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-p4-smart-86-box/firmware.factory.bin)
+- [firmware.ota.bin](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-p4-smart-86-box/firmware.ota.bin)
+- [firmware.bin](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/.pioenvs/esp32-p4-smart-86-box/firmware.bin)
+
+The P4 configuration is [esp32-p4-smart-86-box.yaml](esp32-p4-smart-86-box.yaml). It currently includes hosted Wi-Fi, display, touch, microphone, speaker, voice assistant wiring, OTA, API, and diagnostics. Bluetooth proxy is not enabled in this preview because the ESP32-P4 uses a hosted ESP32-C6 radio and the stock ESPHome Bluetooth proxy path expects local ESP32 Bluetooth headers.
 
 ## Building In This Folder
 
