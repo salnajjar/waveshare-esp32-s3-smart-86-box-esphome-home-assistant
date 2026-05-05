@@ -281,6 +281,7 @@ class VoiceAssistant : public Component {
   void write_speaker_();
   speaker::Speaker *speaker_{nullptr};
   uint8_t *speaker_buffer_{nullptr};
+  size_t speaker_buffer_start_{0};
   size_t speaker_buffer_index_{0};
   size_t speaker_buffer_size_{0};
   size_t speaker_bytes_received_{0};

@@ -4,6 +4,8 @@
 
 #include <driver/i2s_std.h>
 
+#include <array>
+
 #include "esphome/components/audio/audio.h"
 #include "esphome/components/audio/audio_transfer_buffer.h"
 
@@ -47,7 +49,7 @@ enum SpeakerEventGroupBits : uint32_t {
 // Has 100 values representing silence and a reduction [49, 48.5, ... 0.5, 0] dB.
 // dB to PCM scaling factor formula: floating_point_scale_factor = 2^(-db/6.014)
 // float to Q15 fixed point formula: q15_scale_factor = floating_point_scale_factor * 2^(15)
-static const std::vector<int16_t> Q15_VOLUME_SCALING_FACTORS = {
+static const std::array<int16_t, 100> Q15_VOLUME_SCALING_FACTORS = {
     0,     116,   122,   130,   137,   146,   154,   163,   173,   183,   194,   206,   218,   231,   244,
     259,   274,   291,   308,   326,   345,   366,   388,   411,   435,   461,   488,   517,   548,   580,
     615,   651,   690,   731,   774,   820,   868,   920,   974,   1032,  1094,  1158,  1227,  1300,  1377,
@@ -140,8 +142,8 @@ void I2SAudioSpeaker::loop() {
       }
 
       if (this->speaker_task_handle_ == nullptr) {
-        xTaskCreate(I2SAudioSpeaker::speaker_task, "speaker_task", TASK_STACK_SIZE, (void *) this, TASK_PRIORITY,
-                    &this->speaker_task_handle_);
+        xTaskCreatePinnedToCore(I2SAudioSpeaker::speaker_task, "speaker_task", TASK_STACK_SIZE, (void *) this,
+                                TASK_PRIORITY, &this->speaker_task_handle_, 1);
 
         if (this->speaker_task_handle_ == nullptr) {
           ESP_LOGE(TAG, "Task failed to start, retrying in 1 second");

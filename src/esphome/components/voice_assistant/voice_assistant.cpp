@@ -151,6 +151,7 @@ void VoiceAssistant::clear_buffers_() {
   if ((this->speaker_ != nullptr) && (this->speaker_buffer_ != nullptr)) {
     memset(this->speaker_buffer_, 0, SPEAKER_BUFFER_SIZE);
 
+    this->speaker_buffer_start_ = 0;
     this->speaker_buffer_size_ = 0;
     this->speaker_buffer_index_ = 0;
     this->speaker_bytes_received_ = 0;
@@ -316,7 +317,13 @@ void VoiceAssistant::loop() {
       if (this->speaker_ != nullptr) {
         ssize_t received_len = 0;
         if (this->audio_mode_ == AUDIO_MODE_UDP) {
-          if (this->speaker_buffer_index_ + RECEIVE_SIZE < SPEAKER_BUFFER_SIZE) {
+          if (this->speaker_buffer_index_ + RECEIVE_SIZE > SPEAKER_BUFFER_SIZE && this->speaker_buffer_start_ > 0) {
+            memmove(this->speaker_buffer_, this->speaker_buffer_ + this->speaker_buffer_start_,
+                    this->speaker_buffer_size_);
+            this->speaker_buffer_index_ = this->speaker_buffer_size_;
+            this->speaker_buffer_start_ = 0;
+          }
+          if (this->speaker_buffer_index_ + RECEIVE_SIZE <= SPEAKER_BUFFER_SIZE) {
             received_len = this->socket_->read(this->speaker_buffer_ + this->speaker_buffer_index_, RECEIVE_SIZE);
             if (received_len > 0) {
               this->speaker_buffer_index_ += received_len;
@@ -405,14 +412,18 @@ void VoiceAssistant::write_speaker_() {
   if ((this->speaker_ != nullptr) && (this->speaker_buffer_ != nullptr)) {
     if (this->speaker_buffer_size_ > 0) {
       size_t write_chunk = std::min<size_t>(this->speaker_buffer_size_, 8 * 1024);
-      size_t written = this->speaker_->play(this->speaker_buffer_, write_chunk, pdMS_TO_TICKS(25));
+      size_t written = this->speaker_->play(this->speaker_buffer_ + this->speaker_buffer_start_, write_chunk,
+                                            pdMS_TO_TICKS(25));
       if (written > 0) {
         if (written < write_chunk) {
           ESP_LOGD(TAG, "Speaker accepted %u/%u bytes", written, write_chunk);
         }
-        memmove(this->speaker_buffer_, this->speaker_buffer_ + written, this->speaker_buffer_size_ - written);
+        this->speaker_buffer_start_ += written;
         this->speaker_buffer_size_ -= written;
-        this->speaker_buffer_index_ -= written;
+        if (this->speaker_buffer_size_ == 0) {
+          this->speaker_buffer_start_ = 0;
+          this->speaker_buffer_index_ = 0;
+        }
         this->set_timeout("speaker-timeout", 5000, [this]() { this->speaker_->stop(); });
       } else {
         ESP_LOGV(TAG, "Speaker buffer full, trying again next loop");
@@ -853,7 +864,12 @@ void VoiceAssistant::on_event(const api::VoiceAssistantEventResponse &msg) {
 void VoiceAssistant::on_audio(const api::VoiceAssistantAudio &msg) {
 #ifdef USE_SPEAKER  // We should never get to this function if there is no speaker anyway
   if ((this->speaker_ != nullptr) && (this->speaker_buffer_ != nullptr)) {
-    if (this->speaker_buffer_index_ + msg.data_len < SPEAKER_BUFFER_SIZE) {
+    if (this->speaker_buffer_index_ + msg.data_len > SPEAKER_BUFFER_SIZE && this->speaker_buffer_start_ > 0) {
+      memmove(this->speaker_buffer_, this->speaker_buffer_ + this->speaker_buffer_start_, this->speaker_buffer_size_);
+      this->speaker_buffer_index_ = this->speaker_buffer_size_;
+      this->speaker_buffer_start_ = 0;
+    }
+    if (this->speaker_buffer_index_ + msg.data_len <= SPEAKER_BUFFER_SIZE) {
       memcpy(this->speaker_buffer_ + this->speaker_buffer_index_, msg.data, msg.data_len);
       this->speaker_buffer_index_ += msg.data_len;
       this->speaker_buffer_size_ += msg.data_len;
