@@ -36,9 +36,9 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "58"
-  build_id: "b58-20260505-174709"
-  build_time: "2026-05-05 17:47:09 +01:00"
+  build_number: "59"
+  build_id: "b59-20260505-190528"
+  build_time: "2026-05-05 19:05:28 +01:00"
   build_esphome_version: "2026.4.4"
 
 esphome:
@@ -49,7 +49,7 @@ esphome:
     name: salnajjar.waveshare_esp32_s3_smart_86_box
     version: "${build_id}"
   build_path: C:/ESPHomeBuild/esp32-s3-box-3
-  name_add_mac_suffix: true
+  name_add_mac_suffix: false
   on_boot:
     priority: 600
     then:
@@ -1681,6 +1681,7 @@ display:
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
           id(draw_countdown_dialog).execute();
+
 
 
 
