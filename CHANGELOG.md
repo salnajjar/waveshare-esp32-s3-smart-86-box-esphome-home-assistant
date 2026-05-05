@@ -4,6 +4,7 @@ This changelog is generated from the Git commit history for this project.
 
 ## 2026-05-05
 
+- Added an upload wrapper and raised the S3 config minimum to ESPHome 2026.4.4 so local uploads do not silently use an older global ESPHome install.
 - Updated both ESP32-S3 and ESP32-P4 firmware builds to ESPHome 2026.4.4.
 
 ## 2026-05-02

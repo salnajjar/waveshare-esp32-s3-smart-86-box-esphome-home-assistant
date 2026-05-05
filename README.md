@@ -88,7 +88,21 @@ If you changed `esp32-s3-box-3.yaml`, regenerate and build with:
 .\generate.ps1
 ```
 
-The ESPHome release used for generation is controlled by `version.txt`. `build.ps1` and `generate.ps1` call `ensure_esphome_source.ps1`, which clones the matching `esphome-$version` source tree if it is not already present. To move to a future ESPHome release, change `version.txt` and run `.\generate.ps1` or `.\build.ps1`.
+To upload the S3 build over OTA or serial, use the project wrapper rather than running `python -m esphome upload` directly:
+
+```powershell
+.\upload.ps1 192.168.1.188
+```
+
+or:
+
+```powershell
+.\upload.ps1 COM12
+```
+
+The ESPHome release used for generation is controlled by `version.txt`. `build.ps1`, `generate.ps1`, and `upload.ps1` call `ensure_esphome_source.ps1`, which clones the matching `esphome-$version` source tree if it is not already present. To move to a future ESPHome release, change `version.txt` and run `.\generate.ps1` or `.\build.ps1`.
+
+Do not upload this build with plain `python -m esphome upload ...` unless your shell already has the same `PYTHONPATH` as the wrapper scripts. The global ESPHome package on a workstation may be older than `version.txt`, and can produce firmware without this project's patched display/audio source.
 
 Each build updates `firmware_build_info.json`, increments the firmware build number, stamps the current date/time, and exposes that value in Home Assistant as the `ESP32 S3 Box 3 Firmware Build` diagnostic text sensor.
 
