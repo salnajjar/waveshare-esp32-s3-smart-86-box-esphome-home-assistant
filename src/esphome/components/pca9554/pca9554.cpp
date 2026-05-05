@@ -23,9 +23,12 @@ void PCA9554Component::setup() {
 
   // No polarity inversion
   this->write_register_(INVERT_REG, 0);
-  // Preserve modes that may have been requested by pins set up earlier in the boot order.
-  // Invert mask as the part sees a 1 as an input.
+  // All inputs at initialization
+  this->config_mask_ = 0;
+  // Invert mask as the part sees a 1 as an input
   this->write_register_(CONFIG_REG, ~this->config_mask_);
+  // All outputs low
+  this->output_mask_ = 0;
   this->write_register_(OUTPUT_REG, this->output_mask_);
   // Read the inputs
   this->read_inputs_();

@@ -8,7 +8,7 @@ See [CHANGELOG.md](CHANGELOG.md) for the project changelog generated from Git co
 
 ## Status
 
-**2026-04-28:** Updated to ESPHome 2026.4.3
+**2026-05-05:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.4.4
 
 Everything is working nicely overall with caveats:
 

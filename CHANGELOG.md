@@ -2,6 +2,10 @@
 
 This changelog is generated from the Git commit history for this project.
 
+## 2026-05-05
+
+- Updated both ESP32-S3 and ESP32-P4 firmware builds to ESPHome 2026.4.4.
+
 ## 2026-05-02
 
 - [506827e](https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/commit/506827e) Added an experimental ESP32-P4 Smart 86 Box build, including a separate ESPHome YAML, compiled firmware binaries, and README download links.
