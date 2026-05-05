@@ -36,9 +36,9 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "46"
-  build_id: "b46-20260505-090721"
-  build_time: "2026-05-05 09:07:21 +01:00"
+  build_number: "58"
+  build_id: "b58-20260505-174709"
+  build_time: "2026-05-05 17:47:09 +01:00"
   build_esphome_version: "2026.4.4"
 
 esphome:
@@ -179,6 +179,12 @@ touchscreen:
           const int x = touch.x;
           const int y = touch.y;
 
+          if ((id(voice_assistant_phase) == ${voice_assist_timer_finished_phase_id} || id(timer_ringing).state) &&
+              x >= 170 && x <= 310 && y >= 213 && y <= 267) {
+            id(stop_finished_timer).execute();
+            return;
+          }
+
           if (id(countdown_dialog_visible)) {
             if (y >= 226 && y <= 278) {
               if (x >= 68 && x <= 142)
@@ -226,11 +232,9 @@ interval:
                 then:
                   - lambda: id(local_countdown_active) = false;
                   - script.execute: wake_screen
-                  - switch.turn_on: timer_ringing
-                  - wait_until:
-                      media_player.is_announcing:
                   - lambda: id(voice_assistant_phase) = ${voice_assist_timer_finished_phase_id};
                   - script.execute: draw_display
+                  - switch.turn_on: timer_ringing
                 else:
                   - if:
                       condition:
@@ -241,6 +245,16 @@ interval:
                               && id(voice_assistant_phase) == ${voice_assist_idle_phase_id};
                       then:
                         - component.update: s3_box_lcd
+  - interval: 1s
+    then:
+      - if:
+          condition:
+            lambda: |-
+              return id(va_timer_display_active)
+                  && !id(init_in_progress)
+                  && !id(ota_update_in_progress);
+          then:
+            - script.execute: refresh_timer_display
 
 button:
   - platform: factory_reset
@@ -523,19 +537,29 @@ voice_assistant:
         id(voice_assistant_phase) = ${voice_assist_not_ready_phase_id};
     - script.execute: draw_display
   on_timer_started:
+    - lambda: |-
+        id(va_timer_display_anchor_ms) = millis();
+        id(va_timer_display_anchor_seconds_left) = timer.seconds_left;
+        id(va_timer_display_total_seconds) = timer.total_seconds;
+        id(va_timer_display_active) = timer.is_active;
     - script.execute: draw_display
   on_timer_cancelled:
+    - lambda: id(va_timer_display_active) = false;
     - script.execute: draw_display
   on_timer_updated:
+    - lambda: |-
+        id(va_timer_display_anchor_ms) = millis();
+        id(va_timer_display_anchor_seconds_left) = timer.seconds_left;
+        id(va_timer_display_total_seconds) = timer.total_seconds;
+        id(va_timer_display_active) = timer.is_active;
     - script.execute: draw_display
   on_timer_tick:
     - script.execute: refresh_timer_display
   on_timer_finished:
-    - switch.turn_on: timer_ringing
-    - wait_until:
-        media_player.is_announcing:
+    - lambda: id(va_timer_display_active) = false;
     - lambda: id(voice_assistant_phase) = ${voice_assist_timer_finished_phase_id};
     - script.execute: draw_display
+    - switch.turn_on: timer_ringing
 
 script:
   - id: wake_screen
@@ -632,6 +656,13 @@ script:
       - script.execute: draw_timer_timeline
       - script.execute: draw_active_timer_widget
       - component.update: s3_box_lcd
+
+  - id: stop_finished_timer
+    mode: restart
+    then:
+      - switch.turn_off: timer_ringing
+      - script.execute: set_idle_or_mute_phase
+      - script.execute: draw_display
 
   - id: show_countdown_dialog
     mode: restart
@@ -751,6 +782,15 @@ script:
             selected_total_seconds = selected->total_seconds;
           }
 
+          if (active && id(va_timer_display_active)) {
+            const uint32_t elapsed_seconds = (millis() - id(va_timer_display_anchor_ms)) / 1000;
+            selected_seconds_left = elapsed_seconds >= id(va_timer_display_anchor_seconds_left)
+                                        ? 0
+                                        : id(va_timer_display_anchor_seconds_left) - elapsed_seconds;
+            if (id(va_timer_display_total_seconds) > 0)
+              selected_total_seconds = id(va_timer_display_total_seconds);
+          }
+
           if (id(local_countdown_active) &&
               (!active || selected == nullptr || id(local_countdown_seconds_left) <= selected_seconds_left)) {
             active = true;
@@ -761,14 +801,38 @@ script:
           if (!active && selected_seconds_left == 0)
             return;
 
-          const int active_pixels =
-              roundf(320.0f * selected_seconds_left / max(selected_total_seconds, static_cast<uint32_t>(1)));
-          if (active_pixels <= 0)
-            return;
+          const int hours_left = selected_seconds_left / 3600;
+          const int minutes_left = (selected_seconds_left % 3600) / 60;
+          const int seconds_left = selected_seconds_left % 60;
+          char display_string[9];
+          if (hours_left > 0)
+            snprintf(display_string, sizeof(display_string), "%02d:%02d:%02d", hours_left, minutes_left, seconds_left);
+          else
+            snprintf(display_string, sizeof(display_string), "%02d:%02d", minutes_left, seconds_left);
 
-          id(s3_box_lcd).filled_rectangle(0, 225, 320, 15, Color::WHITE);
-          id(s3_box_lcd).filled_rectangle(0, 226, active_pixels, 13,
-                                          active ? id(active_timer_color) : id(paused_timer_color));
+          const int box_w = hours_left > 0 ? 190 : 140;
+          const int box_h = 54;
+          const int box_x = (id(s3_box_lcd).get_width() - box_w) / 2;
+          const int box_y = 213;
+          const int radius = 10;
+          const Color box_color = Color::WHITE;
+          const Color border_color = active ? id(active_timer_color) : id(paused_timer_color);
+          const Color text_color = Color::BLACK;
+
+          auto fill_round_rect = [&](int x, int y, int w, int h, int r, Color color) {
+            id(s3_box_lcd).filled_rectangle(x + r, y, w - 2 * r, h, color);
+            id(s3_box_lcd).filled_rectangle(x, y + r, w, h - 2 * r, color);
+            id(s3_box_lcd).filled_circle(x + r, y + r, r, color);
+            id(s3_box_lcd).filled_circle(x + w - r - 1, y + r, r, color);
+            id(s3_box_lcd).filled_circle(x + r, y + h - r - 1, r, color);
+            id(s3_box_lcd).filled_circle(x + w - r - 1, y + h - r - 1, r, color);
+          };
+
+          id(s3_box_lcd).filled_rectangle(box_x - 8, box_y - 8, box_w + 16, box_h + 16, Color::WHITE);
+          fill_round_rect(box_x, box_y, box_w, box_h, radius, border_color);
+          fill_round_rect(box_x + 3, box_y + 3, box_w - 6, box_h - 6, radius - 3, box_color);
+          id(s3_box_lcd).printf(box_x + (box_w / 2), box_y + 10, id(font_timer), text_color, TextAlign::TOP_CENTER,
+                                "%s", display_string);
   - id: draw_active_timer_widget
     then:
       - lambda: |
@@ -782,6 +846,13 @@ script:
 
           if (selected != nullptr)
             selected_seconds_left = selected->seconds_left;
+
+          if (selected != nullptr && id(va_timer_display_active)) {
+            const uint32_t elapsed_seconds = (millis() - id(va_timer_display_anchor_ms)) / 1000;
+            selected_seconds_left = elapsed_seconds >= id(va_timer_display_anchor_seconds_left)
+                                        ? 0
+                                        : id(va_timer_display_anchor_seconds_left) - elapsed_seconds;
+          }
 
           if (id(local_countdown_active) &&
               (selected == nullptr || id(local_countdown_seconds_left) <= selected_seconds_left))
@@ -1096,6 +1167,22 @@ globals:
     type: uint32_t
     restore_value: false
     initial_value: "0"
+  - id: va_timer_display_anchor_ms
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: va_timer_display_anchor_seconds_left
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: va_timer_display_total_seconds
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: va_timer_display_active
+    type: bool
+    restore_value: false
+    initial_value: "false"
 
 image:
   - file: ${error_illustration_file}
@@ -1233,6 +1320,10 @@ text_sensor:
     on_value:
       lambda: |-
         auto &state = id(text_request).state;
+        for (auto &ch : state) {
+          if (ch == '\r' || ch == '\n' || ch == '\t')
+            ch = ' ';
+        }
         if (state.length() > 78) {
           state.resize(75);
           state.append("...");
@@ -1244,6 +1335,10 @@ text_sensor:
     on_value:
       lambda: |-
         auto &state = id(text_response).state;
+        for (auto &ch : state) {
+          if (ch == '\r' || ch == '\n' || ch == '\t')
+            ch = ' ';
+        }
         if (state.length() > 78) {
           state.resize(75);
           state.append("...");
@@ -1537,8 +1632,24 @@ display:
           id(draw_countdown_dialog).execute();
       - id: timer_finished_page
         lambda: |-
+          auto fill_round_rect = [&](int x, int y, int w, int h, int r, Color color) {
+            it.filled_rectangle(x + r, y, w - 2 * r, h, color);
+            it.filled_rectangle(x, y + r, w, h - 2 * r, color);
+            it.filled_circle(x + r, y + r, r, color);
+            it.filled_circle(x + w - r - 1, y + r, r, color);
+            it.filled_circle(x + r, y + h - r - 1, r, color);
+            it.filled_circle(x + w - r - 1, y + h - r - 1, r, color);
+          };
+
           it.fill(id(idle_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_timer_finished), ImageAlign::CENTER);
+          const int box_w = 140;
+          const int box_h = 54;
+          const int box_x = (it.get_width() - box_w) / 2;
+          const int box_y = 213;
+          fill_round_rect(box_x, box_y, box_w, box_h, 10, Color::BLACK);
+          fill_round_rect(box_x + 3, box_y + 3, box_w - 6, box_h - 6, 7, Color::WHITE);
+          it.printf(box_x + (box_w / 2), box_y + 10, id(font_timer), Color::BLACK, TextAlign::TOP_CENTER, "Stop");
           id(draw_volume_overlay).execute();
           id(draw_countdown_dialog).execute();
       - id: error_page
@@ -1570,6 +1681,14 @@ display:
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
           id(draw_countdown_dialog).execute();
+
+
+
+
+
+
+
+
 
 
 

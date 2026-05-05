@@ -31,4 +31,17 @@ if (!(Test-Path $ConstPath)) {
   throw "Invalid ESPHome source path: $EspHomeDir"
 }
 
+$VoiceAssistantPath = Join-Path $EspHomeDir "esphome\components\voice_assistant\voice_assistant.cpp"
+if (Test-Path $VoiceAssistantPath) {
+  $voiceAssistantSource = Get-Content -Raw -Encoding UTF8 $VoiceAssistantPath
+  $patchedVoiceAssistantSource = $voiceAssistantSource -replace "static const size_t SPEAKER_BUFFER_SIZE = 64 \* RECEIVE_SIZE;", @"
+// The Smart 86 Box builds can briefly stall while display/audio tasks share the loop.
+// Keep more incoming API audio queued so short stalls do not drop TTS chunks.
+static const size_t SPEAKER_BUFFER_SIZE = 256 * RECEIVE_SIZE;
+"@
+  if ($patchedVoiceAssistantSource -ne $voiceAssistantSource) {
+    Set-Content -Encoding UTF8 -Path $VoiceAssistantPath -Value $patchedVoiceAssistantSource
+  }
+}
+
 Write-Output $EspHomeDir

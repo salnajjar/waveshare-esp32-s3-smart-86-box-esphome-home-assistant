@@ -25,7 +25,9 @@ static const size_t RING_BUFFER_SIZE = RING_BUFFER_SAMPLES * sizeof(int16_t);
 static const size_t SEND_BUFFER_SAMPLES = 32 * SAMPLE_RATE_HZ / 1000;  // 32ms * 16kHz / 1000ms
 static const size_t SEND_BUFFER_SIZE = SEND_BUFFER_SAMPLES * sizeof(int16_t);
 static const size_t RECEIVE_SIZE = 1024;
-static const size_t SPEAKER_BUFFER_SIZE = 64 * RECEIVE_SIZE;
+// The S3 Smart 86 Box can briefly stall while display/audio tasks share the loop.
+// Keep more incoming API audio queued so short stalls do not drop TTS chunks.
+static const size_t SPEAKER_BUFFER_SIZE = 256 * RECEIVE_SIZE;
 
 VoiceAssistant::VoiceAssistant() { global_voice_assistant = this; }
 

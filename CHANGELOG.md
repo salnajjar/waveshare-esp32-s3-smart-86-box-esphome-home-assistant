@@ -4,6 +4,12 @@ This changelog is generated from the Git commit history for this project.
 
 ## 2026-05-05
 
+- Added a tap-to-stop button on the S3 timer-finished screen so the timer alarm can be stopped from the same location as the countdown.
+- Reworked the S3 timer-finished flow to draw the finished screen before starting alarm playback, reducing avoidable blocking warnings.
+- Fixed S3 timer countdown drift by rendering remaining time from a monotonic display anchor rather than delayed timer tick cadence.
+- Sanitized S3 assistant speech text before display so newline and tab characters do not trigger missing font glyph warnings.
+- Increased the shared ESPHome voice assistant receive buffer used by both S3 and P4 builds to reduce dropped TTS audio chunks when the device briefly stalls.
+- Updated the P4 preview config to require ESPHome 2026.4.4 and rebuilt the P4 firmware binaries with the shared voice assistant buffer fix.
 - Added an upload wrapper and raised the S3 config minimum to ESPHome 2026.4.4 so local uploads do not silently use an older global ESPHome install.
 - Updated both ESP32-S3 and ESP32-P4 firmware builds to ESPHome 2026.4.4.
 
