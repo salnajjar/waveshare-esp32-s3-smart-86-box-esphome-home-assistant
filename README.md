@@ -8,7 +8,9 @@ See [CHANGELOG.md](CHANGELOG.md) for the project changelog generated from Git co
 
 ## Status
 
-**2026-05-05:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.4.4
+**2026-05-06:** Rebuilt the ESP32-S3 firmware with smaller centered RGB565 screen images and matching page background fills, reducing firmware size while keeping the display layout tidy.
+
+**2026-05-05:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.4.4.
 
 Everything is working nicely overall with caveats:
 

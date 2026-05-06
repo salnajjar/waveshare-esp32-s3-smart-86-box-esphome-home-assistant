@@ -1,21 +1,22 @@
-﻿---
+---
 substitutions:
   name: esp32-s3-box-3
   friendly_name: ESP32 S3 Box 3
-  loading_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/loading-480x480.png
-  idle_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/idle-480x480.png
-  listening_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/listening-480x480.png
-  thinking_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/thinking-480x480.png
-  replying_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/replying-480x480.png
-  error_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/error-480x480.png
-  timer_finished_illustration_file: https://raw.githubusercontent.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/main/images/timer-480x480.png
+  loading_illustration_file: images/loading-370x370.png
+  idle_illustration_file: images/idle-370x370.png
+  listening_illustration_file: images/listening-450x370.png
+  thinking_illustration_file: images/thinking-370x370.png
+  replying_illustration_file: images/replying-390x370.png
+  error_illustration_file: images/error-370x370.png
+  timer_finished_illustration_file: images/timer-450x400.png
 
   loading_illustration_background_color: "000000"
   idle_illustration_background_color: "000000"
-  listening_illustration_background_color: "FFFFFF"
-  thinking_illustration_background_color: "FFFFFF"
-  replying_illustration_background_color: "FFFFFF"
-  error_illustration_background_color: "000000"
+  listening_illustration_background_color: "F5F5FA"
+  thinking_illustration_background_color: "F1F2F5"
+  replying_illustration_background_color: "F1F2F6"
+  error_illustration_background_color: "F0F0F4"
+  timer_finished_illustration_background_color: "F1F2F6"
 
   voice_assist_idle_phase_id: "1"
   voice_assist_listening_phase_id: "2"
@@ -36,9 +37,9 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "61"
-  build_id: "b61-20260505-194619"
-  build_time: "2026-05-05 19:46:19 +01:00"
+  build_number: "62"
+  build_id: "b62-20260506-164433"
+  build_time: "2026-05-06 16:44:33 +01:00"
   build_esphome_version: "2026.4.4"
 
 esphome:
@@ -1192,37 +1193,37 @@ globals:
 image:
   - file: ${error_illustration_file}
     id: casita_error
-    resize: 480x480
+    resize: 370x370
     type: RGB565
     transparency: opaque
   - file: ${idle_illustration_file}
     id: casita_idle
-    resize: 480x480
+    resize: 370x370
     type: RGB565
     transparency: opaque
   - file: ${listening_illustration_file}
     id: casita_listening
-    resize: 480x480
+    resize: 450x370
     type: RGB565
     transparency: opaque
   - file: ${thinking_illustration_file}
     id: casita_thinking
-    resize: 480x480
+    resize: 370x370
     type: RGB565
     transparency: opaque
   - file: ${replying_illustration_file}
     id: casita_replying
-    resize: 480x480
+    resize: 390x370
     type: RGB565
     transparency: opaque
   - file: ${timer_finished_illustration_file}
     id: casita_timer_finished
-    resize: 480x480
+    resize: 450x400
     type: RGB565
     transparency: opaque
   - file: ${loading_illustration_file}
     id: casita_initializing
-    resize: 480x480
+    resize: 370x370
     type: RGB565
     transparency: opaque
   - file: https://github.com/esphome/wake-word-voice-assistants/raw/main/error_box_illustrations/error-no-wifi.png
@@ -1362,6 +1363,8 @@ color:
     hex: ${loading_illustration_background_color}
   - id: error_color
     hex: ${error_illustration_background_color}
+  - id: timer_finished_color
+    hex: ${timer_finished_illustration_background_color}
   - id: active_timer_color
     hex: "26ed3a"
   - id: paused_timer_color
@@ -1459,6 +1462,7 @@ display:
           it.printf(screen_w / 2, 328, id(font_request), Color::WHITE, TextAlign::CENTER, "%.0f%%", progress);
       - id: idle_page
         lambda: |-
+          it.fill(id(idle_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_idle), ImageAlign::CENTER);
           auto now = id(homeassistant_time).now();
           if (now.is_valid()) {
@@ -1476,6 +1480,7 @@ display:
           id(draw_countdown_dialog).execute();
       - id: listening_page
         lambda: |-
+          it.fill(id(listening_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_listening), ImageAlign::CENTER);
           id(draw_timer_timeline).execute();
           id(draw_volume_overlay).execute();
@@ -1550,6 +1555,7 @@ display:
               it.print(text_x, y + pad_y + line_h, font, text_color, text_align, line2, bubble_color);
           };
 
+          it.fill(id(thinking_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_thinking), ImageAlign::CENTER);
           draw_speech_bubble(id(text_request).state, 16, 18, false, true);
           id(draw_timer_timeline).execute();
@@ -1625,6 +1631,7 @@ display:
               it.print(text_x, y + pad_y + line_h, font, text_color, text_align, line2, bubble_color);
           };
 
+          it.fill(id(replying_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_replying), ImageAlign::CENTER);
           draw_speech_bubble(id(text_request).state, 16, 18, false, true);
           draw_speech_bubble(id(text_response).state, it.get_width() - 312 - 16, it.get_height() - 66 - 18, true, false);
@@ -1642,6 +1649,7 @@ display:
             it.filled_circle(x + w - r - 1, y + h - r - 1, r, color);
           };
 
+          it.fill(id(timer_finished_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_timer_finished), ImageAlign::CENTER);
           const int box_w = 140;
           const int box_h = 54;
@@ -1654,6 +1662,7 @@ display:
           id(draw_countdown_dialog).execute();
       - id: error_page
         lambda: |-
+          it.fill(id(error_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_error), ImageAlign::CENTER);
           id(draw_volume_overlay).execute();
           id(draw_countdown_dialog).execute();
@@ -1669,6 +1678,7 @@ display:
           id(draw_countdown_dialog).execute();
       - id: initializing_page
         lambda: |-
+          it.fill(id(loading_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_initializing), ImageAlign::CENTER);
           id(draw_volume_overlay).execute();
           id(draw_countdown_dialog).execute();
@@ -1679,50 +1689,3 @@ display:
           id(draw_active_timer_widget).execute();
           id(draw_volume_overlay).execute();
           id(draw_countdown_dialog).execute();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

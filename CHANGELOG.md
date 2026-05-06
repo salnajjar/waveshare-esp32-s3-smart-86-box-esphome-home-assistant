@@ -2,6 +2,13 @@
 
 This changelog is generated from the Git commit history for this project.
 
+## 2026-05-06
+
+- Rebuilt the ESP32-S3 firmware as build b62 with reduced-size RGB565 assistant images.
+- Centered the reduced S3 state images on the 480 x 480 display and restored per-state background fills for the newly exposed border area.
+- Switched the S3 image references to local repository image files so local builds do not depend on the raw GitHub branch already containing the new assets.
+- Reduced the S3 firmware flash footprint by roughly 1.15 MB compared with the previous full-size image build.
+
 ## 2026-05-05
 
 - Added a tap-to-stop button on the S3 timer-finished screen so the timer alarm can be stopped from the same location as the countdown.
