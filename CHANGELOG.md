@@ -2,6 +2,15 @@
 
 This changelog is generated from the Git commit history for this project.
 
+## 2026-05-07
+
+- Updated the project ESPHome source pin from 2026.4.4 to 2026.4.5.
+- Raised the S3 and P4 ESPHome minimum versions to 2026.4.5.
+- Rebuilt the ESP32-S3 firmware as build b63 with ESPHome 2026.4.5.
+- Rebuilt and mirrored the ESP32-P4 preview firmware binaries with ESPHome 2026.4.5.
+- Fixed the S3 blank-screen regression on ESPHome 2026.4.5 by preserving PCA9554 expander output state during setup.
+- Rebuilt and OTA-tested the ESP32-S3 firmware as build b64 with the display fix.
+
 ## 2026-05-06
 
 - Rebuilt the ESP32-S3 firmware as build b62 with reduced-size RGB565 assistant images.

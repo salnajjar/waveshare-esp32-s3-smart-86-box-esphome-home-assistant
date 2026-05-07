@@ -37,15 +37,15 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "62"
-  build_id: "b62-20260506-164433"
-  build_time: "2026-05-06 16:44:33 +01:00"
-  build_esphome_version: "2026.4.4"
+  build_number: "64"
+  build_id: "b64-20260507-063940"
+  build_time: "2026-05-07 06:39:40 +01:00"
+  build_esphome_version: "2026.4.5"
 
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
-  min_version: 2026.4.4
+  min_version: 2026.4.5
   project:
     name: salnajjar.waveshare_esp32_s3_smart_86_box
     version: "${build_id}"

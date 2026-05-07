@@ -1,6 +1,6 @@
 ﻿{
-    "build_number":  62,
-    "build_id":  "b62-20260506-164433",
-    "build_time_str":  "2026-05-06 16:44:33 +01:00",
-    "esphome_version":  "2026.4.4"
+    "build_number":  64,
+    "build_id":  "b64-20260507-063940",
+    "build_time_str":  "2026-05-07 06:39:40 +01:00",
+    "esphome_version":  "2026.4.5"
 }

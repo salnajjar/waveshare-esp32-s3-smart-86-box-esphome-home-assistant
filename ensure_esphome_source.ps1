@@ -129,4 +129,27 @@ if (Test-Path $I2sSpeakerPath) {
   }
 }
 
+$Pca9554Path = Join-Path $EspHomeDir "esphome\components\pca9554\pca9554.cpp"
+if (Test-Path $Pca9554Path) {
+  $pca9554Source = Get-Content -Raw -Encoding UTF8 $Pca9554Path
+  $patchedPca9554Source = $pca9554Source.Replace(@"
+  // All inputs at initialization
+  this->config_mask_ = 0;
+  // Invert mask as the part sees a 1 as an input
+  this->write_register_(CONFIG_REG, ~this->config_mask_);
+  // All outputs low
+  this->output_mask_ = 0;
+  this->write_register_(OUTPUT_REG, this->output_mask_);
+"@, @"
+  // Preserve modes and output states that may have been requested by pins set up earlier in boot order.
+  // Invert mask as the part sees a 1 as an input.
+  this->write_register_(CONFIG_REG, ~this->config_mask_);
+  this->write_register_(OUTPUT_REG, this->output_mask_);
+"@)
+  if ($patchedPca9554Source -ne $pca9554Source) {
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($Pca9554Path, $patchedPca9554Source, $utf8NoBom)
+  }
+}
+
 Write-Output $EspHomeDir

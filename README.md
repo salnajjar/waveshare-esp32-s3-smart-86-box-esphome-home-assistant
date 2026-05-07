@@ -8,6 +8,10 @@ See [CHANGELOG.md](CHANGELOG.md) for the project changelog generated from Git co
 
 ## Status
 
+**2026-05-07:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.4.5.
+
+**2026-05-07:** Fixed the S3 blank-screen regression on ESPHome 2026.4.5 by preserving PCA9554 expander output state during setup.
+
 **2026-05-06:** Rebuilt the ESP32-S3 firmware with smaller centered RGB565 screen images and matching page background fills, reducing firmware size while keeping the display layout tidy.
 
 **2026-05-05:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.4.4.

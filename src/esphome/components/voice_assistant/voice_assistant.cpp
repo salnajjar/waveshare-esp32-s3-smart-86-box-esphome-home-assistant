@@ -1,4 +1,4 @@
-#include "voice_assistant.h"
+﻿#include "voice_assistant.h"
 #include "esphome/core/defines.h"
 
 #ifdef USE_VOICE_ASSISTANT
@@ -25,9 +25,7 @@ static const size_t RING_BUFFER_SIZE = RING_BUFFER_SAMPLES * sizeof(int16_t);
 static const size_t SEND_BUFFER_SAMPLES = 32 * SAMPLE_RATE_HZ / 1000;  // 32ms * 16kHz / 1000ms
 static const size_t SEND_BUFFER_SIZE = SEND_BUFFER_SAMPLES * sizeof(int16_t);
 static const size_t RECEIVE_SIZE = 1024;
-// The S3 Smart 86 Box can briefly stall while display/audio tasks share the loop.
-// Keep more incoming API audio queued so short stalls do not drop TTS chunks.
-static const size_t SPEAKER_BUFFER_SIZE = 256 * RECEIVE_SIZE;
+static const size_t SPEAKER_BUFFER_SIZE = 16 * RECEIVE_SIZE;
 
 VoiceAssistant::VoiceAssistant() { global_voice_assistant = this; }
 
@@ -336,7 +334,7 @@ void VoiceAssistant::loop() {
         }
         // Build a small buffer of audio before sending to the speaker
         bool end_of_stream = this->stream_ended_ && (this->audio_mode_ == AUDIO_MODE_API || received_len < 0);
-        if (this->speaker_bytes_received_ > RECEIVE_SIZE * 8 || end_of_stream)
+        if (this->speaker_bytes_received_ > RECEIVE_SIZE * 4 || end_of_stream)
           this->write_speaker_();
         if (this->wait_for_stream_end_) {
           this->cancel_timeout("playing");
@@ -411,13 +409,9 @@ void VoiceAssistant::loop() {
 void VoiceAssistant::write_speaker_() {
   if ((this->speaker_ != nullptr) && (this->speaker_buffer_ != nullptr)) {
     if (this->speaker_buffer_size_ > 0) {
-      size_t write_chunk = std::min<size_t>(this->speaker_buffer_size_, 8 * 1024);
-      size_t written = this->speaker_->play(this->speaker_buffer_ + this->speaker_buffer_start_, write_chunk,
-                                            pdMS_TO_TICKS(25));
+      size_t write_chunk = std::min<size_t>(this->speaker_buffer_size_, 4 * 1024);
+      size_t written = this->speaker_->play(this->speaker_buffer_, write_chunk);
       if (written > 0) {
-        if (written < write_chunk) {
-          ESP_LOGD(TAG, "Speaker accepted %u/%u bytes", written, write_chunk);
-        }
         this->speaker_buffer_start_ += written;
         this->speaker_buffer_size_ -= written;
         if (this->speaker_buffer_size_ == 0) {
@@ -1032,3 +1026,4 @@ VoiceAssistant *global_voice_assistant = nullptr;  // NOLINT(cppcoreguidelines-a
 }  // namespace esphome
 
 #endif  // USE_VOICE_ASSISTANT
+

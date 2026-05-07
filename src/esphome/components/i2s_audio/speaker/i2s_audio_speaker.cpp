@@ -1,4 +1,4 @@
-#include "i2s_audio_speaker.h"
+﻿#include "i2s_audio_speaker.h"
 
 #ifdef USE_ESP32
 
@@ -142,8 +142,7 @@ void I2SAudioSpeaker::loop() {
       }
 
       if (this->speaker_task_handle_ == nullptr) {
-        xTaskCreatePinnedToCore(I2SAudioSpeaker::speaker_task, "speaker_task", TASK_STACK_SIZE, (void *) this,
-                                TASK_PRIORITY, &this->speaker_task_handle_, 1);
+        xTaskCreatePinnedToCore(I2SAudioSpeaker::speaker_task, "speaker_task", TASK_STACK_SIZE, (void *) this, TASK_PRIORITY, &this->speaker_task_handle_, 1);
 
         if (this->speaker_task_handle_ == nullptr) {
           ESP_LOGE(TAG, "Task failed to start, retrying in 1 second");
@@ -602,3 +601,4 @@ void I2SAudioSpeaker::stop_i2s_driver_() {
 }  // namespace esphome
 
 #endif  // USE_ESP32
+
