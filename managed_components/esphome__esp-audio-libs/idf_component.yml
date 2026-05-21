@@ -1,5 +1,4 @@
-description: A collection of libraries and functions that are useful for playing audio
-  on ESP32 devices
+description: Audio resampling library for ESP32 devices
 files:
   exclude:
   - .clang-format
@@ -7,7 +6,7 @@ files:
   - library.json
 repository: git://github.com/esphome-libs/esp-audio-libs.git
 repository_info:
-  commit_sha: 5e5b9315edeb9db8fe945a7ca5f4e415ba794b86
+  commit_sha: c19599c47607029c42b332b066da4e5cd7fe0c4a
   path: .
 url: https://github.com/esphome/esp-audio-libs
-version: 2.0.4
+version: 3.0.0

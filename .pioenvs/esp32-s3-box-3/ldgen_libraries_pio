@@ -137,6 +137,7 @@ C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/rt/librt.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/touch_element/libtouch_element.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/usb/libusb.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-audio-libs/libesphome__esp-audio-libs.a
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/libesphome__esp-micro-speech-features.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__micro-flac/libesphome__micro-flac.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__micro-flac/libmicro_ogg_demuxer.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/espressif__esp-nn/libespressif__esp-nn.a
@@ -146,6 +147,7 @@ C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/espressif__mdns/l
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/console/libconsole.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/zorxx__multipart-parser/libzorxx__multipart-parser.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-audio-libs/libesphome__esp-audio-libs.a
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/libesphome__esp-micro-speech-features.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__micro-flac/libesphome__micro-flac.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/espressif__esp-tflite-micro/libespressif__esp-tflite-micro.a
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/espressif__mdns/libespressif__mdns.a

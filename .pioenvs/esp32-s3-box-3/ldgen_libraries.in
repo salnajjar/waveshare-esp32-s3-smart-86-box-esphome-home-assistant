@@ -138,6 +138,7 @@ $<TARGET_FILE:idf::rt>
 $<TARGET_FILE:idf::touch_element>
 $<TARGET_FILE:idf::usb>
 $<TARGET_FILE:idf::esphome__esp-audio-libs>
+$<TARGET_FILE:idf::esphome__esp-micro-speech-features>
 $<TARGET_FILE:idf::esphome__micro-flac>
 $<TARGET_FILE:micro_ogg_demuxer>
 $<TARGET_FILE:idf::espressif__esp-nn>
@@ -148,6 +149,7 @@ $<TARGET_FILE:__idf_console>
 $<TARGET_FILE:idf::zorxx__multipart-parser>
 $<TARGET_FILE:idf::src>
 $<TARGET_FILE:__idf_esphome__esp-audio-libs>
+$<TARGET_FILE:__idf_esphome__esp-micro-speech-features>
 $<TARGET_FILE:__idf_esphome__micro-flac>
 $<TARGET_FILE:__idf_espressif__esp-tflite-micro>
 $<TARGET_FILE:__idf_espressif__mdns>

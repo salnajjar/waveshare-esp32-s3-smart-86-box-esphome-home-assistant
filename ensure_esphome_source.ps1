@@ -34,7 +34,7 @@ if (!(Test-Path $ConstPath)) {
 $VoiceAssistantPath = Join-Path $EspHomeDir "esphome\components\voice_assistant\voice_assistant.cpp"
 if (Test-Path $VoiceAssistantPath) {
   $voiceAssistantSource = Get-Content -Raw -Encoding UTF8 $VoiceAssistantPath
-  $patchedVoiceAssistantSource = $voiceAssistantSource -replace "static const size_t SPEAKER_BUFFER_SIZE = 64 \* RECEIVE_SIZE;", @"
+  $patchedVoiceAssistantSource = $voiceAssistantSource -replace "static const size_t SPEAKER_BUFFER_SIZE = \d+ \* RECEIVE_SIZE;", @"
 // The Smart 86 Box builds can briefly stall while display/audio tasks share the loop.
 // Keep more incoming API audio queued so short stalls do not drop TTS chunks.
 static const size_t SPEAKER_BUFFER_SIZE = 256 * RECEIVE_SIZE;
@@ -62,14 +62,9 @@ static const size_t SPEAKER_BUFFER_SIZE = 256 * RECEIVE_SIZE;
           if (this->speaker_buffer_index_ + RECEIVE_SIZE <= SPEAKER_BUFFER_SIZE) {
             received_len = this->socket_->read(this->speaker_buffer_ + this->speaker_buffer_index_, RECEIVE_SIZE);
 "@)
-  $patchedVoiceAssistantSource = $patchedVoiceAssistantSource.Replace(@"
-      size_t write_chunk = std::min<size_t>(this->speaker_buffer_size_, 8 * 1024);
-      size_t written = this->speaker_->play(this->speaker_buffer_, write_chunk, pdMS_TO_TICKS(25));
-"@, @"
-      size_t write_chunk = std::min<size_t>(this->speaker_buffer_size_, 8 * 1024);
-      size_t written = this->speaker_->play(this->speaker_buffer_ + this->speaker_buffer_start_, write_chunk,
-                                            pdMS_TO_TICKS(25));
-"@)
+  $patchedVoiceAssistantSource = $patchedVoiceAssistantSource -replace `
+    'size_t written = this->speaker_->play\(this->speaker_buffer_, write_chunk(, pdMS_TO_TICKS\(25\))?\);', `
+    'size_t written = this->speaker_->play(this->speaker_buffer_ + this->speaker_buffer_start_, write_chunk$1);'
   $patchedVoiceAssistantSource = $patchedVoiceAssistantSource.Replace(@"
         memmove(this->speaker_buffer_, this->speaker_buffer_ + written, this->speaker_buffer_size_ - written);
         this->speaker_buffer_size_ -= written;
@@ -95,7 +90,8 @@ static const size_t SPEAKER_BUFFER_SIZE = 256 * RECEIVE_SIZE;
       memcpy(this->speaker_buffer_ + this->speaker_buffer_index_, msg.data, msg.data_len);
 "@)
   if ($patchedVoiceAssistantSource -ne $voiceAssistantSource) {
-    Set-Content -Encoding UTF8 -Path $VoiceAssistantPath -Value $patchedVoiceAssistantSource
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($VoiceAssistantPath, $patchedVoiceAssistantSource, $utf8NoBom)
   }
 }
 
@@ -111,7 +107,8 @@ if (Test-Path $VoiceAssistantHeaderPath) {
   size_t speaker_buffer_index_{0};
 "@)
   if ($patchedVoiceAssistantHeader -ne $voiceAssistantHeader) {
-    Set-Content -Encoding UTF8 -Path $VoiceAssistantHeaderPath -Value $patchedVoiceAssistantHeader
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($VoiceAssistantHeaderPath, $patchedVoiceAssistantHeader, $utf8NoBom)
   }
 }
 
@@ -123,9 +120,10 @@ if (Test-Path $I2sSpeakerPath) {
     $patchedI2sSpeakerSource = $patchedI2sSpeakerSource -replace '#include <driver/i2s_std.h>', "#include <driver/i2s_std.h>`r`n`r`n#include <array>"
   }
   $patchedI2sSpeakerSource = $patchedI2sSpeakerSource -replace 'static const std::vector<int16_t> Q15_VOLUME_SCALING_FACTORS = \{', 'static const std::array<int16_t, 100> Q15_VOLUME_SCALING_FACTORS = {'
-  $patchedI2sSpeakerSource = $patchedI2sSpeakerSource -replace 'xTaskCreate\(I2SAudioSpeaker::speaker_task, "speaker_task", TASK_STACK_SIZE, \(void \*\) this, TASK_PRIORITY,\s*&this->speaker_task_handle_\);', 'xTaskCreatePinnedToCore(I2SAudioSpeaker::speaker_task, "speaker_task", TASK_STACK_SIZE, (void *) this, TASK_PRIORITY, &this->speaker_task_handle_, 1);'
+  $patchedI2sSpeakerSource = $patchedI2sSpeakerSource -replace 'xTaskCreate\((I2SAudioSpeaker(?:Base)?::speaker_task), "speaker_task", TASK_STACK_SIZE, \(void \*\) this, TASK_PRIORITY,\s*&this->speaker_task_handle_\);', 'xTaskCreatePinnedToCore($1, "speaker_task", TASK_STACK_SIZE, (void *) this, TASK_PRIORITY, &this->speaker_task_handle_, 1);'
   if ($patchedI2sSpeakerSource -ne $i2sSpeakerSource) {
-    Set-Content -Encoding UTF8 -Path $I2sSpeakerPath -Value $patchedI2sSpeakerSource
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($I2sSpeakerPath, $patchedI2sSpeakerSource, $utf8NoBom)
   }
 }
 

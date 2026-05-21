@@ -1690,7 +1690,7 @@
             "include_dirs": [ ".", "micro-ecc" ]
         }
     },
-    "debug_prefix_map_gdbinit": "",
+    "debug_prefix_map_gdbinit": "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/bootloader/gdbinit/prefix_map",
     "gdbinit_files": {
         "01_symbols": "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/bootloader/gdbinit/symbols",
         "02_prefix_map": "C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/bootloader/gdbinit/prefix_map",

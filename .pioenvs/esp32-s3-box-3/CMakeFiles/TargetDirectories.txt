@@ -765,6 +765,13 @@ C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-audi
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-audio-libs/CMakeFiles/install.dir
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-audio-libs/CMakeFiles/install/local.dir
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-audio-libs/CMakeFiles/install/strip.dir
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/CMakeFiles/__idf_esphome__esp-micro-speech-features.dir
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/CMakeFiles/edit_cache.dir
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/CMakeFiles/rebuild_cache.dir
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/CMakeFiles/list_install_components.dir
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/CMakeFiles/install.dir
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/CMakeFiles/install/local.dir
+C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/CMakeFiles/install/strip.dir
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__micro-flac/CMakeFiles/__idf_esphome__micro-flac.dir
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__micro-flac/CMakeFiles/micro_ogg_demuxer.dir
 C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__micro-flac/CMakeFiles/edit_cache.dir

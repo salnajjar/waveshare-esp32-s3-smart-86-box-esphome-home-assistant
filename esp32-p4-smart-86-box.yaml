@@ -6,10 +6,10 @@ substitutions:
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
-  min_version: 2026.4.5
+  min_version: 2026.5.0
   project:
     name: salnajjar.waveshare_esp32_p4_smart_86_box
-    version: "p4-preview-2026.4.5"
+    version: "p4-preview-2026.5.0"
   build_path: C:/ESPHomeBuild/esp32-p4-smart-86-box
   name_add_mac_suffix: true
   on_boot:
@@ -23,6 +23,10 @@ esphome:
           id: box_speaker
           volume: 0.7
       - speaker.mute_off: box_speaker
+
+dashboard_import:
+  package_import_url: github://salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/esp32-p4-smart-86-box.yaml@main
+  import_full_config: true
 
 esp32:
   board: esp32-p4-evboard

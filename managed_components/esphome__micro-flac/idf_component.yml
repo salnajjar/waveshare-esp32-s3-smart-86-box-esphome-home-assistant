@@ -21,7 +21,7 @@ maintainers:
 - Kevin Ahrendt <kevin.ahrendt@openhomefoundation.org>
 repository: git://github.com/esphome-libs/micro-flac.git
 repository_info:
-  commit_sha: 9f8bfe5c9ee46cea175084b49ae8ac95545705b5
+  commit_sha: 387cbfd0903b73b0957485e4b9eeabc8bc214934
   path: .
 url: https://github.com/esphome-libs/micro-flac
-version: 0.1.1
+version: 0.2.0

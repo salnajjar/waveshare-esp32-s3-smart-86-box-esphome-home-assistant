@@ -484,6 +484,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__micro-flac/cmake_install.cmake")
 endif()
 

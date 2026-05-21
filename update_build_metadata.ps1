@@ -34,7 +34,8 @@ $buildInfo = [ordered]@{
   esphome_version = $espHomeVersion
 }
 
-$buildInfo | ConvertTo-Json | Set-Content -Encoding UTF8 $BuildInfoPath
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText($BuildInfoPath, (($buildInfo | ConvertTo-Json) + "`r`n"), $utf8NoBom)
 
 $yaml = Get-Content -Raw -Encoding UTF8 $YamlPath
 $metadataBlock = @"
@@ -50,5 +51,5 @@ if ($yaml -match "(?ms)^  build_number:.*?^  build_esphome_version:.*?\r?\n") {
   $yaml = $yaml -replace "(?m)^(  screen_idle_timeout: .*\r?\n)", "`$1`r`n$metadataBlock`r`n"
 }
 
-Set-Content -Encoding UTF8 $YamlPath $yaml
+[System.IO.File]::WriteAllText($YamlPath, $yaml, $utf8NoBom)
 Write-Host "Build metadata: $buildId, ESPHome $espHomeVersion, $buildTime"

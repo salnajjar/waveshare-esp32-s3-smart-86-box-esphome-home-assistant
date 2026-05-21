@@ -37,15 +37,15 @@ substitutions:
   font_family: Figtree
   screen_idle_timeout: 30s
 
-  build_number: "64"
-  build_id: "b64-20260507-063940"
-  build_time: "2026-05-07 06:39:40 +01:00"
-  build_esphome_version: "2026.4.5"
+  build_number: "66"
+  build_id: "b66-20260521-190906"
+  build_time: "2026-05-21 19:09:06 +01:00"
+  build_esphome_version: "2026.5.0"
 
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
-  min_version: 2026.4.5
+  min_version: 2026.5.0
   project:
     name: salnajjar.waveshare_esp32_s3_smart_86_box
     version: "${build_id}"
@@ -67,6 +67,10 @@ esphome:
           then:
             - lambda: id(init_in_progress) = false;
             - script.execute: draw_display
+
+dashboard_import:
+  package_import_url: github://salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/esp32-s3-box-3.yaml@main
+  import_full_config: true
 
 external_components:
   - source:

@@ -1181,8 +1181,8 @@ Discarded input sections
  .debug_abbrev  0x00000000      0x119 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_table.c.o)
  .debug_aranges
                 0x00000000       0x18 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_table.c.o)
- .debug_line    0x00000000      0x261 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_table.c.o)
- .debug_str     0x00000000     0x308b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_table.c.o)
+ .debug_line    0x00000000      0x17e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_table.c.o)
+ .debug_str     0x00000000     0x3050 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_table.c.o)
  .comment       0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_table.c.o)
  .literal.esp_efuse_get_pkg_ver
                 0x00000000        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_fields.c.o)
@@ -1210,8 +1210,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x38 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_fields.c.o)
  .debug_ranges  0x00000000       0x28 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_fields.c.o)
- .debug_line    0x00000000      0x442 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_fields.c.o)
- .debug_str     0x00000000      0x64e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_fields.c.o)
+ .debug_line    0x00000000      0x33e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_fields.c.o)
+ .debug_str     0x00000000      0x613 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_fields.c.o)
  .comment       0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_fields.c.o)
  .literal.esp_efuse_read_field_blob
                 0x00000000       0x10 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api.c.o)
@@ -1305,8 +1305,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x98 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api.c.o)
  .debug_ranges  0x00000000       0xb8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api.c.o)
- .debug_line    0x00000000     0x149a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api.c.o)
- .debug_str     0x00000000      0x9d4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api.c.o)
+ .debug_line    0x00000000     0x1306 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api.c.o)
+ .debug_str     0x00000000      0x999 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api.c.o)
  .comment       0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api.c.o)
  .literal.write_reg
                 0x00000000       0x1c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
@@ -1416,8 +1416,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xa8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
  .debug_ranges  0x00000000      0x320 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
- .debug_line    0x00000000     0x19c8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
- .debug_str     0x00000000      0xb48 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
+ .debug_line    0x00000000     0x183c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
+ .debug_str     0x00000000      0xb0d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
  .comment       0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
  .literal.esp_efuse_block_is_empty
                 0x00000000        0x4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api_key.c.o)
@@ -1553,8 +1553,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xe0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api_key.c.o)
  .debug_ranges  0x00000000      0x170 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api_key.c.o)
- .debug_line    0x00000000     0x164a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api_key.c.o)
- .debug_str     0x00000000     0x11a6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api_key.c.o)
+ .debug_line    0x00000000     0x14cc .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api_key.c.o)
+ .debug_str     0x00000000     0x116b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api_key.c.o)
  .comment       0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_api_key.c.o)
  .literal.esp_efuse_utility_clear_program_registers
                 0x00000000        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
@@ -1594,8 +1594,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x40 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
  .debug_ranges  0x00000000      0x108 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
- .debug_line    0x00000000      0xe7b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
- .debug_str     0x00000000      0x892 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
+ .debug_line    0x00000000      0xcac .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
+ .debug_str     0x00000000      0x857 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
  .comment       0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\efuse\libefuse.a(esp_efuse_utility.c.o)
  .text          0x00000000        0x0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
  .data          0x00000000        0x0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
@@ -1727,8 +1727,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x40 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_sleep.c.o)
  .debug_ranges  0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_sleep.c.o)
- .debug_line    0x00000000      0xff2 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_sleep.c.o)
- .debug_str     0x00000000     0x10a8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_sleep.c.o)
+ .debug_line    0x00000000      0xee9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_sleep.c.o)
+ .debug_str     0x00000000     0x106d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_sleep.c.o)
  .comment       0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_sleep.c.o)
  .literal.rtc_clk_cal_internal
                 0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
@@ -1929,19 +1929,19 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x48 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_esp32s2_esp32s3.c.o)
  .debug_ranges  0x00000000       0x68 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_esp32s2_esp32s3.c.o)
- .debug_line    0x00000000      0x6fe .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_esp32s2_esp32s3.c.o)
- .debug_str     0x00000000      0x4fd .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_esp32s2_esp32s3.c.o)
+ .debug_line    0x00000000      0x687 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_esp32s2_esp32s3.c.o)
+ .debug_str     0x00000000      0x4c2 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_esp32s2_esp32s3.c.o)
  .comment       0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_esp32s2_esp32s3.c.o)
  .literal       0x00000000       0x10 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
  .text          0x00000000       0x56 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
  .data          0x00000000        0x0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
  .bss           0x00000000        0x0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
- .debug_line    0x00000000      0x168 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
+ .debug_line    0x00000000      0x140 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
  .debug_info    0x00000000       0x30 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
  .debug_abbrev  0x00000000       0x28 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
  .debug_aranges
                 0x00000000       0x20 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
- .debug_str     0x00000000       0xb4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
+ .debug_str     0x00000000       0x7a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_cache_writeback_esp32s3.S.o)
  .text          0x00000000       0x18 C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti\libgcc.a(_ashldi3.o)
  .data          0x00000000        0x0 C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti\libgcc.a(_ashldi3.o)
  .bss           0x00000000        0x0 C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32s3/no-rtti\libgcc.a(_ashldi3.o)
@@ -5276,7 +5276,7 @@ LOAD C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-
  *(.jcr)
                 0x3fce2888                        _data_end = ABSOLUTE (.)
 
-.dram0.rodata   0x3fce2888     0x14c4
+.dram0.rodata   0x3fce2888     0x14a8
                 0x3fce2888                        _rodata_start = ABSOLUTE (.)
  *(.rodata)
  .rodata        0x3fce2888        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_clock_init.c.o)
@@ -5284,142 +5284,143 @@ LOAD C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-
  .rodata        0x3fce2898       0x14 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
  *(.rodata.*)
  .rodata.call_start_cpu0.str1.1
-                0x3fce28ac     0x1379 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
+                0x3fce28ac     0x135c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
                                  0x2e (size before relaxing)
  .rodata.log_invalid_app_partition.str1.1
-                0x3fce3c25       0x8e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08       0x8e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.load_image.str1.1
-                0x3fce3c25       0x91 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08       0x91 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.try_load_partition.str1.1
-                0x3fce3c25       0x37 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08       0x37 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.write_otadata$isra$0.str1.1
-                0x3fce3c25       0x3a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08       0x3a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.set_actual_ota_seq.str1.1
-                0x3fce3c25       0x32 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08       0x32 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.bootloader_common_read_otadata.str1.1
-                0x3fce3c25       0x7b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08       0x7b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.bootloader_utility_load_partition_table.str1.1
-                0x3fce3c25      0x1e5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08      0x1e5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.bootloader_utility_get_selected_boot_partition.str1.1
-                0x3fce3c25       0xe6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08       0xe6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.bootloader_utility_load_boot_image.str1.1
-                0x3fce3c25       0xbf .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+                0x3fce3c08       0xbf .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
  .rodata.esp_partition_table_verify.str1.1
-                0x3fce3c25      0x12d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_partitions.c.o)
+                0x3fce3c08      0x12d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_partitions.c.o)
  .rodata.process_checksum.str1.1
-                0x3fce3c25       0x42 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c08       0x42 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.process_image_header.str1.1
-                0x3fce3c25       0x87 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c08       0x87 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.bootloader_util_regions_overlap.str1.1
-                0x3fce3c25       0x5a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c08       0x5a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.verify_load_addresses.str1.1
-                0x3fce3c25       0xe1 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c08       0xe1 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.process_appended_hash_and_sig$isra$0.str1.1
-                0x3fce3c25       0x42 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c08       0x42 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.process_segments.str1.1
-                0x3fce3c25      0x17d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c08      0x17d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.image_load.str1.1
-                0x3fce3c25       0x50 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c08       0x50 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.__func__$0
-                0x3fce3c25       0x20 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c08       0x20 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.__func__$1
-                0x3fce3c45       0x16 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+                0x3fce3c28       0x16 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
  .rodata.bootloader_sha256_data.str1.1
-                0x3fce3c5b       0x48 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
+                0x3fce3c3e       0x48 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
  .rodata.__func__$2
-                0x3fce3c5b       0x19 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
+                0x3fce3c3e       0x19 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
  .rodata.__func__$3
-                0x3fce3c74       0x17 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
+                0x3fce3c57       0x17 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
  .rodata.bootloader_init.str1.1
-                0x3fce3c8b      0x119 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
+                0x3fce3c6e      0x119 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
  .rodata.__func__$0
-                0x3fce3c8b       0x10 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
+                0x3fce3c6e       0x10 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
  .rodata.__assert_func.str1.1
-                0x3fce3c9b       0x22 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_panic.c.o)
+                0x3fce3c7e       0x22 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_panic.c.o)
  .rodata.abort.str1.1
-                0x3fce3c9b       0x22 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_panic.c.o)
+                0x3fce3c7e       0x22 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_panic.c.o)
  .rodata.bootloader_common_check_chip_revision_validity.str1.1
-                0x3fce3c9b       0xa0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
+                0x3fce3c7e       0xa0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
  .rodata.bootloader_common_check_efuse_blk_validity.str1.1
-                0x3fce3c9b       0x98 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
+                0x3fce3c7e       0x98 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
  .rodata.bootloader_common_check_chip_validity.str1.1
-                0x3fce3c9b       0x35 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
+                0x3fce3c7e       0x35 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
  .rodata.bootloader_fill_random.str1.1
-                0x3fce3c9b       0x4b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random.c.o)
+                0x3fce3c7e       0x4b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random.c.o)
  .rodata.__func__$0
-                0x3fce3c9b       0x17 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random.c.o)
+                0x3fce3c7e       0x17 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random.c.o)
  .rodata.bootloader_mmap.str1.1
-                0x3fce3cb2       0x87 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
+                0x3fce3c95       0x87 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
  .rodata.bootloader_flash_read.str1.1
-                0x3fce3cb2       0x5c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
+                0x3fce3c95       0x5c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
  .rodata.str1.1
-                0x3fce3cb2       0xc5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
+                0x3fce3c95       0xc5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
  .rodata.bootloader_flash_write.str1.1
-                0x3fce3cb2       0xc9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
+                0x3fce3c95       0xc9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
  .rodata.__func__$1
-                0x3fce3cb2       0x1b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
+                0x3fce3c95       0x1b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
  .rodata.__func__$0
-                0x3fce3ccd       0x28 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
+                0x3fce3cb0       0x28 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
  .rodata.bootloader_init_spi_flash.str1.1
-                0x3fce3cf5       0xd5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
+                0x3fce3cd8       0xd5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
  .rodata.bootloader_read_bootloader_header.str1.1
-                0x3fce3cf5       0x3a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x3fce3cd8       0x3a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
  .rodata.bootloader_check_bootloader_validity.str1.1
-                0x3fce3cf5       0x4d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x3fce3cd8       0x4d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
  .rodata.bootloader_enable_random.str1.1
-                0x3fce3cf5       0x32 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x3fce3cd8       0x32 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
  .rodata.bootloader_print_banner.str1.1
-                0x3fce3cf5       0x6c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x3fce3cd8       0x4f .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
  .rodata.str1.1
-                0x3fce3cf5       0x43 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
+                0x3fce3cd8       0x43 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
  .rodata.rtc_clk_cpu_freq_set_config.str1.1
-                0x3fce3cf5       0x59 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
+                0x3fce3cd8       0x59 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
  .rodata.__func__$0
-                0x3fce3cf5       0x17 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
+                0x3fce3cd8       0x17 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
  .rodata.rtc_clk_init.str1.1
-                0x3fce3d0c       0x36 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
+                0x3fce3cef       0x36 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
+ *fill*         0x3fce3cef        0x1 
  .rodata.uart_periph_signal
-                0x3fce3d0c       0x3c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
-                0x3fce3d0c                uart_periph_signal
+                0x3fce3cf0       0x3c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
+                0x3fce3cf0                uart_periph_signal
  *(.gnu.linkonce.r.*)
  *(.rodata1)
  *(.sdata2 .sdata2.*)
-                0x3fce3d48                        __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x3fce3d2c                        __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame_hdr)
  *(.eh_frame)
-                0x3fce3e0c                        . = ((. + 0x3) & 0xfffffffffffffffc)
-                0x3fce3d48                        __init_array_start = ABSOLUTE (.)
+                0x3fce3d2c                        . = ((. + 0x3) & 0xfffffffffffffffc)
+                0x3fce3d2c                        __init_array_start = ABSOLUTE (.)
  *crtbegin.*(.ctors)
  *(EXCLUDE_FILE(*crtend.*) .ctors)
- .ctors         0x3fce3d48        0x4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
+ .ctors         0x3fce3d2c        0x4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
-                0x3fce3d4c                        __init_array_end = ABSOLUTE (.)
+                0x3fce3d30                        __init_array_end = ABSOLUTE (.)
  *crtbegin.*(.dtors)
  *(EXCLUDE_FILE(*crtend.*) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x3fce3d4c                        __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x3fce3d30                        __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x3fce3d4c                        __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x3fce3d30                        __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x3fce3d4c                        _rodata_end = ABSOLUTE (.)
-                0x3fce3d4c                        _lit4_start = ABSOLUTE (.)
+                0x3fce3d30                        _rodata_end = ABSOLUTE (.)
+                0x3fce3d30                        _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x3fce3d4c                        _lit4_end = ABSOLUTE (.)
-                0x3fce3e0c                        . = ALIGN (0x4)
-                0x3fce3d4c                        _dram_end = ABSOLUTE (.)
+                0x3fce3d30                        _lit4_end = ABSOLUTE (.)
+                0x3fce3d30                        . = ALIGN (0x4)
+                0x3fce3d30                        _dram_end = ABSOLUTE (.)
 
-.iram.text      0x403c8700      0xce3
+.iram.text      0x403c8700      0xccb
                 0x403c8700                        _stext = .
                 0x403c8700                        _text_start = ABSOLUTE (.)
  *(.literal .text .literal.* .text.* .stub .gnu.warning .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
@@ -5460,126 +5461,126 @@ LOAD C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-
                 0x403c88b8        0x4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
                                  0x14 (size before relaxing)
  .literal.bootloader_print_banner
-                0x403c88bc        0xc .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
-                                 0x2c (size before relaxing)
+                0x403c88bc        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                                 0x20 (size before relaxing)
  .literal.bootloader_console_init
-                0x403c88c8       0x14 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
+                0x403c88c4       0x14 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
                                  0x20 (size before relaxing)
  .literal.esp_bootloader_get_description
-                0x403c88dc        0x4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
+                0x403c88d8        0x4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
  .literal.esp_cpu_configure_region_protection
-                0x403c88e0        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
+                0x403c88dc        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
                                  0x10 (size before relaxing)
  .literal.rtc_clk_init
-                0x403c88e8       0x20 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
+                0x403c88e4       0x20 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
                                  0x60 (size before relaxing)
  .literal.esp_rom_install_channel_putc
-                0x403c8908       0x10 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
+                0x403c8904       0x10 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
  .text.call_start_cpu0
-                0x403c8918       0x6c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
+                0x403c8914       0x6c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
                                  0x7c (size before relaxing)
-                0x403c8918                call_start_cpu0
+                0x403c8914                call_start_cpu0
  .text.bootloader_init
-                0x403c8984      0x1f6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
+                0x403c8980      0x1f6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
                                 0x22e (size before relaxing)
-                0x403c8984                bootloader_init
- *fill*         0x403c8b7a        0x2 
+                0x403c8980                bootloader_init
+ *fill*         0x403c8b76        0x2 
  .text.bootloader_clock_configure
-                0x403c8b7c       0xc5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_clock_init.c.o)
+                0x403c8b78       0xc5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_clock_init.c.o)
                                  0xc9 (size before relaxing)
-                0x403c8b7c                bootloader_clock_configure
- *fill*         0x403c8c41        0x3 
+                0x403c8b78                bootloader_clock_configure
+ *fill*         0x403c8c3d        0x3 
  .text.bootloader_init_mem
-                0x403c8c44        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_mem.c.o)
+                0x403c8c40        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_mem.c.o)
                                   0xb (size before relaxing)
-                0x403c8c44                bootloader_init_mem
- *fill*         0x403c8c4c        0x0 
+                0x403c8c40                bootloader_init_mem
+ *fill*         0x403c8c48        0x0 
  .text.bootloader_random_enable
-                0x403c8c4c      0x242 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random_esp32s3.c.o)
-                0x403c8c4c                bootloader_random_enable
- *fill*         0x403c8e8e        0x2 
+                0x403c8c48      0x242 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random_esp32s3.c.o)
+                0x403c8c48                bootloader_random_enable
+ *fill*         0x403c8e8a        0x2 
  .text.bootloader_flash_update_id
-                0x403c8e90       0x12 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
-                0x403c8e90                bootloader_flash_update_id
- *fill*         0x403c8ea2        0x2 
+                0x403c8e8c       0x12 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
+                0x403c8e8c                bootloader_flash_update_id
+ *fill*         0x403c8e9e        0x2 
  .text.bootloader_init_spi_flash
-                0x403c8ea4      0x16d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
+                0x403c8ea0      0x16d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
                                 0x195 (size before relaxing)
-                0x403c8ea4                bootloader_init_spi_flash
- *fill*         0x403c9011        0x3 
+                0x403c8ea0                bootloader_init_spi_flash
+ *fill*         0x403c900d        0x3 
  .text.bootloader_clear_bss_section
-                0x403c9014       0x16 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
-                0x403c9014                bootloader_clear_bss_section
- *fill*         0x403c902a        0x2 
+                0x403c9010       0x16 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x403c9010                bootloader_clear_bss_section
+ *fill*         0x403c9026        0x2 
  .text.bootloader_read_bootloader_header
-                0x403c902c       0x2a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x403c9028       0x2a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
                                  0x2e (size before relaxing)
-                0x403c902c                bootloader_read_bootloader_header
- *fill*         0x403c9056        0x2 
+                0x403c9028                bootloader_read_bootloader_header
+ *fill*         0x403c9052        0x2 
  .text.bootloader_check_bootloader_validity
-                0x403c9058       0x6b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x403c9054       0x6b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
                                  0x77 (size before relaxing)
-                0x403c9058                bootloader_check_bootloader_validity
- *fill*         0x403c90c3        0x1 
+                0x403c9054                bootloader_check_bootloader_validity
+ *fill*         0x403c90bf        0x1 
  .text.bootloader_config_wdt
-                0x403c90c4       0x8c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
-                0x403c90c4                bootloader_config_wdt
+                0x403c90c0       0x8c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x403c90c0                bootloader_config_wdt
  .text.bootloader_enable_random
-                0x403c9150       0x19 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                0x403c914c       0x19 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
                                  0x20 (size before relaxing)
-                0x403c9150                bootloader_enable_random
- *fill*         0x403c9169        0x3 
+                0x403c914c                bootloader_enable_random
+ *fill*         0x403c9165        0x3 
  .text.bootloader_print_banner
-                0x403c916c       0x42 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
-                                 0x52 (size before relaxing)
-                0x403c916c                bootloader_print_banner
- *fill*         0x403c91ae        0x2 
+                0x403c9168       0x2f .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+                                 0x37 (size before relaxing)
+                0x403c9168                bootloader_print_banner
+ *fill*         0x403c9197        0x1 
  .text.bootloader_console_init
-                0x403c91b0       0x6e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
+                0x403c9198       0x6e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
                                  0x72 (size before relaxing)
-                0x403c91b0                bootloader_console_init
- *fill*         0x403c921e        0x2 
+                0x403c9198                bootloader_console_init
+ *fill*         0x403c9206        0x2 
  .text.esp_bootloader_get_description
-                0x403c9220        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
-                0x403c9220                esp_bootloader_get_description
+                0x403c9208        0x8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
+                0x403c9208                esp_bootloader_get_description
  .text.esp_cpu_configure_region_protection
-                0x403c9228       0x2e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
+                0x403c9210       0x2e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
                                  0x32 (size before relaxing)
-                0x403c9228                esp_cpu_configure_region_protection
- *fill*         0x403c9256        0x2 
+                0x403c9210                esp_cpu_configure_region_protection
+ *fill*         0x403c923e        0x2 
  .text.rtc_clk_init
-                0x403c9258      0x11b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
+                0x403c9240      0x11b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
                                 0x13f (size before relaxing)
-                0x403c9258                rtc_clk_init
- *fill*         0x403c9373        0x1 
+                0x403c9240                rtc_clk_init
+ *fill*         0x403c935b        0x1 
  .text.esp_rom_install_channel_putc
-                0x403c9374       0x2b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
-                0x403c9374                esp_rom_install_channel_putc
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x0 
- *fill*         0x403c939f        0x1 
+                0x403c935c       0x2b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
+                0x403c935c                esp_rom_install_channel_putc
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x0 
+ *fill*         0x403c9387        0x1 
  .text.mpu_hal_set_region_access
-                0x403c93a0       0x33 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mpu_hal.c.o)
-                0x403c93a0                mpu_hal_set_region_access
+                0x403c9388       0x33 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mpu_hal.c.o)
+                0x403c9388                mpu_hal_set_region_access
  *(.iram .iram.*)
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x403c93e3                        . = (. + 0x10)
- *fill*         0x403c93d3       0x10 
-                0x403c93e3                        _text_end = ABSOLUTE (.)
-                0x403c93e3                        _etext = .
+                0x403c93cb                        . = (. + 0x10)
+ *fill*         0x403c93bb       0x10 
+                0x403c93cb                        _text_end = ABSOLUTE (.)
+                0x403c93cb                        _etext = .
 
 .xt.prop        0x00000000     0x2820
  *(.xt.prop .gnu.linkonce.prop.*)
@@ -5891,7 +5892,7 @@ LOAD C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x36f80
+.debug_info     0x00000000    0x36f5a
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xd7f .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
  .debug_info    0x00000d7f     0x2463 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
@@ -5910,23 +5911,23 @@ LOAD C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-
  .debug_info    0x0000d403      0x25f .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random_esp32s3.c.o)
  .debug_info    0x0000d662     0x8474 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
  .debug_info    0x00015ad6      0xe4f .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
- .debug_info    0x00016925     0x5650 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
- .debug_info    0x0001bf75      0xefa .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
- .debug_info    0x0001ce6f      0x18e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
- .debug_info    0x0001cffd      0x17b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
- .debug_info    0x0001d178     0x3943 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
- .debug_info    0x00020abb      0x9f3 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
- .debug_info    0x000214ae     0x4c0a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_init.c.o)
- .debug_info    0x000260b8     0x6418 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
- .debug_info    0x0002c4d0      0x238 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
- .debug_info    0x0002c708      0x37a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_uart.c.o)
- .debug_info    0x0002ca82      0x233 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mpu_hal.c.o)
- .debug_info    0x0002ccb5     0x3a73 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
- .debug_info    0x00030728     0x3dce .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
- .debug_info    0x000344f6      0xe2e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mmu_hal.c.o)
- .debug_info    0x00035324     0x1736 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(cache_hal.c.o)
- .debug_info    0x00036a5a      0x132 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\log\liblog.a(log_timestamp.c.o)
- .debug_info    0x00036b8c      0x3f4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
+ .debug_info    0x00016925     0x562a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+ .debug_info    0x0001bf4f      0xefa .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
+ .debug_info    0x0001ce49      0x18e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
+ .debug_info    0x0001cfd7      0x17b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
+ .debug_info    0x0001d152     0x3943 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
+ .debug_info    0x00020a95      0x9f3 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
+ .debug_info    0x00021488     0x4c0a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_init.c.o)
+ .debug_info    0x00026092     0x6418 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
+ .debug_info    0x0002c4aa      0x238 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
+ .debug_info    0x0002c6e2      0x37a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_uart.c.o)
+ .debug_info    0x0002ca5c      0x233 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mpu_hal.c.o)
+ .debug_info    0x0002cc8f     0x3a73 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
+ .debug_info    0x00030702     0x3dce .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
+ .debug_info    0x000344d0      0xe2e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mmu_hal.c.o)
+ .debug_info    0x000352fe     0x1736 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(cache_hal.c.o)
+ .debug_info    0x00036a34      0x132 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\log\liblog.a(log_timestamp.c.o)
+ .debug_info    0x00036b66      0x3f4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
 
 .debug_abbrev   0x00000000     0x5710
  *(.debug_abbrev)
@@ -5965,42 +5966,42 @@ LOAD C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-
  .debug_abbrev  0x00005556       0xe6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\log\liblog.a(log_timestamp.c.o)
  .debug_abbrev  0x0000563c       0xd4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
 
-.debug_line     0x00000000    0x17a6c
+.debug_line     0x00000000    0x151f7
  *(.debug_line)
- .debug_line    0x00000000      0x6b9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
- .debug_line    0x000006b9     0x2b9d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
- .debug_line    0x00003256      0x7af .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_partitions.c.o)
- .debug_line    0x00003a05     0x2bb6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
- .debug_line    0x000065bb      0x4d7 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
- .debug_line    0x00006a92       0xa5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console_loader.c.o)
- .debug_line    0x00006b37      0x26e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_soc.c.o)
- .debug_line    0x00006da5     0x1354 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
- .debug_line    0x000080f9      0x291 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_panic.c.o)
- .debug_line    0x0000838a      0xb13 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
- .debug_line    0x00008e9d      0x413 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_clock_init.c.o)
- .debug_line    0x000092b0      0x100 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_mem.c.o)
- .debug_line    0x000093b0      0x47e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random.c.o)
- .debug_line    0x0000982e     0x10ed .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_encrypt.c.o)
- .debug_line    0x0000a91b      0x63a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random_esp32s3.c.o)
- .debug_line    0x0000af55     0x2064 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
- .debug_line    0x0000cfb9      0xdee .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
- .debug_line    0x0000dda7      0xbdd .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
- .debug_line    0x0000e984      0x437 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
- .debug_line    0x0000edbb      0x1dc .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
- .debug_line    0x0000ef97      0x1f4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
- .debug_line    0x0000f18b     0x1ff7 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
- .debug_line    0x00011182      0x810 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
- .debug_line    0x00011992     0x183d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_init.c.o)
- .debug_line    0x000131cf      0xdfd .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
- .debug_line    0x00013fcc      0x35b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
- .debug_line    0x00014327      0x1f0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_uart.c.o)
- .debug_line    0x00014517      0x2c4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mpu_hal.c.o)
- .debug_line    0x000147db      0x4e9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
- .debug_line    0x00014cc4      0x8dc .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
- .debug_line    0x000155a0      0xde3 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mmu_hal.c.o)
- .debug_line    0x00016383     0x123e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(cache_hal.c.o)
- .debug_line    0x000175c1      0x2ba .pioenvs\esp32-s3-box-3\bootloader\esp-idf\log\liblog.a(log_timestamp.c.o)
- .debug_line    0x0001787b      0x1f1 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
+ .debug_line    0x00000000      0x4f7 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
+ .debug_line    0x000004f7     0x2941 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+ .debug_line    0x00002e38      0x652 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_partitions.c.o)
+ .debug_line    0x0000348a     0x2981 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+ .debug_line    0x00005e0b      0x3d4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
+ .debug_line    0x000061df       0x9d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console_loader.c.o)
+ .debug_line    0x0000627c      0x209 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_soc.c.o)
+ .debug_line    0x00006485     0x10db .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
+ .debug_line    0x00007560      0x1db .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_panic.c.o)
+ .debug_line    0x0000773b      0x9ce .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
+ .debug_line    0x00008109      0x338 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_clock_init.c.o)
+ .debug_line    0x00008441       0xc4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_mem.c.o)
+ .debug_line    0x00008505      0x374 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random.c.o)
+ .debug_line    0x00008879      0xf1a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_encrypt.c.o)
+ .debug_line    0x00009793      0x5b7 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random_esp32s3.c.o)
+ .debug_line    0x00009d4a     0x1e89 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
+ .debug_line    0x0000bbd3      0xc35 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
+ .debug_line    0x0000c808      0x8fb .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+ .debug_line    0x0000d103      0x307 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
+ .debug_line    0x0000d40a      0x151 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
+ .debug_line    0x0000d55b      0x192 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
+ .debug_line    0x0000d6ed     0x1e80 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
+ .debug_line    0x0000f56d      0x60c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
+ .debug_line    0x0000fb79     0x16b6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_init.c.o)
+ .debug_line    0x0001122f      0xca9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
+ .debug_line    0x00011ed8      0x2a5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
+ .debug_line    0x0001217d      0x15e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_uart.c.o)
+ .debug_line    0x000122db      0x204 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mpu_hal.c.o)
+ .debug_line    0x000124df      0x40e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
+ .debug_line    0x000128ed      0x7d9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
+ .debug_line    0x000130c6      0xce0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mmu_hal.c.o)
+ .debug_line    0x00013da6     0x1147 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(cache_hal.c.o)
+ .debug_line    0x00014eed      0x1d7 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\log\liblog.a(log_timestamp.c.o)
+ .debug_line    0x000150c4      0x133 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
 
 .debug_frame    0x00000000     0x1470
  *(.debug_frame)
@@ -6038,43 +6039,43 @@ LOAD C:/PlatformIO/core/packages/toolchain-xtensa-esp-elf/bin/../lib/gcc/xtensa-
  .debug_frame   0x000012e8      0x160 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(cache_hal.c.o)
  .debug_frame   0x00001448       0x28 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\log\liblog.a(log_timestamp.c.o)
 
-.debug_str      0x00000000    0x12231
+.debug_str      0x00000000    0x11c97
  *(.debug_str)
- .debug_str     0x00000000    0x12231 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
-                                0xb9e (size before relaxing)
- .debug_str     0x00012231     0x1c38 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
- .debug_str     0x00012231      0x5a4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_partitions.c.o)
- .debug_str     0x00012231     0x1e34 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
- .debug_str     0x00012231      0x4d5 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
- .debug_str     0x00012231      0x29e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console_loader.c.o)
- .debug_str     0x00012231      0x2f1 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_soc.c.o)
- .debug_str     0x00012231     0x3de9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
- .debug_str     0x00012231      0x2c6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_panic.c.o)
- .debug_str     0x00012231     0x1414 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
- .debug_str     0x00012231      0x7ad .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_clock_init.c.o)
- .debug_str     0x00012231      0x2b1 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_mem.c.o)
- .debug_str     0x00012231      0x34d .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random.c.o)
- .debug_str     0x00012231      0xb7c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_encrypt.c.o)
- .debug_str     0x00012231      0x2f7 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random_esp32s3.c.o)
- .debug_str     0x00012231     0x5d0c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
- .debug_str     0x00012231     0x185c .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
- .debug_str     0x00012231     0x42ab .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
- .debug_str     0x00012231      0x95e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
- .debug_str     0x00012231      0x333 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
- .debug_str     0x00012231      0x339 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
- .debug_str     0x00012231     0x2fc3 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
- .debug_str     0x00012231      0xe5b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
- .debug_str     0x00012231     0x3e32 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_init.c.o)
- .debug_str     0x00012231     0x4d05 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
- .debug_str     0x00012231      0x481 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
- .debug_str     0x00012231      0x571 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_uart.c.o)
- .debug_str     0x00012231      0x34e .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mpu_hal.c.o)
- .debug_str     0x00012231     0x2b44 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
- .debug_str     0x00012231     0x2d0f .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
- .debug_str     0x00012231      0x680 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mmu_hal.c.o)
- .debug_str     0x00012231      0xa37 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(cache_hal.c.o)
- .debug_str     0x00012231      0x305 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\log\liblog.a(log_timestamp.c.o)
- .debug_str     0x00012231      0xd1b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
+ .debug_str     0x00000000    0x11c97 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\main\libmain.a(bootloader_start.c.o)
+                                0xb4d (size before relaxing)
+ .debug_str     0x00011c97     0x1bfd .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_utility.c.o)
+ .debug_str     0x00011c97      0x569 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_partitions.c.o)
+ .debug_str     0x00011c97     0x1df9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(esp_image_format.c.o)
+ .debug_str     0x00011c97      0x49a .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_sha.c.o)
+ .debug_str     0x00011c97      0x263 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console_loader.c.o)
+ .debug_str     0x00011c97      0x2b6 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_soc.c.o)
+ .debug_str     0x00011c97     0x3dae .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_esp32s3.c.o)
+ .debug_str     0x00011c97      0x28b .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_panic.c.o)
+ .debug_str     0x00011c97     0x13d9 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_common_loader.c.o)
+ .debug_str     0x00011c97      0x772 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_clock_init.c.o)
+ .debug_str     0x00011c97      0x276 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_mem.c.o)
+ .debug_str     0x00011c97      0x312 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random.c.o)
+ .debug_str     0x00011c97      0xb41 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(flash_encrypt.c.o)
+ .debug_str     0x00011c97      0x2bc .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_random_esp32s3.c.o)
+ .debug_str     0x00011c97     0x5cd1 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash.c.o)
+ .debug_str     0x00011c97     0x1821 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_flash_config_esp32s3.c.o)
+ .debug_str     0x00011c97     0x4270 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_init.c.o)
+ .debug_str     0x00011c97      0x923 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\bootloader_support\libbootloader_support.a(bootloader_console.c.o)
+ .debug_str     0x00011c97      0x2f8 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_bootloader_format\libesp_bootloader_format.a(esp_bootloader_desc.c.o)
+ .debug_str     0x00011c97      0x2fe .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(cpu_region_protect.c.o)
+ .debug_str     0x00011c97     0x2f88 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk.c.o)
+ .debug_str     0x00011c97      0xe20 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_clk_init.c.o)
+ .debug_str     0x00011c97     0x3df7 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_init.c.o)
+ .debug_str     0x00011c97     0x4cca .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_hw_support\libesp_hw_support.a(rtc_time.c.o)
+ .debug_str     0x00011c97      0x446 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_sys.c.o)
+ .debug_str     0x00011c97      0x536 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\esp_rom\libesp_rom.a(esp_rom_uart.c.o)
+ .debug_str     0x00011c97      0x313 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mpu_hal.c.o)
+ .debug_str     0x00011c97     0x2b09 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
+ .debug_str     0x00011c97     0x2cd4 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(efuse_hal.c.o)
+ .debug_str     0x00011c97      0x645 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(mmu_hal.c.o)
+ .debug_str     0x00011c97      0x9fc .pioenvs\esp32-s3-box-3\bootloader\esp-idf\hal\libhal.a(cache_hal.c.o)
+ .debug_str     0x00011c97      0x2ca .pioenvs\esp32-s3-box-3\bootloader\esp-idf\log\liblog.a(log_timestamp.c.o)
+ .debug_str     0x00011c97      0xce0 .pioenvs\esp32-s3-box-3\bootloader\esp-idf\soc\libsoc.a(uart_periph.c.o)
 
 .debug_loc      0x00000000     0x8155
  *(.debug_loc)

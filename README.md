@@ -8,6 +8,8 @@ See [CHANGELOG.md](CHANGELOG.md) for the project changelog generated from Git co
 
 ## Status
 
+**2026-05-21:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.5.0 and added ESPHome Dashboard import metadata for easier future updates.
+
 **2026-05-07:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.4.5.
 
 **2026-05-07:** Fixed the S3 blank-screen regression on ESPHome 2026.4.5 by preserving PCA9554 expander output state during setup.
@@ -107,6 +109,8 @@ or:
 ```
 
 The ESPHome release used for generation is controlled by `version.txt`. `build.ps1`, `generate.ps1`, and `upload.ps1` call `ensure_esphome_source.ps1`, which clones the matching `esphome-$version` source tree if it is not already present. To move to a future ESPHome release, change `version.txt` and run `.\generate.ps1` or `.\build.ps1`.
+
+The firmware also advertises `dashboard_import` metadata so ESPHome Dashboard / Device Builder can adopt the device config from this repository for future dashboard-managed updates.
 
 Do not upload this build with plain `python -m esphome upload ...` unless your shell already has the same `PYTHONPATH` as the wrapper scripts. The global ESPHome package on a workstation may be older than `version.txt`, and can produce firmware without this project's patched display/audio source.
 

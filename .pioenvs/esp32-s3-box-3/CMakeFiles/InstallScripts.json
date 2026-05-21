@@ -107,6 +107,7 @@
 		"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/touch_element/cmake_install.cmake",
 		"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/usb/cmake_install.cmake",
 		"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-audio-libs/cmake_install.cmake",
+		"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__esp-micro-speech-features/cmake_install.cmake",
 		"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/esphome__micro-flac/cmake_install.cmake",
 		"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/espressif__esp-nn/cmake_install.cmake",
 		"C:/ESPHomeBuild/esp32-s3-box-3/.pioenvs/esp32-s3-box-3/esp-idf/espressif__esp-tflite-micro/cmake_install.cmake",

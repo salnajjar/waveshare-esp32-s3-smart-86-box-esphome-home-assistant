@@ -2,6 +2,16 @@
 
 This changelog is generated from the Git commit history for this project.
 
+## 2026-05-21
+
+- Updated the project ESPHome source pin from 2026.4.5 to 2026.5.0.
+- Raised the S3 and P4 ESPHome minimum versions to 2026.5.0.
+- Kept the automatic S3 display source fix in the ESPHome source preparation step so PCA9554 output state is preserved after future source updates.
+- Updated the source patcher for ESPHome 2026.5.0 voice assistant and I2S speaker changes so the existing larger audio buffer and pinned speaker task fixes continue to apply.
+- Added ESPHome Dashboard import metadata to the S3 and P4 YAML files so the devices can be adopted for future ESPHome-managed updates from this repository.
+- Rebuilt the ESP32-S3 firmware as build b66 with ESPHome 2026.5.0.
+- Rebuilt and mirrored the ESP32-P4 preview firmware binaries with ESPHome 2026.5.0.
+
 ## 2026-05-07
 
 - Updated the project ESPHome source pin from 2026.4.4 to 2026.4.5.
