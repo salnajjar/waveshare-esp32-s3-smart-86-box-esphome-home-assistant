@@ -1,19 +1,20 @@
 #pragma once
 
-#include "esphome/components/i2c/i2c.h"
+#include "esphome/components/pca9554/pca9554.h"
 #include "esphome/core/component.h"
 
 namespace esphome::waveshare_s3_86_lcd_preinit {
 
-class WaveshareS386LcdPreinit : public Component, public i2c::I2CDevice {
+class WaveshareS386LcdPreinit : public Component {
  public:
+  void set_pca9554(pca9554::PCA9554Component *pca9554) { this->pca9554_ = pca9554; }
+
   void setup() override;
   void dump_config() override;
   float get_setup_priority() const override;
 
  protected:
-  bool read_u8_(uint8_t reg, uint8_t *value);
-  bool write_u8_(uint8_t reg, uint8_t value);
+  pca9554::PCA9554Component *pca9554_{nullptr};
 };
 
 }  // namespace esphome::waveshare_s3_86_lcd_preinit
