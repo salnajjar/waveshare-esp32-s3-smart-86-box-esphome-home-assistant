@@ -8,6 +8,10 @@ See [CHANGELOG.md](CHANGELOG.md) for the project changelog generated from Git co
 
 ## Status
 
+**2026-06-02:** Updated the local ESPHome source pin and S3/P4 base configs to ESPHome 2026.5.2.
+
+**2026-05-26:** Updated the local ESPHome source pin and S3/P4 base configs to ESPHome 2026.5.1.
+
 **2026-05-21:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.5.0 and added ESPHome Dashboard import metadata for easier future updates.
 
 **2026-05-07:** Updated both ESP32-S3 and ESP32-P4 builds to ESPHome 2026.4.5.

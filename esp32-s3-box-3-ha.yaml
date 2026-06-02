@@ -1,0 +1,1697 @@
+---
+substitutions:
+  name: esp32-s3-box-3
+  friendly_name: ESP32 S3 Box 3
+  loading_illustration_file: https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/images/loading-370x370.png
+  idle_illustration_file: https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/images/idle-370x370.png
+  listening_illustration_file: https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/images/listening-450x370.png
+  thinking_illustration_file: https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/images/thinking-370x370.png
+  replying_illustration_file: https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/images/replying-390x370.png
+  error_illustration_file: https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/images/error-370x370.png
+  timer_finished_illustration_file: https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/raw/main/images/timer-450x400.png
+
+  loading_illustration_background_color: "000000"
+  idle_illustration_background_color: "000000"
+  listening_illustration_background_color: "F5F5FA"
+  thinking_illustration_background_color: "F1F2F5"
+  replying_illustration_background_color: "F1F2F6"
+  error_illustration_background_color: "F0F0F4"
+  timer_finished_illustration_background_color: "F1F2F6"
+
+  voice_assist_idle_phase_id: "1"
+  voice_assist_listening_phase_id: "2"
+  voice_assist_thinking_phase_id: "3"
+  voice_assist_replying_phase_id: "4"
+  voice_assist_not_ready_phase_id: "10"
+  voice_assist_error_phase_id: "11"
+  voice_assist_muted_phase_id: "12"
+  voice_assist_timer_finished_phase_id: "20"
+
+  # These unique characters have been extracted from every test file of every language available on https://github.com/home-assistant/intents (14 March 2024)
+  # However, the Figtree font only contains Latin characters, so there is no point using this... unlessyou change the font configuration accordingly.
+  allowed_characters: " !#%'()+,-./0123456789:;<>?@ABCDEFGHIJKLMNOPQRSTUVWYZ[]_abcdefghijklmnopqrstuvwxyz{|}°²³µ¿ÁÂÄÅÉÖÚßàáâãäåæçèéêëìíîðñòóôõöøùúûüýþāăąćčďĐđēėęěğĮįıļľŁłńňőřśšťũūůűųźŻżŽžơưșțΆΈΌΐΑΒΓΔΕΖΗΘΚΜΝΠΡΣΤΥΦάέήίαβγδεζηθικλμνξοπρςστυφχψωϊόύώАБВГДЕЖЗИКЛМНОПРСТУХЦЧШЪЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёђєіїјљњћאבגדהוזחטיכלםמןנסעפץצקרשת،ءآأإئابةتجحخدذرزسشصضطظعغفقكلمنهوىيٹپچڈکگںھہیےংকচতধনফবযরলশষস়ািু্చయలిెొ్ംഅആഇഈഉഎഓകഗങചജഞടഡണതദധനപഫബഭമയരറലളവശസഹാിീുൂെേൈ്ൺൻർൽൾაბგდევზთილმნოპრსტუფქყშჩცძჭხạảấầẩậắặẹẽếềểệỉịọỏốồổỗộớờởợụủứừửữựỳ—、一上不个中为主乾了些亮人任低佔何作供依侧係個側偵充光入全关冇冷几切到制前動區卧厅厨及口另右吊后吗启吸呀咗哪唔問啟嗎嘅嘛器圍在场執場外多大始安定客室家密寵对將小少左已帘常幫幾库度庫廊廚廳开式後恆感態成我戲戶户房所扇手打执把拔换掉控插摄整斯新明是景暗更最會有未本模機檯櫃欄次正氏水沒没洗活派温測源溫漏潮激濕灯為無煙照熱燈燥物狀玄现現瓦用發的盞目着睡私空窗立笛管節簾籬紅線红罐置聚聲脚腦腳臥色节著行衣解設調請謝警设调走路車车运連遊運過道邊部都量鎖锁門閂閉開關门闭除隱離電震霧面音頂題顏颜風风食餅餵가간감갔강개거게겨결경고공과관그금급기길깥꺼껐꼽나난내네놀누는능니다닫담대더데도동됐되된됨둡드든등디때떤뜨라래러렇렌려로료른를리림링마많명몇모무문물뭐바밝방배변보부불블빨뽑사산상색서설성세센션소쇼수스습시신실싱아안않알았애야어얼업없었에여연열옆오온완외왼요운움워원위으은을음의이인일임입있작잠장재전절정제져조족종주줄중줘지직진짐쪽차창천최추출충치침커컴켜켰쿠크키탁탄태탬터텔통트튼티파팬퍼폰표퓨플핑한함해했행혀현화활후휴힘，？"
+
+  # Add support for non-unicode characters by using better glyphset
+  font_glyphsets: "GF_Latin_Core"
+  # for Greek use "Noto Sans" for other languages use a compatible font family
+  font_family: Figtree
+  screen_idle_timeout: 30s
+
+  build_number: "69"
+  build_id: "b69-20260602-092555"
+  build_time: "2026-06-02 09:25:55 +01:00"
+  build_esphome_version: "2026.5.2"
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  min_version: 2026.5.2
+  project:
+    name: salnajjar.waveshare_esp32_s3_smart_86_box
+    version: "${build_id}"
+  compile_process_limit: 1
+  name_add_mac_suffix: false
+  on_boot:
+    priority: 600
+    then:
+      - switch.turn_on: speaker_enable
+      - speaker.volume_set:
+          id: box_speaker
+          volume: 0.7
+      - speaker.mute_off: box_speaker
+      - script.execute: draw_display
+      - delay: 30s
+      - if:
+          condition:
+            lambda: return id(init_in_progress);
+          then:
+            - lambda: id(init_in_progress) = false;
+            - script.execute: draw_display
+
+dashboard_import:
+  package_import_url: github://salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant/esp32-s3-box-3-ha.yaml@main
+  import_full_config: true
+
+external_components:
+  - source:
+      type: git
+      url: https://github.com/salnajjar/Waveshare-ESP32-S3-Smart-86-Box-ESPHome-Home-Assistant
+      ref: main
+      path: local_components
+    components:
+      - axp2101_powerkey
+
+esp32:
+  board: esp32-s3-devkitc-1
+  flash_size: 16MB
+  cpu_frequency: 240MHz
+  framework:
+    type: esp-idf
+    sdkconfig_options:
+      CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240: "y"
+      CONFIG_ESP32S3_DATA_CACHE_64KB: "y"
+      CONFIG_ESP32S3_DATA_CACHE_LINE_64B: "y"
+      CONFIG_FREERTOS_HZ: "1000"
+      CONFIG_COMPILER_OPTIMIZATION_PERF: "y"
+      CONFIG_LWIP_IRAM_OPTIMIZATION: "y"
+      CONFIG_LWIP_EXTRA_IRAM_OPTIMIZATION: "y"
+
+psram:
+  mode: octal
+  speed: 80MHz
+
+api:
+  batch_delay: 0ms
+  on_client_connected:
+    - script.execute: draw_display
+  on_client_disconnected:
+    - script.execute: draw_display
+
+ota:
+  - platform: esphome
+    id: ota_esphome
+    on_begin:
+      - lambda: |-
+          id(ota_update_in_progress) = true;
+          id(ota_update_progress) = 0.0f;
+          id(ota_update_last_drawn_percent) = -1;
+      - script.execute: draw_ota_update
+    on_progress:
+      - lambda: |-
+          id(ota_update_progress) = x;
+          const int progress = static_cast<int>(roundf(x));
+          if (progress >= id(ota_update_last_drawn_percent) + 2 || progress >= 100) {
+            id(ota_update_last_drawn_percent) = progress;
+            id(draw_ota_update).execute();
+          }
+    on_end:
+      - lambda: |-
+          id(ota_update_progress) = 100.0f;
+      - script.execute: draw_ota_update
+    on_error:
+      - lambda: id(ota_update_in_progress) = false;
+      - script.execute: draw_display
+
+logger:
+  hardware_uart: USB_SERIAL_JTAG
+  level: WARN
+
+debug:
+  update_interval: 120s
+
+wifi:
+  power_save_mode: none
+  ap:
+  on_connect:
+    - script.execute: draw_display
+  on_disconnect:
+    - script.execute: draw_display
+
+captive_portal:
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+    on_time:
+      - seconds: 0
+        then:
+          - if:
+              condition:
+                lambda: |-
+                  return !id(init_in_progress)
+                      && !id(ota_update_in_progress)
+                      && id(voice_assistant_phase) == ${voice_assist_idle_phase_id};
+              then:
+                - display.page.show: idle_page
+                - component.update: s3_box_lcd
+
+esp32_ble_tracker:
+  scan_parameters:
+    interval: 320ms
+    window: 20ms
+    active: true
+
+bluetooth_proxy:
+  active: true
+
+touchscreen:
+  - platform: gt911
+    id: touch_panel
+    display: s3_box_lcd
+    i2c_id: i2c_adc_dac
+    update_interval: 50ms
+    on_touch:
+      - lambda: |-
+          id(wake_screen).execute();
+          if (id(init_in_progress) || id(ota_update_in_progress))
+            return;
+
+          const int x = touch.x;
+          const int y = touch.y;
+
+          if ((id(voice_assistant_phase) == ${voice_assist_timer_finished_phase_id} || id(timer_ringing).state) &&
+              x >= 170 && x <= 310 && y >= 213 && y <= 267) {
+            id(stop_finished_timer).execute();
+            return;
+          }
+
+          if (id(countdown_dialog_visible)) {
+            if (y >= 226 && y <= 278) {
+              if (x >= 68 && x <= 142)
+                id(countdown_selected_seconds) = std::max<int>(60, id(countdown_selected_seconds) - 300);
+              else if (x >= 152 && x <= 226)
+                id(countdown_selected_seconds) = std::max<int>(60, id(countdown_selected_seconds) - 60);
+              else if (x >= 254 && x <= 328)
+                id(countdown_selected_seconds) = std::min<int>(7200, id(countdown_selected_seconds) + 60);
+              else if (x >= 338 && x <= 412)
+                id(countdown_selected_seconds) = std::min<int>(7200, id(countdown_selected_seconds) + 300);
+              else
+                return;
+              id(draw_display).execute();
+              return;
+            }
+
+            if (y >= 312 && y <= 364) {
+              if (x >= 68 && x <= 218)
+                id(hide_countdown_dialog).execute();
+              else if (x >= 262 && x <= 412)
+                id(start_countdown_timer).execute();
+              return;
+            }
+
+            return;
+          }
+
+          const bool idle_clock_tapped = x >= 300 && x <= 470 && y >= 10 && y <= 105;
+          if (idle_clock_tapped && id(voice_assistant_phase) == ${voice_assist_idle_phase_id})
+            id(show_countdown_dialog).execute();
+
+interval:
+  - interval: 1s
+    then:
+      - if:
+          condition:
+            lambda: return id(local_countdown_active);
+          then:
+            - lambda: |-
+                if (id(local_countdown_seconds_left) > 0)
+                  id(local_countdown_seconds_left)--;
+            - if:
+                condition:
+                  lambda: return id(local_countdown_seconds_left) == 0;
+                then:
+                  - lambda: id(local_countdown_active) = false;
+                  - script.execute: wake_screen
+                  - lambda: id(voice_assistant_phase) = ${voice_assist_timer_finished_phase_id};
+                  - script.execute: draw_display
+                  - switch.turn_on: timer_ringing
+                else:
+                  - if:
+                      condition:
+                        lambda: |-
+                          return !id(countdown_dialog_visible)
+                              && !id(init_in_progress)
+                              && !id(ota_update_in_progress)
+                              && id(voice_assistant_phase) == ${voice_assist_idle_phase_id};
+                      then:
+                        - component.update: s3_box_lcd
+  - interval: 1s
+    then:
+      - if:
+          condition:
+            lambda: |-
+              return id(va_timer_display_active)
+                  && !id(init_in_progress)
+                  && !id(ota_update_in_progress);
+          then:
+            - script.execute: refresh_timer_display
+
+button:
+  - platform: factory_reset
+    id: factory_reset_btn
+    internal: true
+  - platform: template
+    name: Play Test Sound
+    entity_category: diagnostic
+    on_press:
+      - script.execute: wake_screen
+      - media_player.speaker.play_on_device_media_file:
+          media_file: timer_finished_sound
+          announcement: true
+  - platform: restart
+    name: "${friendly_name} Restart"
+  - platform: safe_mode
+    name: "${friendly_name} Restart in Safe Mode"
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      ignore_strapping_warning: true
+      mode: INPUT_PULLUP
+      inverted: true
+    id: left_top_button
+    internal: true
+    on_press:
+      - script.execute: volume_down_pressed
+    on_multi_click:
+      - timing:
+          - ON for at least 50ms
+          - OFF for at least 50ms
+        then:
+          - switch.turn_off: timer_ringing
+      - timing:
+          - ON for at least 10s
+        then:
+          - button.press: factory_reset_btn
+  - platform: axp2101_powerkey
+    id: power_button
+    i2c_id: i2c_adc_dac
+    update_interval: 25ms
+    internal: true
+    on_press:
+      - script.execute: volume_up_pressed
+
+output:
+  - platform: ledc
+    pin: GPIO4
+    id: backlight_output
+    inverted: true
+
+light:
+  - platform: monochromatic
+    id: led
+    name: Screen
+    icon: "mdi:television"
+    entity_category: config
+    output: backlight_output
+    restore_mode: RESTORE_DEFAULT_ON
+    default_transition_length: 0s
+
+i2c:
+  - id: i2c_adc_dac
+    scl: GPIO48
+    sda: GPIO47
+    frequency: 400kHz
+
+pca9554:
+  - id: io_expander
+    pin_count: 8
+    i2c_id: i2c_adc_dac
+    address: 0x20
+
+i2s_audio:
+  - id: i2s_audio_bus
+    i2s_lrclk_pin: GPIO7
+    i2s_bclk_pin: GPIO16
+    i2s_mclk_pin: GPIO5
+
+audio_adc:
+  - platform: es7210
+    i2c_id: i2c_adc_dac
+    id: es7210_adc
+    bits_per_sample: 16bit
+    sample_rate: 16000
+
+audio_dac:
+  - platform: es8311
+    i2c_id: i2c_adc_dac
+    id: es8311_dac
+    bits_per_sample: 16bit
+    sample_rate: 16000
+
+microphone:
+  - platform: i2s_audio
+    id: box_mic
+    sample_rate: 16000
+    i2s_din_pin: GPIO15
+    bits_per_sample: 16bit
+    adc_type: external
+
+speaker:
+  - platform: i2s_audio
+    id: box_speaker
+    i2s_dout_pin: GPIO6
+    dac_type: external
+    sample_rate: 16000
+    bits_per_sample: 16bit
+    channel: stereo
+    audio_dac: es8311_dac
+    buffer_duration: 160ms
+    timeout: never
+
+media_player:
+  - platform: speaker
+    name: None
+    id: speaker_media_player
+    buffer_size: 131072
+    volume_min: 0.5
+    volume_max: 1.0
+    volume_increment: 0.05
+    on_volume:
+      - script.execute: wake_screen
+      - lambda: |-
+          id(volume_overlay_level) = x;
+          if (!id(volume_overlay_visible))
+            id(show_volume_overlay).execute();
+    announcement_pipeline:
+      speaker: box_speaker
+      format: FLAC
+      sample_rate: 16000
+      num_channels: 2
+    files:
+      - id: timer_finished_sound
+        file: https://github.com/esphome/home-assistant-voice-pe/raw/dev/sounds/timer_finished.flac
+    on_announcement:
+      # Stop the wake word (mWW or VA) if the mic is capturing
+      - if:
+          condition:
+            - microphone.is_capturing:
+          then:
+            - script.execute: stop_wake_word
+            # Ensure VA stops before moving on
+            - if:
+                condition:
+                  - lambda: return id(wake_word_engine_location).current_option() == "In Home Assistant";
+                then:
+                  - wait_until:
+                      - not:
+                          voice_assistant.is_running:
+      # Since VA isn't running, this is user-intiated media playback. Draw the mute display
+      - if:
+          condition:
+            not:
+              voice_assistant.is_running:
+          then:
+            - lambda: id(voice_assistant_phase) = ${voice_assist_muted_phase_id};
+            - script.execute: draw_display
+    on_idle:
+      # Since VA isn't running, this is the end of user-intiated media playback. Restart the wake word.
+      - if:
+          condition:
+            not:
+              voice_assistant.is_running:
+          then:
+            - script.execute: start_wake_word
+            - script.execute: set_idle_or_mute_phase
+            - script.execute: draw_display
+
+micro_wake_word:
+  id: mww
+  models:
+    - okay_nabu
+    - hey_mycroft
+    - hey_jarvis
+  on_wake_word_detected:
+    - voice_assistant.start:
+        wake_word: !lambda return wake_word;
+
+voice_assistant:
+  id: va
+  microphone: box_mic
+  speaker: box_speaker
+  micro_wake_word: mww
+  noise_suppression_level: 2
+  auto_gain: 31dBFS
+  volume_multiplier: 0.85
+  on_listening:
+    - lambda: id(voice_assistant_phase) = ${voice_assist_listening_phase_id};
+    - text_sensor.template.publish:
+        id: text_request
+        state: "..."
+    - text_sensor.template.publish:
+        id: text_response
+        state: "..."
+    - script.execute: draw_display
+  on_stt_vad_end:
+    - lambda: id(voice_assistant_phase) = ${voice_assist_thinking_phase_id};
+    - script.execute: draw_display
+  on_stt_end:
+    - text_sensor.template.publish:
+        id: text_request
+        state: !lambda return x;
+    - script.execute: draw_display
+  on_tts_start:
+    - lambda: id(voice_response_active) = true;
+    - text_sensor.template.publish:
+        id: text_response
+        state: !lambda return x;
+    - lambda: id(voice_assistant_phase) = ${voice_assist_replying_phase_id};
+    - script.execute: draw_display
+  on_tts_stream_start:
+    - lambda: |-
+        id(voice_response_active) = true;
+        id(voice_assistant_phase) = ${voice_assist_replying_phase_id};
+  on_tts_stream_end:
+    - lambda: id(voice_response_active) = false;
+  on_end:
+    # Wait for direct speaker TTS streaming to finish before returning to idle.
+    - wait_until:
+        condition:
+          lambda: return !id(voice_response_active);
+        timeout: 3min
+    # Wait a short amount of time to see if an announcement starts
+    - wait_until:
+        condition:
+          - media_player.is_announcing:
+        timeout: 0.5s
+    # Announcement is finished and the I2S bus is free
+    - wait_until:
+        - and:
+            - not:
+                media_player.is_announcing:
+            - not:
+                speaker.is_playing:
+    # Restart only mWW if enabled; streaming wake words automatically restart
+    - if:
+        condition:
+          - lambda: return id(wake_word_engine_location).current_option() == "On device";
+        then:
+          - lambda: id(va).set_use_wake_word(false);
+          - micro_wake_word.start:
+    - script.execute: set_idle_or_mute_phase
+    - script.execute: draw_display
+    # Clear text sensors
+    - text_sensor.template.publish:
+        id: text_request
+        state: ""
+    - text_sensor.template.publish:
+        id: text_response
+        state: ""
+  on_error:
+    - lambda: id(voice_response_active) = false;
+    - if:
+        condition:
+          lambda: return !id(init_in_progress);
+        then:
+          - lambda: id(voice_assistant_phase) = ${voice_assist_error_phase_id};
+          - script.execute: draw_display
+          - delay: 1s
+          - if:
+              condition:
+                switch.is_off: mute
+              then:
+                - lambda: id(voice_assistant_phase) = ${voice_assist_idle_phase_id};
+              else:
+                - lambda: id(voice_assistant_phase) = ${voice_assist_muted_phase_id};
+          - script.execute: draw_display
+  on_client_connected:
+    - lambda: id(init_in_progress) = false;
+    - script.execute: start_wake_word
+    - script.execute: set_idle_or_mute_phase
+    - script.execute: draw_display
+  on_client_disconnected:
+    - script.execute: stop_wake_word
+    - lambda: |-
+        id(voice_response_active) = false;
+        id(voice_assistant_phase) = ${voice_assist_not_ready_phase_id};
+    - script.execute: draw_display
+  on_timer_started:
+    - lambda: |-
+        id(va_timer_display_anchor_ms) = millis();
+        id(va_timer_display_anchor_seconds_left) = timer.seconds_left;
+        id(va_timer_display_total_seconds) = timer.total_seconds;
+        id(va_timer_display_active) = timer.is_active;
+    - script.execute: draw_display
+  on_timer_cancelled:
+    - lambda: id(va_timer_display_active) = false;
+    - script.execute: draw_display
+  on_timer_updated:
+    - lambda: |-
+        id(va_timer_display_anchor_ms) = millis();
+        id(va_timer_display_anchor_seconds_left) = timer.seconds_left;
+        id(va_timer_display_total_seconds) = timer.total_seconds;
+        id(va_timer_display_active) = timer.is_active;
+    - script.execute: draw_display
+  on_timer_tick:
+    - script.execute: refresh_timer_display
+  on_timer_finished:
+    - lambda: id(va_timer_display_active) = false;
+    - lambda: id(voice_assistant_phase) = ${voice_assist_timer_finished_phase_id};
+    - script.execute: draw_display
+    - switch.turn_on: timer_ringing
+
+script:
+  - id: wake_screen
+    mode: restart
+    then:
+      - if:
+          condition:
+            light.is_off: led
+          then:
+            - light.turn_on:
+                id: led
+                brightness: 100%
+      - script.execute: screen_idle_timer
+
+  - id: screen_idle_timer
+    mode: restart
+    then:
+      - delay: ${screen_idle_timeout}
+      - if:
+          condition:
+            or:
+              - voice_assistant.is_running:
+              - media_player.is_announcing:
+              - speaker.is_playing:
+              - switch.is_on: timer_ringing
+              - lambda: return id(ota_update_in_progress);
+          then:
+            - script.execute: screen_idle_timer
+          else:
+            - light.turn_off: led
+
+  - id: volume_up_pressed
+    mode: restart
+    then:
+      - script.execute: wake_screen
+      - lambda: |-
+          const uint32_t now = millis();
+          const bool was_visible = id(volume_overlay_visible);
+          const float base_volume = id(volume_overlay_visible) ? id(volume_overlay_level) : id(box_speaker).get_volume();
+          id(volume_overlay_level) = std::min(base_volume + 0.05f, 1.0f);
+          id(volume_overlay_visible) = true;
+          id(box_speaker).set_volume(id(volume_overlay_level));
+          if (!was_visible || now - id(volume_overlay_last_draw_ms) >= 50) {
+            id(volume_overlay_last_draw_ms) = now;
+            id(s3_box_lcd).update();
+          }
+      - script.execute: sync_volume_to_media_player
+      - script.execute: volume_overlay_hide_timer
+
+  - id: volume_down_pressed
+    mode: restart
+    then:
+      - script.execute: wake_screen
+      - lambda: |-
+          const uint32_t now = millis();
+          const bool was_visible = id(volume_overlay_visible);
+          const float base_volume = id(volume_overlay_visible) ? id(volume_overlay_level) : id(box_speaker).get_volume();
+          id(volume_overlay_level) = std::max(base_volume - 0.05f, 0.0f);
+          id(volume_overlay_visible) = true;
+          id(box_speaker).set_volume(id(volume_overlay_level));
+          if (!was_visible || now - id(volume_overlay_last_draw_ms) >= 50) {
+            id(volume_overlay_last_draw_ms) = now;
+            id(s3_box_lcd).update();
+          }
+      - script.execute: sync_volume_to_media_player
+      - script.execute: volume_overlay_hide_timer
+
+  - id: sync_volume_to_media_player
+    mode: restart
+    then:
+      - delay: 150ms
+      - lambda: |-
+          id(speaker_media_player).make_call().set_volume(id(volume_overlay_level)).perform();
+
+  - id: show_volume_overlay
+    mode: restart
+    then:
+      - script.execute: wake_screen
+      - lambda: id(volume_overlay_visible) = true;
+      - script.execute: refresh_volume_overlay
+      - script.execute: volume_overlay_hide_timer
+
+  - id: volume_overlay_hide_timer
+    mode: restart
+    then:
+      - delay: 1200ms
+      - lambda: id(volume_overlay_visible) = false;
+      - script.execute: draw_display
+
+  - id: refresh_volume_overlay
+    mode: restart
+    then:
+      - component.update: s3_box_lcd
+
+  - id: refresh_timer_display
+    mode: restart
+    then:
+      - component.update: s3_box_lcd
+
+  - id: stop_finished_timer
+    mode: restart
+    then:
+      - switch.turn_off: timer_ringing
+      - script.execute: set_idle_or_mute_phase
+      - script.execute: draw_display
+
+  - id: show_countdown_dialog
+    mode: restart
+    then:
+      - script.execute: wake_screen
+      - lambda: |-
+          id(countdown_dialog_visible) = true;
+          if (id(countdown_selected_seconds) < 60)
+            id(countdown_selected_seconds) = 300;
+      - script.execute: draw_display
+
+  - id: hide_countdown_dialog
+    mode: restart
+    then:
+      - lambda: id(countdown_dialog_visible) = false;
+      - script.execute: draw_display
+
+  - id: start_countdown_timer
+    mode: restart
+    then:
+      - lambda: |-
+          id(local_countdown_total_seconds) = std::max<uint32_t>(60, id(countdown_selected_seconds));
+          id(local_countdown_seconds_left) = id(local_countdown_total_seconds);
+          id(local_countdown_active) = true;
+          id(countdown_dialog_visible) = false;
+          id(voice_assistant_phase) = ${voice_assist_idle_phase_id};
+      - script.execute: draw_display
+
+  - id: draw_display
+    then:
+      - script.execute: wake_screen
+      - if:
+          condition:
+            lambda: return id(ota_update_in_progress);
+          then:
+            - script.execute: draw_ota_update
+          else:
+            - if:
+                condition:
+                  lambda: return !id(init_in_progress);
+                then:
+                  - if:
+                      condition:
+                        wifi.connected:
+                      then:
+                        - if:
+                            condition:
+                              api.connected:
+                            then:
+                              - lambda: |
+                                  switch(id(voice_assistant_phase)) {
+                                    case ${voice_assist_listening_phase_id}:
+                                      id(s3_box_lcd).show_page(listening_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_thinking_phase_id}:
+                                      id(s3_box_lcd).show_page(thinking_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_replying_phase_id}:
+                                      id(s3_box_lcd).show_page(replying_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_error_phase_id}:
+                                      id(s3_box_lcd).show_page(error_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_muted_phase_id}:
+                                      id(s3_box_lcd).show_page(muted_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_not_ready_phase_id}:
+                                      id(s3_box_lcd).show_page(no_ha_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    case ${voice_assist_timer_finished_phase_id}:
+                                      id(s3_box_lcd).show_page(timer_finished_page);
+                                      id(s3_box_lcd).update();
+                                      break;
+                                    default:
+                                      id(s3_box_lcd).show_page(idle_page);
+                                      id(s3_box_lcd).update();
+                                  }
+                            else:
+                              - display.page.show: no_ha_page
+                              - component.update: s3_box_lcd
+                      else:
+                        - display.page.show: no_wifi_page
+                        - component.update: s3_box_lcd
+                else:
+                  - display.page.show: initializing_page
+                  - component.update: s3_box_lcd
+
+  - id: draw_timer_timeline
+    then:
+      - lambda: |
+          const auto &timers = id(va).get_timers();
+          const voice_assistant::Timer *selected = nullptr;
+          bool active = false;
+          uint32_t selected_seconds_left = 0;
+          uint32_t selected_total_seconds = 0;
+          for (const auto &timer : timers) {
+            if (timer.is_active && (selected == nullptr || timer.seconds_left <= selected->seconds_left)) {
+              selected = &timer;
+              active = true;
+            }
+          }
+          if (selected == nullptr) {
+            for (const auto &timer : timers) {
+              if (selected == nullptr || timer.seconds_left <= selected->seconds_left)
+                selected = &timer;
+            }
+          }
+
+          if (selected != nullptr) {
+            selected_seconds_left = selected->seconds_left;
+            selected_total_seconds = selected->total_seconds;
+          }
+
+          if (active && id(va_timer_display_active)) {
+            const uint32_t elapsed_seconds = (millis() - id(va_timer_display_anchor_ms)) / 1000;
+            selected_seconds_left = elapsed_seconds >= id(va_timer_display_anchor_seconds_left)
+                                        ? 0
+                                        : id(va_timer_display_anchor_seconds_left) - elapsed_seconds;
+            if (id(va_timer_display_total_seconds) > 0)
+              selected_total_seconds = id(va_timer_display_total_seconds);
+          }
+
+          if (id(local_countdown_active) &&
+              (!active || selected == nullptr || id(local_countdown_seconds_left) <= selected_seconds_left)) {
+            active = true;
+            selected_seconds_left = id(local_countdown_seconds_left);
+            selected_total_seconds = id(local_countdown_total_seconds);
+          }
+
+          if (!active && selected_seconds_left == 0)
+            return;
+
+          const int hours_left = selected_seconds_left / 3600;
+          const int minutes_left = (selected_seconds_left % 3600) / 60;
+          const int seconds_left = selected_seconds_left % 60;
+          char display_string[9];
+          if (hours_left > 0)
+            snprintf(display_string, sizeof(display_string), "%02d:%02d:%02d", hours_left, minutes_left, seconds_left);
+          else
+            snprintf(display_string, sizeof(display_string), "%02d:%02d", minutes_left, seconds_left);
+
+          const int box_w = hours_left > 0 ? 190 : 140;
+          const int box_h = 54;
+          const int box_x = (id(s3_box_lcd).get_width() - box_w) / 2;
+          const int box_y = 213;
+          const int radius = 10;
+          const Color box_color = Color::WHITE;
+          const Color border_color = active ? id(active_timer_color) : id(paused_timer_color);
+          const Color text_color = Color::BLACK;
+
+          auto fill_round_rect = [&](int x, int y, int w, int h, int r, Color color) {
+            id(s3_box_lcd).filled_rectangle(x + r, y, w - 2 * r, h, color);
+            id(s3_box_lcd).filled_rectangle(x, y + r, w, h - 2 * r, color);
+            id(s3_box_lcd).filled_circle(x + r, y + r, r, color);
+            id(s3_box_lcd).filled_circle(x + w - r - 1, y + r, r, color);
+            id(s3_box_lcd).filled_circle(x + r, y + h - r - 1, r, color);
+            id(s3_box_lcd).filled_circle(x + w - r - 1, y + h - r - 1, r, color);
+          };
+
+          id(s3_box_lcd).filled_rectangle(box_x - 8, box_y - 8, box_w + 16, box_h + 16, Color::WHITE);
+          fill_round_rect(box_x, box_y, box_w, box_h, radius, border_color);
+          fill_round_rect(box_x + 3, box_y + 3, box_w - 6, box_h - 6, radius - 3, box_color);
+          id(s3_box_lcd).printf(box_x + (box_w / 2), box_y + 10, id(font_timer), text_color, TextAlign::TOP_CENTER,
+                                "%s", display_string);
+  - id: draw_active_timer_widget
+    then:
+      - lambda: |
+          const auto &timers = id(va).get_timers();
+          const voice_assistant::Timer *selected = nullptr;
+          uint32_t selected_seconds_left = 0;
+          for (const auto &timer : timers) {
+            if (timer.is_active && (selected == nullptr || timer.seconds_left <= selected->seconds_left))
+              selected = &timer;
+          }
+
+          if (selected != nullptr)
+            selected_seconds_left = selected->seconds_left;
+
+          if (selected != nullptr && id(va_timer_display_active)) {
+            const uint32_t elapsed_seconds = (millis() - id(va_timer_display_anchor_ms)) / 1000;
+            selected_seconds_left = elapsed_seconds >= id(va_timer_display_anchor_seconds_left)
+                                        ? 0
+                                        : id(va_timer_display_anchor_seconds_left) - elapsed_seconds;
+          }
+
+          if (id(local_countdown_active) &&
+              (selected == nullptr || id(local_countdown_seconds_left) <= selected_seconds_left))
+            selected_seconds_left = id(local_countdown_seconds_left);
+
+          if (selected_seconds_left == 0)
+            return;
+
+          id(s3_box_lcd).filled_rectangle(80, 40, 160, 50, Color::WHITE);
+          id(s3_box_lcd).rectangle(80, 40, 160, 50, Color::BLACK);
+
+          const int hours_left = selected_seconds_left / 3600;
+          const int minutes_left = (selected_seconds_left % 3600) / 60;
+          const int seconds_left = selected_seconds_left % 60;
+          char display_string[6];
+          if (hours_left > 0)
+            snprintf(display_string, sizeof(display_string), "%02d:%02d", hours_left, minutes_left);
+          else
+            snprintf(display_string, sizeof(display_string), "%02d:%02d", minutes_left, seconds_left);
+          id(s3_box_lcd).printf(120, 47, id(font_timer), Color::BLACK, "%s", display_string);
+
+  - id: draw_countdown_dialog
+    then:
+      - lambda: |
+          if (!id(countdown_dialog_visible))
+            return;
+
+          const int x = 48;
+          const int y = 104;
+          const int w = 384;
+          const int h = 272;
+          const int radius = 10;
+          const Color panel_color(248, 248, 248);
+          const Color text_color(0, 0, 0);
+          const Color button_color(255, 255, 255);
+          const Color outline_color(0, 0, 0);
+
+          auto fill_round_rect = [&](int rx, int ry, int rw, int rh, int rr, Color color) {
+            id(s3_box_lcd).filled_rectangle(rx + rr, ry, rw - 2 * rr, rh, color);
+            id(s3_box_lcd).filled_rectangle(rx, ry + rr, rw, rh - 2 * rr, color);
+            id(s3_box_lcd).filled_circle(rx + rr, ry + rr, rr, color);
+            id(s3_box_lcd).filled_circle(rx + rw - rr - 1, ry + rr, rr, color);
+            id(s3_box_lcd).filled_circle(rx + rr, ry + rh - rr - 1, rr, color);
+            id(s3_box_lcd).filled_circle(rx + rw - rr - 1, ry + rh - rr - 1, rr, color);
+          };
+
+          auto draw_button = [&](int bx, int by, int bw, int bh, const char *label) {
+            fill_round_rect(bx, by, bw, bh, 8, button_color);
+            id(s3_box_lcd).rectangle(bx + 8, by, bw - 16, bh, outline_color);
+            id(s3_box_lcd).rectangle(bx, by + 8, bw, bh - 16, outline_color);
+            id(s3_box_lcd).printf(bx + bw / 2, by + 13, id(font_idle_date), text_color, TextAlign::TOP_CENTER,
+                                  "%s", label);
+          };
+
+          fill_round_rect(x, y, w, h, radius, panel_color);
+          id(s3_box_lcd).rectangle(x + radius, y, w - 2 * radius, h, outline_color);
+          id(s3_box_lcd).rectangle(x, y + radius, w, h - 2 * radius, outline_color);
+          id(s3_box_lcd).printf(240, 126, id(font_idle_date), text_color, TextAlign::TOP_CENTER, "Countdown");
+
+          const uint32_t seconds = id(countdown_selected_seconds);
+          const uint32_t hours = seconds / 3600;
+          const uint32_t minutes = (seconds % 3600) / 60;
+          char duration[12];
+          if (hours > 0)
+            snprintf(duration, sizeof(duration), "%uh %02um", hours, minutes);
+          else
+            snprintf(duration, sizeof(duration), "%um", minutes);
+          id(s3_box_lcd).printf(240, 158, id(font_timer), text_color, TextAlign::TOP_CENTER, "%s", duration);
+
+          draw_button(68, 226, 74, 52, "-5");
+          draw_button(152, 226, 74, 52, "-1");
+          draw_button(254, 226, 74, 52, "+1");
+          draw_button(338, 226, 74, 52, "+5");
+          draw_button(68, 312, 150, 52, "Cancel");
+          draw_button(262, 312, 150, 52, "Start");
+
+  - id: draw_volume_overlay
+    then:
+      - lambda: |
+          if (!id(volume_overlay_visible))
+            return;
+
+          const int x = 44;
+          const int y = 398;
+          const int w = 392;
+          const int h = 42;
+          const int padding = 8;
+          const int bar_w = w - 2 * padding;
+          const int bar_h = h - 2 * padding;
+          const float volume = std::min(std::max(id(volume_overlay_level), 0.0f), 1.0f);
+          const int filled = static_cast<int>(roundf(bar_w * volume));
+
+          id(s3_box_lcd).filled_rectangle(x, y, w, h, Color::WHITE);
+          id(s3_box_lcd).rectangle(x, y, w, h, Color::BLACK);
+          id(s3_box_lcd).filled_rectangle(x + padding, y + padding, bar_w, bar_h, Color(230, 230, 230));
+          if (filled > 0)
+            id(s3_box_lcd).filled_rectangle(x + padding, y + padding, filled, bar_h, id(active_timer_color));
+          id(s3_box_lcd).rectangle(x + padding, y + padding, bar_w, bar_h, Color::BLACK);
+
+  - id: draw_ota_update
+    mode: restart
+    then:
+      - light.turn_on:
+          id: led
+          brightness: 100%
+      - display.page.show: ota_update_page
+      - component.update: s3_box_lcd
+
+  # Starts either mWW or the streaming wake word, depending on the configured location
+  - id: start_wake_word
+    then:
+      - if:
+          condition:
+            and:
+              - not:
+                  - voice_assistant.is_running:
+              - lambda: return id(wake_word_engine_location).current_option() == "On device";
+          then:
+            - lambda: id(va).set_use_wake_word(false);
+            - micro_wake_word.start:
+      - if:
+          condition:
+            and:
+              - not:
+                  - voice_assistant.is_running:
+              - lambda: return id(wake_word_engine_location).current_option() == "In Home Assistant";
+          then:
+            - lambda: id(va).set_use_wake_word(true);
+            - voice_assistant.start_continuous:
+  # Stops either mWW or the streaming wake word, depending on the configured location
+  - id: stop_wake_word
+    then:
+      - if:
+          condition:
+            lambda: return id(wake_word_engine_location).current_option() == "In Home Assistant";
+          then:
+            - lambda: id(va).set_use_wake_word(false);
+            - voice_assistant.stop:
+      - if:
+          condition:
+            lambda: return id(wake_word_engine_location).current_option() == "On device";
+          then:
+            - micro_wake_word.stop:
+  # Set the voice assistant phase to idle or muted, depending on if the software mute switch is activated
+  - id: set_idle_or_mute_phase
+    then:
+      - if:
+          condition:
+            switch.is_off: mute
+          then:
+            - lambda: id(voice_assistant_phase) = ${voice_assist_idle_phase_id};
+          else:
+            - lambda: id(voice_assistant_phase) = ${voice_assist_muted_phase_id};
+
+switch:
+  - platform: gpio
+    name: Speaker Enable
+    id: speaker_enable
+    pin:
+      pca9554: io_expander
+      number: 3
+      mode:
+        output: true
+    restore_mode: ALWAYS_ON
+    entity_category: config
+    disabled_by_default: true
+  - platform: template
+    name: Mute
+    id: mute
+    icon: "mdi:microphone-off"
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_OFF
+    entity_category: config
+    on_turn_off:
+      - microphone.unmute:
+      - lambda: id(voice_assistant_phase) = ${voice_assist_idle_phase_id};
+      - script.execute: draw_display
+    on_turn_on:
+      - microphone.mute:
+      - lambda: id(voice_assistant_phase) = ${voice_assist_muted_phase_id};
+      - script.execute: draw_display
+  - platform: template
+    id: timer_ringing
+    optimistic: true
+    internal: true
+    restore_mode: ALWAYS_OFF
+    on_turn_off:
+      # Turn off the repeat mode and disable the pause between playlist items
+      - lambda: |-
+              id(speaker_media_player)
+                ->make_call()
+                .set_command(media_player::MediaPlayerCommand::MEDIA_PLAYER_COMMAND_REPEAT_OFF)
+                .set_announcement(true)
+                .perform();
+              id(speaker_media_player)->set_playlist_delay_ms(speaker::AudioPipelineType::ANNOUNCEMENT, 0);
+      # Stop playing the alarm
+      - media_player.stop:
+          announcement: true
+    on_turn_on:
+      # Turn on the repeat mode and pause for 1000 ms between playlist items/repeats
+      - lambda: |-
+            id(speaker_media_player)
+              ->make_call()
+              .set_command(media_player::MediaPlayerCommand::MEDIA_PLAYER_COMMAND_REPEAT_ONE)
+              .set_announcement(true)
+              .perform();
+            id(speaker_media_player)->set_playlist_delay_ms(speaker::AudioPipelineType::ANNOUNCEMENT, 1000);
+      - media_player.speaker.play_on_device_media_file:
+          media_file: timer_finished_sound
+          announcement: true
+      - delay: 15min
+      - switch.turn_off: timer_ringing
+
+select:
+  - platform: template
+    entity_category: config
+    name: Wake word engine location
+    id: wake_word_engine_location
+    icon: "mdi:account-voice"
+    optimistic: true
+    restore_value: true
+    options:
+      - In Home Assistant
+      - On device
+    initial_option: On device
+    on_value:
+      - if:
+          condition:
+            lambda: return !id(init_in_progress);
+          then:
+            - wait_until:
+                lambda: return id(voice_assistant_phase) == ${voice_assist_muted_phase_id} || id(voice_assistant_phase) == ${voice_assist_idle_phase_id};
+            - if:
+                condition:
+                  lambda: return x == "In Home Assistant";
+                then:
+                  - micro_wake_word.stop
+                  - delay: 500ms
+                  - if:
+                      condition:
+                        switch.is_off: mute
+                      then:
+                        - lambda: id(va).set_use_wake_word(true);
+                        - voice_assistant.start_continuous:
+            - if:
+                condition:
+                  lambda: return x == "On device";
+                then:
+                  - lambda: id(va).set_use_wake_word(false);
+                  - voice_assistant.stop
+                  - delay: 500ms
+                  - if:
+                      condition:
+                        switch.is_off: mute
+                      then:
+                        - micro_wake_word.start
+
+globals:
+  - id: init_in_progress
+    type: bool
+    restore_value: false
+    initial_value: "true"
+  - id: voice_assistant_phase
+    type: int
+    restore_value: false
+    initial_value: ${voice_assist_not_ready_phase_id}
+  - id: volume_overlay_visible
+    type: bool
+    restore_value: false
+    initial_value: "false"
+  - id: volume_overlay_level
+    type: float
+    restore_value: false
+    initial_value: "0.5"
+  - id: volume_overlay_last_draw_ms
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: voice_response_active
+    type: bool
+    restore_value: false
+    initial_value: "false"
+  - id: ota_update_in_progress
+    type: bool
+    restore_value: false
+    initial_value: "false"
+  - id: ota_update_progress
+    type: float
+    restore_value: false
+    initial_value: "0.0"
+  - id: ota_update_last_drawn_percent
+    type: int
+    restore_value: false
+    initial_value: "-1"
+  - id: countdown_dialog_visible
+    type: bool
+    restore_value: false
+    initial_value: "false"
+  - id: countdown_selected_seconds
+    type: uint32_t
+    restore_value: false
+    initial_value: "300"
+  - id: local_countdown_active
+    type: bool
+    restore_value: false
+    initial_value: "false"
+  - id: local_countdown_total_seconds
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: local_countdown_seconds_left
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: va_timer_display_anchor_ms
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: va_timer_display_anchor_seconds_left
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: va_timer_display_total_seconds
+    type: uint32_t
+    restore_value: false
+    initial_value: "0"
+  - id: va_timer_display_active
+    type: bool
+    restore_value: false
+    initial_value: "false"
+
+image:
+  - file: ${error_illustration_file}
+    id: casita_error
+    resize: 370x370
+    type: RGB565
+    transparency: opaque
+  - file: ${idle_illustration_file}
+    id: casita_idle
+    resize: 370x370
+    type: RGB565
+    transparency: opaque
+  - file: ${listening_illustration_file}
+    id: casita_listening
+    resize: 450x370
+    type: RGB565
+    transparency: opaque
+  - file: ${thinking_illustration_file}
+    id: casita_thinking
+    resize: 370x370
+    type: RGB565
+    transparency: opaque
+  - file: ${replying_illustration_file}
+    id: casita_replying
+    resize: 390x370
+    type: RGB565
+    transparency: opaque
+  - file: ${timer_finished_illustration_file}
+    id: casita_timer_finished
+    resize: 450x400
+    type: RGB565
+    transparency: opaque
+  - file: ${loading_illustration_file}
+    id: casita_initializing
+    resize: 370x370
+    type: RGB565
+    transparency: opaque
+  - file: https://github.com/esphome/wake-word-voice-assistants/raw/main/error_box_illustrations/error-no-wifi.png
+    id: error_no_wifi
+    resize: 320x240
+    type: RGB
+    transparency: alpha_channel
+  - file: https://github.com/esphome/wake-word-voice-assistants/raw/main/error_box_illustrations/error-no-ha.png
+    id: error_no_ha
+    resize: 320x240
+    type: RGB
+    transparency: alpha_channel
+
+font:
+  - file:
+      type: gfonts
+      family: ${font_family}
+      weight: 300
+      italic: true
+    id: font_request
+    size: 15
+    glyphsets:
+      - ${font_glyphsets}
+  - file:
+      type: gfonts
+      family: ${font_family}
+      weight: 300
+    id: font_response
+    size: 15
+    glyphsets:
+      - ${font_glyphsets}
+  - file:
+      type: gfonts
+      family: ${font_family}
+      weight: 300
+    id: font_timer
+    size: 30
+    glyphsets:
+      - ${font_glyphsets}
+  - file:
+      type: gfonts
+      family: ${font_family}
+      weight: 500
+    id: font_idle_time
+    size: 48
+    glyphsets:
+      - ${font_glyphsets}
+  - file:
+      type: gfonts
+      family: ${font_family}
+      weight: 400
+    id: font_idle_date
+    size: 18
+    glyphsets:
+      - ${font_glyphsets}
+
+sensor:
+  - platform: wifi_signal
+    name: "${friendly_name} WiFi Signal"
+    update_interval: 60s
+
+  - platform: uptime
+    name: "${friendly_name} Uptime"
+
+  - platform: debug
+    free:
+      name: "${friendly_name} Heap Free"
+    block:
+      name: "${friendly_name} Heap Max Block"
+    loop_time:
+      name: "${friendly_name} Loop Time"
+
+text_sensor:
+  - platform: template
+    name: "${friendly_name} Firmware Build"
+    entity_category: diagnostic
+    lambda: |-
+      return std::string("Build ${build_id}; ESPHome ${build_esphome_version}; ${build_time}");
+
+  - platform: template
+    name: "${friendly_name} IP Address"
+    update_interval: 60s
+    lambda: |-
+      auto ips = network::get_ip_addresses();
+      if (!ips[0].is_set())
+        return {};
+      char buf[network::IP_ADDRESS_BUFFER_SIZE];
+      ips[0].str_to(buf);
+      return std::string(buf);
+
+  - platform: debug
+    reset_reason:
+      name: "${friendly_name} Reset Reason"
+    device:
+      name: "${friendly_name} Device Info"
+
+  - id: text_request
+    platform: template
+    update_interval: never
+    on_value:
+      lambda: |-
+        auto &state = id(text_request).state;
+        for (auto &ch : state) {
+          if (ch == '\r' || ch == '\n' || ch == '\t')
+            ch = ' ';
+        }
+        if (state.length() > 78) {
+          state.resize(75);
+          state.append("...");
+        }
+
+  - id: text_response
+    platform: template
+    update_interval: never
+    on_value:
+      lambda: |-
+        auto &state = id(text_response).state;
+        for (auto &ch : state) {
+          if (ch == '\r' || ch == '\n' || ch == '\t')
+            ch = ' ';
+        }
+        if (state.length() > 78) {
+          state.resize(75);
+          state.append("...");
+        }
+
+color:
+  - id: idle_color
+    hex: ${idle_illustration_background_color}
+  - id: listening_color
+    hex: ${listening_illustration_background_color}
+  - id: thinking_color
+    hex: ${thinking_illustration_background_color}
+  - id: replying_color
+    hex: ${replying_illustration_background_color}
+  - id: loading_color
+    hex: ${loading_illustration_background_color}
+  - id: error_color
+    hex: ${error_illustration_background_color}
+  - id: timer_finished_color
+    hex: ${timer_finished_illustration_background_color}
+  - id: active_timer_color
+    hex: "26ed3a"
+  - id: paused_timer_color
+    hex: "3b89e3"
+
+spi:
+  - id: spi_bus
+    interface: software
+    clk_pin:
+      pca9554: io_expander
+      number: 2
+      mode:
+        output: true
+    mosi_pin:
+      pca9554: io_expander
+      number: 1
+      mode:
+        output: true
+
+display:
+  - platform: mipi_rgb
+    id: s3_box_lcd
+    model: WAVESHARE-4-480X480
+    dimensions:
+      width: 480
+      height: 480
+    color_order: RGB
+    pixel_mode: 18bit
+    invert_colors: true
+    data_rate: 2MHz
+    spi_mode: MODE3
+    cs_pin:
+      pca9554: io_expander
+      number: 0
+      mode:
+        output: true
+    reset_pin:
+      pca9554: io_expander
+      number: 7
+      mode:
+        output: true
+    pclk_frequency: 12MHz
+    pclk_inverted: false
+    hsync_pulse_width: 10
+    hsync_back_porch: 10
+    hsync_front_porch: 20
+    vsync_pulse_width: 10
+    vsync_back_porch: 10
+    vsync_front_porch: 10
+    de_pin: GPIO17
+    pclk_pin: GPIO9
+    hsync_pin:
+      number: GPIO46
+      ignore_strapping_warning: true
+    vsync_pin:
+      number: GPIO3
+      ignore_strapping_warning: true
+    data_pins:
+      red:
+        - GPIO40
+        - GPIO41
+        - GPIO42
+        - GPIO2
+        - GPIO1
+      green:
+        - GPIO21
+        - GPIO8
+        - GPIO18
+        - GPIO45
+        - GPIO38
+        - GPIO39
+      blue:
+        - GPIO10
+        - GPIO11
+        - GPIO12
+        - GPIO13
+        - GPIO14
+    update_interval: never
+    pages:
+      - id: ota_update_page
+        lambda: |-
+          const int screen_w = it.get_width();
+          const int bar_x = 60;
+          const int bar_y = 284;
+          const int bar_w = screen_w - 120;
+          const int bar_h = 28;
+          const float progress = std::min(std::max(id(ota_update_progress), 0.0f), 100.0f);
+          const int filled = static_cast<int>(roundf(bar_w * progress / 100.0f));
+
+          it.fill(Color::BLACK);
+          it.printf(screen_w / 2, 180, id(font_timer), Color::WHITE, TextAlign::CENTER, "Update in progress...");
+          it.rectangle(bar_x, bar_y, bar_w, bar_h, Color::WHITE);
+          if (filled > 0)
+            it.filled_rectangle(bar_x, bar_y, filled, bar_h, id(active_timer_color));
+          it.printf(screen_w / 2, 328, id(font_request), Color::WHITE, TextAlign::CENTER, "%.0f%%", progress);
+      - id: idle_page
+        lambda: |-
+          it.fill(id(idle_color));
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_idle), ImageAlign::CENTER);
+          auto now = id(homeassistant_time).now();
+          if (now.is_valid()) {
+            char time_buf[6];
+            char date_buf[16];
+            now.strftime(time_buf, sizeof(time_buf), "%H:%M");
+            now.strftime(date_buf, sizeof(date_buf), "%a %d %b");
+            const Color idle_clock_color(235, 235, 235);
+            it.printf(450, 20, id(font_idle_time), idle_clock_color, TextAlign::TOP_RIGHT, "%s", time_buf);
+            it.printf(450, 67, id(font_idle_date), idle_clock_color, TextAlign::TOP_RIGHT, "%s", date_buf);
+          }
+          id(draw_timer_timeline).execute();
+          id(draw_active_timer_widget).execute();
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: listening_page
+        lambda: |-
+          it.fill(id(listening_color));
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_listening), ImageAlign::CENTER);
+          id(draw_timer_timeline).execute();
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: thinking_page
+        lambda: |-
+          auto draw_speech_bubble = [&](const std::string &text, int x, int y, bool align_right, bool italic) {
+            if (text.empty())
+              return;
+
+            const int max_chars = 36;
+            const int bubble_w = 312;
+            const int bubble_h = 66;
+            const int radius = 8;
+            const int pad_x = 14;
+            const int pad_y = 11;
+            const int line_h = 20;
+            const Color bubble_color = Color::WHITE;
+            const Color border_color = Color::BLACK;
+            const Color text_color = Color::BLACK;
+            char line1[40] = {0};
+            char line2[40] = {0};
+            const char *source = text.c_str();
+            size_t len = strlen(source);
+
+            auto copy_line = [&](char *dest, const char *src, size_t count, bool ellipsis) {
+              count = std::min<size_t>(count, max_chars);
+              memcpy(dest, src, count);
+              dest[count] = '\0';
+              if (ellipsis && count >= 3) {
+                dest[count - 3] = '.';
+                dest[count - 2] = '.';
+                dest[count - 1] = '.';
+              }
+            };
+
+            size_t first_len = std::min<size_t>(len, max_chars);
+            if (len > max_chars) {
+              for (size_t i = first_len; i > 18; i--) {
+                if (source[i] == ' ') {
+                  first_len = i;
+                  break;
+                }
+              }
+            }
+            copy_line(line1, source, first_len, false);
+
+            size_t second_start = first_len;
+            while (second_start < len && source[second_start] == ' ')
+              second_start++;
+            if (second_start < len) {
+              const size_t remaining = len - second_start;
+              copy_line(line2, source + second_start, remaining, remaining > max_chars);
+            }
+
+            auto fill_round_rect = [&](int bx, int by, int bw, int bh, int br, Color color) {
+              it.filled_rectangle(bx + br, by, bw - 2 * br, bh, color);
+              it.filled_rectangle(bx, by + br, bw, bh - 2 * br, color);
+              it.filled_circle(bx + br, by + br, br, color);
+              it.filled_circle(bx + bw - br - 1, by + br, br, color);
+              it.filled_circle(bx + br, by + bh - br - 1, br, color);
+              it.filled_circle(bx + bw - br - 1, by + bh - br - 1, br, color);
+            };
+            fill_round_rect(x, y, bubble_w, bubble_h, radius, border_color);
+            fill_round_rect(x + 1, y + 1, bubble_w - 2, bubble_h - 2, radius - 1, bubble_color);
+
+            const int text_x = align_right ? x + bubble_w - pad_x : x + pad_x;
+            const TextAlign text_align = align_right ? TextAlign::TOP_RIGHT : TextAlign::TOP_LEFT;
+            auto *font = italic ? id(font_request) : id(font_response);
+            it.print(text_x, y + pad_y, font, text_color, text_align, line1, bubble_color);
+            if (line2[0] != '\0')
+              it.print(text_x, y + pad_y + line_h, font, text_color, text_align, line2, bubble_color);
+          };
+
+          it.fill(id(thinking_color));
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_thinking), ImageAlign::CENTER);
+          draw_speech_bubble(id(text_request).state, 16, 18, false, true);
+          id(draw_timer_timeline).execute();
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: replying_page
+        lambda: |-
+          auto draw_speech_bubble = [&](const std::string &text, int x, int y, bool align_right, bool italic) {
+            if (text.empty())
+              return;
+
+            const int max_chars = 36;
+            const int bubble_w = 312;
+            const int bubble_h = 66;
+            const int radius = 8;
+            const int pad_x = 14;
+            const int pad_y = 11;
+            const int line_h = 20;
+            const Color bubble_color = Color::WHITE;
+            const Color border_color = Color::BLACK;
+            const Color text_color = Color::BLACK;
+            char line1[40] = {0};
+            char line2[40] = {0};
+            const char *source = text.c_str();
+            size_t len = strlen(source);
+
+            auto copy_line = [&](char *dest, const char *src, size_t count, bool ellipsis) {
+              count = std::min<size_t>(count, max_chars);
+              memcpy(dest, src, count);
+              dest[count] = '\0';
+              if (ellipsis && count >= 3) {
+                dest[count - 3] = '.';
+                dest[count - 2] = '.';
+                dest[count - 1] = '.';
+              }
+            };
+
+            size_t first_len = std::min<size_t>(len, max_chars);
+            if (len > max_chars) {
+              for (size_t i = first_len; i > 18; i--) {
+                if (source[i] == ' ') {
+                  first_len = i;
+                  break;
+                }
+              }
+            }
+            copy_line(line1, source, first_len, false);
+
+            size_t second_start = first_len;
+            while (second_start < len && source[second_start] == ' ')
+              second_start++;
+            if (second_start < len) {
+              const size_t remaining = len - second_start;
+              copy_line(line2, source + second_start, remaining, remaining > max_chars);
+            }
+
+            auto fill_round_rect = [&](int bx, int by, int bw, int bh, int br, Color color) {
+              it.filled_rectangle(bx + br, by, bw - 2 * br, bh, color);
+              it.filled_rectangle(bx, by + br, bw, bh - 2 * br, color);
+              it.filled_circle(bx + br, by + br, br, color);
+              it.filled_circle(bx + bw - br - 1, by + br, br, color);
+              it.filled_circle(bx + br, by + bh - br - 1, br, color);
+              it.filled_circle(bx + bw - br - 1, by + bh - br - 1, br, color);
+            };
+            fill_round_rect(x, y, bubble_w, bubble_h, radius, border_color);
+            fill_round_rect(x + 1, y + 1, bubble_w - 2, bubble_h - 2, radius - 1, bubble_color);
+
+            const int text_x = align_right ? x + bubble_w - pad_x : x + pad_x;
+            const TextAlign text_align = align_right ? TextAlign::TOP_RIGHT : TextAlign::TOP_LEFT;
+            auto *font = italic ? id(font_request) : id(font_response);
+            it.print(text_x, y + pad_y, font, text_color, text_align, line1, bubble_color);
+            if (line2[0] != '\0')
+              it.print(text_x, y + pad_y + line_h, font, text_color, text_align, line2, bubble_color);
+          };
+
+          it.fill(id(replying_color));
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_replying), ImageAlign::CENTER);
+          draw_speech_bubble(id(text_request).state, 16, 18, false, true);
+          draw_speech_bubble(id(text_response).state, it.get_width() - 312 - 16, it.get_height() - 66 - 18, true, false);
+          id(draw_timer_timeline).execute();
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: timer_finished_page
+        lambda: |-
+          auto fill_round_rect = [&](int x, int y, int w, int h, int r, Color color) {
+            it.filled_rectangle(x + r, y, w - 2 * r, h, color);
+            it.filled_rectangle(x, y + r, w, h - 2 * r, color);
+            it.filled_circle(x + r, y + r, r, color);
+            it.filled_circle(x + w - r - 1, y + r, r, color);
+            it.filled_circle(x + r, y + h - r - 1, r, color);
+            it.filled_circle(x + w - r - 1, y + h - r - 1, r, color);
+          };
+
+          it.fill(id(timer_finished_color));
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_timer_finished), ImageAlign::CENTER);
+          const int box_w = 140;
+          const int box_h = 54;
+          const int box_x = (it.get_width() - box_w) / 2;
+          const int box_y = 213;
+          fill_round_rect(box_x, box_y, box_w, box_h, 10, Color::BLACK);
+          fill_round_rect(box_x + 3, box_y + 3, box_w - 6, box_h - 6, 7, Color::WHITE);
+          it.printf(box_x + (box_w / 2), box_y + 10, id(font_timer), Color::BLACK, TextAlign::TOP_CENTER, "Stop");
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: error_page
+        lambda: |-
+          it.fill(id(error_color));
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_error), ImageAlign::CENTER);
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: no_ha_page
+        lambda: |-
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(error_no_ha), ImageAlign::CENTER);
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: no_wifi_page
+        lambda: |-
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(error_no_wifi), ImageAlign::CENTER);
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: initializing_page
+        lambda: |-
+          it.fill(id(loading_color));
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_initializing), ImageAlign::CENTER);
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();
+      - id: muted_page
+        lambda: |-
+          it.fill(Color::BLACK);
+          id(draw_timer_timeline).execute();
+          id(draw_active_timer_widget).execute();
+          id(draw_volume_overlay).execute();
+          id(draw_countdown_dialog).execute();

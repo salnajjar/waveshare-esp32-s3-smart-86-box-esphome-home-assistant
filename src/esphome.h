@@ -2,6 +2,7 @@
 #include "esphome/core/macros.h"
 #include "esphome\components\api\api_buffer.h"
 #include "esphome\components\api\api_connection.h"
+#include "esphome\components\api\api_connection_buffer.h"
 #include "esphome\components\api\api_frame_helper.h"
 #include "esphome\components\api\api_frame_helper_noise.h"
 #include "esphome\components\api\api_frame_helper_plaintext.h"

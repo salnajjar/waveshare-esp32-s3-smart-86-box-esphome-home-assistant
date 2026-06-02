@@ -360,4 +360,3 @@ void I2SAudioSpeakerBase::swap_esp32_mono_samples_(uint8_t *data, size_t bytes_r
 }  // namespace esphome::i2s_audio
 
 #endif  // USE_ESP32
-

@@ -2,6 +2,18 @@
 
 This changelog is generated from the Git commit history for this project.
 
+## 2026-06-02
+
+- Updated the project ESPHome source pin from 2026.5.1 to 2026.5.2.
+- Raised the S3 and P4 ESPHome minimum versions to 2026.5.2.
+- Kept the PCA9554 output-state preservation patch in the ESPHome source preparation step so the S3 display continues to initialize correctly.
+
+## 2026-05-26
+
+- Updated the project ESPHome source pin from 2026.5.0 to 2026.5.1.
+- Raised the S3 and P4 ESPHome minimum versions to 2026.5.1.
+- Updated the ESP32-P4 preview project version marker to 2026.5.1.
+
 ## 2026-05-21
 
 - Updated the project ESPHome source pin from 2026.4.5 to 2026.5.0.

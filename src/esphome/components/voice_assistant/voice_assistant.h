@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "esphome/core/defines.h"
 
@@ -378,4 +378,3 @@ extern VoiceAssistant *global_voice_assistant;  // NOLINT(cppcoreguidelines-avoi
 }  // namespace esphome::voice_assistant
 
 #endif  // USE_VOICE_ASSISTANT
-

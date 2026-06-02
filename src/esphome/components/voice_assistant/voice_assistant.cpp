@@ -28,6 +28,8 @@ static const size_t RECEIVE_SIZE = 1024;
 // Keep more incoming API audio queued so short stalls do not drop TTS chunks.
 // The Smart 86 Box builds can briefly stall while display/audio tasks share the loop.
 // Keep more incoming API audio queued so short stalls do not drop TTS chunks.
+// The Smart 86 Box builds can briefly stall while display/audio tasks share the loop.
+// Keep more incoming API audio queued so short stalls do not drop TTS chunks.
 static const size_t SPEAKER_BUFFER_SIZE = 256 * RECEIVE_SIZE;
 
 VoiceAssistant::VoiceAssistant() { global_voice_assistant = this; }
@@ -1128,4 +1130,3 @@ VoiceAssistant *global_voice_assistant = nullptr;  // NOLINT(cppcoreguidelines-a
 }  // namespace esphome::voice_assistant
 
 #endif  // USE_VOICE_ASSISTANT
-
